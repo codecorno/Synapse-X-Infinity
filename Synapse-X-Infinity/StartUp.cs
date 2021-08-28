@@ -34,10 +34,7 @@ namespace Synapse_X_Infinity
             }
         }
 
-        public bool Attached;
-        public bool Loaded;
         public static string sxDirectory = Directory.GetCurrentDirectory();
-
         public void checkFiles()
         {
             string sxDirectory = Directory.GetCurrentDirectory();
@@ -99,6 +96,9 @@ namespace Synapse_X_Infinity
                     this.bunifuProgressBar1.Value = 100;
                     this.bunifuProgressBar1.ProgressColorLeft = Color.FromArgb(86, 252, 3);
                     this.bunifuProgressBar1.ProgressColorRight = Color.FromArgb(86, 252, 3);
+                    this.Visible = false;
+                    var SynapseXLoader = new SynapseX();
+                    SynapseXLoader.Show();
                     return;
 
                 // others
