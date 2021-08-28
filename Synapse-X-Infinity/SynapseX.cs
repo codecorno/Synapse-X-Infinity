@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using sxlib;
@@ -173,7 +174,7 @@ namespace Synapse_X_Infinity
                 string script = File.ReadAllText(Application.StartupPath + @"\scripts\" + item.ToString());
 
                 SetAceText(script);
-                LoadScripts(path);
+                LoadScriptsLoop.Start();
             }
         }
 
@@ -188,7 +189,7 @@ namespace Synapse_X_Infinity
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message);
+                    MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message, "Synapse X - Error Report");
                 }
             }
         }
@@ -212,9 +213,29 @@ namespace Synapse_X_Infinity
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message);
+                    MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message, "Synapse X - Error Report");
                 }
             }
+        }
+
+        private void bunifuButton5_Click(object sender, EventArgs e)
+        {
+            if (SynxF.SaveFile.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    StreamWriter writer = new StreamWriter(SynxF.SaveFile.OpenFile());
+                    writer.WriteLine(GetAceText());
+                    writer.Dispose();
+                    writer.Close();
+                }
+                catch (Exception ex) { MessageBox.Show("[Error]: " + ex.Message, "Synapse X - Error Report"); };
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            LoadScripts(@"\scripts\");
         }
     }
 }

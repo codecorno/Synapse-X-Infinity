@@ -30,6 +30,12 @@ namespace Synapse_X_Infinity
             Title = "Synapse X Infinity - Execute File"
         };
 
-
+        public static SaveFileDialog SaveFile = new SaveFileDialog()
+        {
+            Filter = "Script Files (*.lua) | *.lua",
+            FilterIndex = 1,
+            RestoreDirectory = true,
+            Title = "Synapse X Infinity - Save FIle"
+        };
     }
 }
