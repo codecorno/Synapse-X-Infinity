@@ -9,7 +9,7 @@
     <img alt="Hit Count" src="https://img.shields.io/github/search/ZeusHay/Synapse-X-Infinity/goto?color=orange&label=Hit%20Counter&style=for-the-badge"></a>
     <br />
 </p>
-<p> Synapse X Infinity is a project made using the <a href="https://x.synapse.to/">Synapse X</a> library, we are in a betas version, and bugs will be fixed.</p>
+<p><center>Synapse X Infinity is a project made using the <a href="https://x.synapse.to/">Synapse X</a> library, we are in a betas version, and bugs will be fixed.</center></p>
 
 # Getting Stated
 
@@ -23,7 +23,7 @@
     <h2 align="center">Current Status</h2>
 </b >
 
-We are in an initial development stage, constant updates will be made.
+<center>We are in an initial development stage, constant updates will be made.</center>
 
 |Function|Status|
 |:---------------------------------------------------------------------------------------: | :-------------------------------------------------------------------: |
