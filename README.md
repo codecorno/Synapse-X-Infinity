@@ -2,7 +2,7 @@
     <img width="480px" height="auto" src="https://media.discordapp.net/attachments/742405340397699073/881311465104105512/InfinityLogoV2.png" align="center" alt="Selfium" />
 </p>
 <p align="center">
-    <img alt="Project language" src="https://img.shields.io/badge/language-C%23-success"></a>
+    <img alt="Project language" src="https://img.shields.io/badge/language-C%23-success?color=orange&style=for-the-badge"></a>
     <a href="https://github.com/ZeusHay/Synapse-X-Infinity/issues"><img alt="GitHub License" src="https://img.shields.io/github/license/ZeusHay/Synapse-X-Infinity?color=orange&style=for-the-badge"></a>
     <img alt="Project Issues" src="https://img.shields.io/github/issues/ZeusHay/Synapse-X-Infinity?color=orange&style=for-the-badge"></a>
     <img alt="Project Stars" src="https://img.shields.io/github/stars/ZeusHay/Synapse-X-Infinity?color=orange&style=for-the-badge"></a>
