@@ -117,4 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuProgressBar1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAbEAAAANCAYAAAAnr1ALAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEESURBVHhe7duxTcNAGIZhj0Fx9tkdJSUjUFGzBAOwBRWb
+        pGWFbMACBEVQ0FAk/6GTrEhHnQt6PulpYl/96mRlMDMz+xdLKT1M07QNBwDoQGnSS875qqaqvXjpNV76
+        XJblAAC9mOe5xGw3juN9Tdbp4uFjBOyrdRgAehCt+ohWXdd0rYu6vbUOAEAv6o1sU9O1Ln5sHgCAnkSv
+        vmu61okYAJeg9Kqma52IAXAJ/orYe+tlAOjJOI4/NV3rImKb8sGsdQAAehG92tZ0rcs538SDXesAAPQg
+        OrVPKd3VdJ0urmhPYd86CADnVAIWnmuy2osb2W25qoXfj2cAcG7lv8ztG9gwHAHYuJY4hAgJNwAAAABJ
+        RU5ErkJggg==
+</value>
+  </data>
+  <metadata name="bunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>
