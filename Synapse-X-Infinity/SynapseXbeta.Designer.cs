@@ -31,25 +31,25 @@ namespace Synapse_X_Infinity
         {
             this.components = new System.ComponentModel.Container();
             Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SynapseXbeta));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState4 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
-            Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState5 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
-            Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState6 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
-            Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState1 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
-            Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState2 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
-            Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState3 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges25 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges26 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges27 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges28 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges29 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges30 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges31 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges32 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges33 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges34 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges35 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState13 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
+            Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState14 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
+            Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState15 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
+            Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState16 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
+            Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState17 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
+            Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState18 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges36 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.panel1 = new System.Windows.Forms.Panel();
             this.BunifuPages1 = new Bunifu.UI.WinForms.BunifuPages();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -71,7 +71,6 @@ namespace Synapse_X_Infinity
             this.bunifuButton11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.indicator = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.bunifuButton4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -97,6 +96,7 @@ namespace Synapse_X_Infinity
             this.Configurations = new System.Windows.Forms.Timer(this.components);
             this.bunifuButton12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuSeparator3 = new Bunifu.UI.WinForms.BunifuSeparator();
+            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.panel1.SuspendLayout();
             this.BunifuPages1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -107,12 +107,12 @@ namespace Synapse_X_Infinity
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.indicator)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -125,6 +125,7 @@ namespace Synapse_X_Infinity
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1026, 39);
             this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // BunifuPages1
             // 
@@ -136,10 +137,10 @@ namespace Synapse_X_Infinity
             this.BunifuPages1.Location = new System.Drawing.Point(157, 32);
             this.BunifuPages1.Multiline = true;
             this.BunifuPages1.Name = "BunifuPages1";
-            this.BunifuPages1.Page = this.tabPage1;
-            this.BunifuPages1.PageIndex = 2;
-            this.BunifuPages1.PageName = "tabPage1";
-            this.BunifuPages1.PageTitle = "configPage";
+            this.BunifuPages1.Page = this.dashboardPage;
+            this.BunifuPages1.PageIndex = 1;
+            this.BunifuPages1.PageName = "dashboardPage";
+            this.BunifuPages1.PageTitle = "dashboardPage";
             this.BunifuPages1.SelectedIndex = 0;
             this.BunifuPages1.Size = new System.Drawing.Size(878, 587);
             this.BunifuPages1.TabIndex = 4;
@@ -289,10 +290,10 @@ namespace Synapse_X_Infinity
             this.bunifuShadowPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuShadowPanel1.BorderRadius = 1;
             this.bunifuShadowPanel1.BorderThickness = 1;
+            this.bunifuShadowPanel1.Controls.Add(this.bunifuPictureBox1);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuButton11);
             this.bunifuShadowPanel1.Controls.Add(this.pictureBox1);
             this.bunifuShadowPanel1.Controls.Add(this.indicator);
-            this.bunifuShadowPanel1.Controls.Add(this.pictureBox4);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuButton4);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuButton3);
             this.bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
@@ -306,7 +307,7 @@ namespace Synapse_X_Infinity
             this.bunifuShadowPanel1.ShadowDepth = 5;
             this.bunifuShadowPanel1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.bunifuShadowPanel1.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel1.Size = new System.Drawing.Size(168, 641);
+            this.bunifuShadowPanel1.Size = new System.Drawing.Size(168, 627);
             this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel1.TabIndex = 5;
             this.bunifuShadowPanel1.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.bunifuShadowPanel1_ControlAdded);
@@ -400,11 +401,11 @@ namespace Synapse_X_Infinity
             this.bunifuButton11.ColorContrastOnClick = 45;
             this.bunifuButton11.ColorContrastOnHover = 45;
             this.bunifuButton11.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges10.BottomLeft = true;
-            borderEdges10.BottomRight = true;
-            borderEdges10.TopLeft = true;
-            borderEdges10.TopRight = true;
-            this.bunifuButton11.CustomizableEdges = borderEdges10;
+            borderEdges25.BottomLeft = true;
+            borderEdges25.BottomRight = true;
+            borderEdges25.TopLeft = true;
+            borderEdges25.TopRight = true;
+            this.bunifuButton11.CustomizableEdges = borderEdges25;
             this.bunifuButton11.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton11.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuButton11.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
@@ -490,14 +491,6 @@ namespace Synapse_X_Infinity
             this.indicator.TabIndex = 7;
             this.indicator.TabStop = false;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(27, 53);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(112, 94);
-            this.pictureBox4.TabIndex = 6;
-            this.pictureBox4.TabStop = false;
-            // 
             // bunifuButton4
             // 
             this.bunifuButton4.AllowAnimations = true;
@@ -517,11 +510,11 @@ namespace Synapse_X_Infinity
             this.bunifuButton4.ColorContrastOnClick = 45;
             this.bunifuButton4.ColorContrastOnHover = 45;
             this.bunifuButton4.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges11.BottomLeft = true;
-            borderEdges11.BottomRight = true;
-            borderEdges11.TopLeft = true;
-            borderEdges11.TopRight = true;
-            this.bunifuButton4.CustomizableEdges = borderEdges11;
+            borderEdges26.BottomLeft = true;
+            borderEdges26.BottomRight = true;
+            borderEdges26.TopLeft = true;
+            borderEdges26.TopRight = true;
+            this.bunifuButton4.CustomizableEdges = borderEdges26;
             this.bunifuButton4.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton4.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuButton4.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
@@ -607,11 +600,11 @@ namespace Synapse_X_Infinity
             this.bunifuButton3.ColorContrastOnClick = 45;
             this.bunifuButton3.ColorContrastOnHover = 45;
             this.bunifuButton3.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges12.BottomLeft = true;
-            borderEdges12.BottomRight = true;
-            borderEdges12.TopLeft = true;
-            borderEdges12.TopRight = true;
-            this.bunifuButton3.CustomizableEdges = borderEdges12;
+            borderEdges27.BottomLeft = true;
+            borderEdges27.BottomRight = true;
+            borderEdges27.TopLeft = true;
+            borderEdges27.TopRight = true;
+            this.bunifuButton3.CustomizableEdges = borderEdges27;
             this.bunifuButton3.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton3.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuButton3.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
@@ -747,11 +740,11 @@ namespace Synapse_X_Infinity
             this.bunifuButton6.ColorContrastOnClick = 45;
             this.bunifuButton6.ColorContrastOnHover = 45;
             this.bunifuButton6.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.bunifuButton6.CustomizableEdges = borderEdges1;
+            borderEdges28.BottomLeft = true;
+            borderEdges28.BottomRight = true;
+            borderEdges28.TopLeft = true;
+            borderEdges28.TopRight = true;
+            this.bunifuButton6.CustomizableEdges = borderEdges28;
             this.bunifuButton6.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton6.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuButton6.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
@@ -837,11 +830,11 @@ namespace Synapse_X_Infinity
             this.bunifuButton5.ColorContrastOnClick = 45;
             this.bunifuButton5.ColorContrastOnHover = 45;
             this.bunifuButton5.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.bunifuButton5.CustomizableEdges = borderEdges2;
+            borderEdges29.BottomLeft = true;
+            borderEdges29.BottomRight = true;
+            borderEdges29.TopLeft = true;
+            borderEdges29.TopRight = true;
+            this.bunifuButton5.CustomizableEdges = borderEdges29;
             this.bunifuButton5.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton5.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuButton5.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
@@ -927,11 +920,11 @@ namespace Synapse_X_Infinity
             this.bunifuButton2.ColorContrastOnClick = 45;
             this.bunifuButton2.ColorContrastOnHover = 45;
             this.bunifuButton2.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.bunifuButton2.CustomizableEdges = borderEdges3;
+            borderEdges30.BottomLeft = true;
+            borderEdges30.BottomRight = true;
+            borderEdges30.TopLeft = true;
+            borderEdges30.TopRight = true;
+            this.bunifuButton2.CustomizableEdges = borderEdges30;
             this.bunifuButton2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton2.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuButton2.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
@@ -1017,11 +1010,11 @@ namespace Synapse_X_Infinity
             this.bunifuButton7.ColorContrastOnClick = 45;
             this.bunifuButton7.ColorContrastOnHover = 45;
             this.bunifuButton7.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.bunifuButton7.CustomizableEdges = borderEdges4;
+            borderEdges31.BottomLeft = true;
+            borderEdges31.BottomRight = true;
+            borderEdges31.TopLeft = true;
+            borderEdges31.TopRight = true;
+            this.bunifuButton7.CustomizableEdges = borderEdges31;
             this.bunifuButton7.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton7.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuButton7.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
@@ -1107,11 +1100,11 @@ namespace Synapse_X_Infinity
             this.bunifuButton8.ColorContrastOnClick = 45;
             this.bunifuButton8.ColorContrastOnHover = 45;
             this.bunifuButton8.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.bunifuButton8.CustomizableEdges = borderEdges5;
+            borderEdges32.BottomLeft = true;
+            borderEdges32.BottomRight = true;
+            borderEdges32.TopLeft = true;
+            borderEdges32.TopRight = true;
+            this.bunifuButton8.CustomizableEdges = borderEdges32;
             this.bunifuButton8.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton8.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuButton8.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
@@ -1197,11 +1190,11 @@ namespace Synapse_X_Infinity
             this.bunifuButton9.ColorContrastOnClick = 45;
             this.bunifuButton9.ColorContrastOnHover = 45;
             this.bunifuButton9.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.bunifuButton9.CustomizableEdges = borderEdges6;
+            borderEdges33.BottomLeft = true;
+            borderEdges33.BottomRight = true;
+            borderEdges33.TopLeft = true;
+            borderEdges33.TopRight = true;
+            this.bunifuButton9.CustomizableEdges = borderEdges33;
             this.bunifuButton9.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton9.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuButton9.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
@@ -1287,11 +1280,11 @@ namespace Synapse_X_Infinity
             this.bunifuButton10.ColorContrastOnClick = 45;
             this.bunifuButton10.ColorContrastOnHover = 45;
             this.bunifuButton10.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.bunifuButton10.CustomizableEdges = borderEdges7;
+            borderEdges34.BottomLeft = true;
+            borderEdges34.BottomRight = true;
+            borderEdges34.TopLeft = true;
+            borderEdges34.TopRight = true;
+            this.bunifuButton10.CustomizableEdges = borderEdges34;
             this.bunifuButton10.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton10.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuButton10.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
@@ -1376,11 +1369,11 @@ namespace Synapse_X_Infinity
             this.bunifuButton1.ColorContrastOnClick = 45;
             this.bunifuButton1.ColorContrastOnHover = 45;
             this.bunifuButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges8.BottomLeft = true;
-            borderEdges8.BottomRight = true;
-            borderEdges8.TopLeft = true;
-            borderEdges8.TopRight = true;
-            this.bunifuButton1.CustomizableEdges = borderEdges8;
+            borderEdges35.BottomLeft = true;
+            borderEdges35.BottomRight = true;
+            borderEdges35.TopLeft = true;
+            borderEdges35.TopRight = true;
+            this.bunifuButton1.CustomizableEdges = borderEdges35;
             this.bunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuButton1.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
@@ -1466,7 +1459,7 @@ namespace Synapse_X_Infinity
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(870, 561);
             this.tabPage1.TabIndex = 2;
-            this.tabPage1.Text = "configPage";
+            this.tabPage1.Text = "configurationPage";
             // 
             // topMostToggle
             // 
@@ -1481,33 +1474,33 @@ namespace Synapse_X_Infinity
             this.topMostToggle.Size = new System.Drawing.Size(32, 18);
             this.topMostToggle.TabIndex = 0;
             this.topMostToggle.ThumbMargin = 3;
-            toggleState4.BackColor = System.Drawing.Color.DarkGray;
-            toggleState4.BackColorInner = System.Drawing.Color.White;
-            toggleState4.BorderColor = System.Drawing.Color.DarkGray;
-            toggleState4.BorderColorInner = System.Drawing.Color.White;
-            toggleState4.BorderRadius = 17;
-            toggleState4.BorderRadiusInner = 11;
-            toggleState4.BorderThickness = 1;
-            toggleState4.BorderThicknessInner = 1;
-            this.topMostToggle.ToggleStateDisabled = toggleState4;
-            toggleState5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            toggleState5.BackColorInner = System.Drawing.Color.White;
-            toggleState5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
-            toggleState5.BorderColorInner = System.Drawing.Color.White;
-            toggleState5.BorderRadius = 17;
-            toggleState5.BorderRadiusInner = 11;
-            toggleState5.BorderThickness = 1;
-            toggleState5.BorderThicknessInner = 1;
-            this.topMostToggle.ToggleStateOff = toggleState5;
-            toggleState6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
-            toggleState6.BackColorInner = System.Drawing.Color.White;
-            toggleState6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
-            toggleState6.BorderColorInner = System.Drawing.Color.White;
-            toggleState6.BorderRadius = 17;
-            toggleState6.BorderRadiusInner = 11;
-            toggleState6.BorderThickness = 1;
-            toggleState6.BorderThicknessInner = 1;
-            this.topMostToggle.ToggleStateOn = toggleState6;
+            toggleState13.BackColor = System.Drawing.Color.DarkGray;
+            toggleState13.BackColorInner = System.Drawing.Color.White;
+            toggleState13.BorderColor = System.Drawing.Color.DarkGray;
+            toggleState13.BorderColorInner = System.Drawing.Color.White;
+            toggleState13.BorderRadius = 17;
+            toggleState13.BorderRadiusInner = 11;
+            toggleState13.BorderThickness = 1;
+            toggleState13.BorderThicknessInner = 1;
+            this.topMostToggle.ToggleStateDisabled = toggleState13;
+            toggleState14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            toggleState14.BackColorInner = System.Drawing.Color.White;
+            toggleState14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
+            toggleState14.BorderColorInner = System.Drawing.Color.White;
+            toggleState14.BorderRadius = 17;
+            toggleState14.BorderRadiusInner = 11;
+            toggleState14.BorderThickness = 1;
+            toggleState14.BorderThicknessInner = 1;
+            this.topMostToggle.ToggleStateOff = toggleState14;
+            toggleState15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
+            toggleState15.BackColorInner = System.Drawing.Color.White;
+            toggleState15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
+            toggleState15.BorderColorInner = System.Drawing.Color.White;
+            toggleState15.BorderRadius = 17;
+            toggleState15.BorderRadiusInner = 11;
+            toggleState15.BorderThickness = 1;
+            toggleState15.BorderThicknessInner = 1;
+            this.topMostToggle.ToggleStateOn = toggleState15;
             this.topMostToggle.Value = false;
             // 
             // panel5
@@ -1591,33 +1584,33 @@ namespace Synapse_X_Infinity
             this.autoInjectToggle.Size = new System.Drawing.Size(32, 18);
             this.autoInjectToggle.TabIndex = 5;
             this.autoInjectToggle.ThumbMargin = 3;
-            toggleState1.BackColor = System.Drawing.Color.DarkGray;
-            toggleState1.BackColorInner = System.Drawing.Color.White;
-            toggleState1.BorderColor = System.Drawing.Color.DarkGray;
-            toggleState1.BorderColorInner = System.Drawing.Color.White;
-            toggleState1.BorderRadius = 17;
-            toggleState1.BorderRadiusInner = 11;
-            toggleState1.BorderThickness = 1;
-            toggleState1.BorderThicknessInner = 1;
-            this.autoInjectToggle.ToggleStateDisabled = toggleState1;
-            toggleState2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            toggleState2.BackColorInner = System.Drawing.Color.White;
-            toggleState2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
-            toggleState2.BorderColorInner = System.Drawing.Color.White;
-            toggleState2.BorderRadius = 17;
-            toggleState2.BorderRadiusInner = 11;
-            toggleState2.BorderThickness = 1;
-            toggleState2.BorderThicknessInner = 1;
-            this.autoInjectToggle.ToggleStateOff = toggleState2;
-            toggleState3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
-            toggleState3.BackColorInner = System.Drawing.Color.White;
-            toggleState3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
-            toggleState3.BorderColorInner = System.Drawing.Color.White;
-            toggleState3.BorderRadius = 17;
-            toggleState3.BorderRadiusInner = 11;
-            toggleState3.BorderThickness = 1;
-            toggleState3.BorderThicknessInner = 1;
-            this.autoInjectToggle.ToggleStateOn = toggleState3;
+            toggleState16.BackColor = System.Drawing.Color.DarkGray;
+            toggleState16.BackColorInner = System.Drawing.Color.White;
+            toggleState16.BorderColor = System.Drawing.Color.DarkGray;
+            toggleState16.BorderColorInner = System.Drawing.Color.White;
+            toggleState16.BorderRadius = 17;
+            toggleState16.BorderRadiusInner = 11;
+            toggleState16.BorderThickness = 1;
+            toggleState16.BorderThicknessInner = 1;
+            this.autoInjectToggle.ToggleStateDisabled = toggleState16;
+            toggleState17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            toggleState17.BackColorInner = System.Drawing.Color.White;
+            toggleState17.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
+            toggleState17.BorderColorInner = System.Drawing.Color.White;
+            toggleState17.BorderRadius = 17;
+            toggleState17.BorderRadiusInner = 11;
+            toggleState17.BorderThickness = 1;
+            toggleState17.BorderThicknessInner = 1;
+            this.autoInjectToggle.ToggleStateOff = toggleState17;
+            toggleState18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
+            toggleState18.BackColorInner = System.Drawing.Color.White;
+            toggleState18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
+            toggleState18.BorderColorInner = System.Drawing.Color.White;
+            toggleState18.BorderRadius = 17;
+            toggleState18.BorderRadiusInner = 11;
+            toggleState18.BorderThickness = 1;
+            toggleState18.BorderThicknessInner = 1;
+            this.autoInjectToggle.ToggleStateOn = toggleState18;
             this.autoInjectToggle.Value = false;
             // 
             // Configurations
@@ -1644,11 +1637,11 @@ namespace Synapse_X_Infinity
             this.bunifuButton12.ColorContrastOnClick = 45;
             this.bunifuButton12.ColorContrastOnHover = 45;
             this.bunifuButton12.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges9.BottomLeft = true;
-            borderEdges9.BottomRight = true;
-            borderEdges9.TopLeft = true;
-            borderEdges9.TopRight = true;
-            this.bunifuButton12.CustomizableEdges = borderEdges9;
+            borderEdges36.BottomLeft = true;
+            borderEdges36.BottomRight = true;
+            borderEdges36.TopLeft = true;
+            borderEdges36.TopRight = true;
+            this.bunifuButton12.CustomizableEdges = borderEdges36;
             this.bunifuButton12.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton12.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuButton12.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
@@ -1713,6 +1706,7 @@ namespace Synapse_X_Infinity
             this.bunifuButton12.TextMarginLeft = 0;
             this.bunifuButton12.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton12.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton12.Click += new System.EventHandler(this.bunifuButton12_Click);
             // 
             // bunifuSeparator3
             // 
@@ -1729,6 +1723,22 @@ namespace Synapse_X_Infinity
             this.bunifuSeparator3.Size = new System.Drawing.Size(300, 14);
             this.bunifuSeparator3.TabIndex = 14;
             // 
+            // bunifuPictureBox1
+            // 
+            this.bunifuPictureBox1.AllowFocused = false;
+            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox1.AutoSizeHeight = true;
+            this.bunifuPictureBox1.BorderRadius = 40;
+            this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
+            this.bunifuPictureBox1.IsCircle = true;
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(44, 54);
+            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(80, 80);
+            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox1.TabIndex = 2;
+            this.bunifuPictureBox1.TabStop = false;
+            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            // 
             // SynapseXbeta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1740,6 +1750,7 @@ namespace Synapse_X_Infinity
             this.Controls.Add(this.BunifuPages1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SynapseXbeta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SynapseXbeta";
             this.Load += new System.EventHandler(this.SynapseXbeta_Load);
             this.panel1.ResumeLayout(false);
@@ -1756,13 +1767,13 @@ namespace Synapse_X_Infinity
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.indicator)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1778,7 +1789,6 @@ namespace Synapse_X_Infinity
         private System.Windows.Forms.TabPage dashboardPage;
         private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel1;
         private System.Windows.Forms.PictureBox indicator;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton4;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton3;
         private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
@@ -1816,5 +1826,6 @@ namespace Synapse_X_Infinity
         private System.Windows.Forms.Timer Configurations;
         private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator3;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton12;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
     }
 }

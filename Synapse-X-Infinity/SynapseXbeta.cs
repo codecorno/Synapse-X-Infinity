@@ -67,6 +67,26 @@ namespace Synapse_X_Infinity
                 return false;
         }
 
+        private void killProcess(string ProcessName)
+        {
+            foreach (var process in Process.GetProcessesByName(ProcessName))
+            {
+                process.Kill();
+            }
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            switch (e.CloseReason)
+            {
+                case CloseReason.UserClosing:
+                    Environment.Exit(0);
+                    break;
+            }
+
+            base.OnFormClosing(e);
+        }
+
         private void sxAttachEvent(SxLibBase.SynAttachEvents Event, object whatever)
         {
             switch (Event)
@@ -143,7 +163,7 @@ namespace Synapse_X_Infinity
         private void bunifuButton11_Click(object sender, EventArgs e)
         {
             indicator.Top = ((Control)sender).Top;
-            BunifuPages1.SetPage("dashboardPage");
+            BunifuPages1.SetPage("configurationPage");
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -245,6 +265,7 @@ namespace Synapse_X_Infinity
         private void SynapseXbeta_Load(object sender, EventArgs e)
         {
             this.webBrowser1.Navigate(string.Format("file:///{0}ace/AceEditor.html", AppDomain.CurrentDomain.BaseDirectory));
+            BunifuPages1.SetPage("dashboardPage");
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -277,6 +298,16 @@ namespace Synapse_X_Infinity
             {
 
             }
+        }
+
+        private void bunifuButton12_Click(object sender, EventArgs e)
+        {
+            killProcess("RobloxPlayerBeta");
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

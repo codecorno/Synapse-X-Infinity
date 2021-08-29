@@ -89,6 +89,20 @@ namespace Synapse_X_Infinity
         private void SynapseX_Load(object sender, EventArgs e)
         {
             this.webBrowser1.Navigate(string.Format("file:///{0}ace/AceEditor.html", AppDomain.CurrentDomain.BaseDirectory));
+
+            timer1.Enabled = true;
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            switch (e.CloseReason)
+            {
+                case CloseReason.UserClosing:
+                    Environment.Exit(0);
+                    break;
+            }
+
+            base.OnFormClosing(e);
         }
 
         private void sxAttachEvent(SxLibBase.SynAttachEvents Event, object whatever)
@@ -235,6 +249,18 @@ namespace Synapse_X_Infinity
         private void timer1_Tick(object sender, EventArgs e)
         {
             LoadScripts(@"\scripts\");
+        }
+
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+            timer1.Enabled = false;
+            var testBeta = MessageBox.Show("Do you want to test the alpha version of the Infinity Dashboard?", "Synapse X Alpha Version", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (testBeta == DialogResult.Yes)
+            {
+                this.Visible = false;
+                var SynapseXLoader = new SynapseXbeta();
+                SynapseXLoader.Show();
+            }
         }
     }
 }

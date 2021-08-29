@@ -98,7 +98,7 @@ namespace Synapse_X_Infinity
                     this.dllProgress.Value = 100;
                     this.bunifuProgressBar1.Value = 100;
                     this.Visible = false;
-                    var SynapseXLoader = new SynapseXbeta();
+                    var SynapseXLoader = new SynapseX();
                     SynapseXLoader.Show();
                     return;
 
@@ -132,6 +132,18 @@ namespace Synapse_X_Infinity
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            switch (e.CloseReason)
+            {
+                case CloseReason.UserClosing:
+                    Environment.Exit(0);
+                    break;
+            }
+
+            base.OnFormClosing(e);
         }
 
         private void StartUp_Load(object sender, EventArgs e)
