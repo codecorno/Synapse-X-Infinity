@@ -98,7 +98,7 @@ namespace Synapse_X_Infinity
                     this.dllProgress.Value = 100;
                     this.bunifuProgressBar1.Value = 100;
                     this.Visible = false;
-                    var SynapseXLoader = new SynapseX();
+                    var SynapseXLoader = new SynapseXbeta();
                     SynapseXLoader.Show();
                     return;
 

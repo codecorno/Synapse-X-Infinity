@@ -1,4 +1,7 @@
-Bunifu.UI.WinForms.BunifuCircleProgress, Bunifu.UI.WinForms.BunifuCircleProgress, Version=5.0.9.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9
-Bunifu.UI.WinForms.BunifuProgressBar, Bunifu.UI.WinForms.BunifuProgressBar, Version=5.0.9.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9
 Bunifu.UI.WinForms.BunifuButton.BunifuButton, Bunifu.UI.WinForms.BunifuButton, Version=5.0.9.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9
+Bunifu.UI.WinForms.BunifuFormDock, Bunifu.UI.WinForms.BunifuFormDock, Version=5.0.9.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9
+Bunifu.UI.WinForms.BunifuTransition, Bunifu.UI.WinForms.BunifuTransition, Version=5.0.9.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9
 Bunifu.UI.WinForms.BunifuPages, Bunifu.UI.WinForms.BunifuPages, Version=5.0.9.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9
+Bunifu.UI.WinForms.BunifuProgressBar, Bunifu.UI.WinForms.BunifuProgressBar, Version=5.0.9.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9
+Bunifu.UI.WinForms.BunifuCircleProgress, Bunifu.UI.WinForms.BunifuCircleProgress, Version=5.0.9.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9
+Bunifu.UI.WinForms.BunifuShadowPanel, Bunifu.UI.WinForms.BunifuShadowPanel, Version=5.0.9.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9

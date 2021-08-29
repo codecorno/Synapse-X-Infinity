@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using sxlib;
@@ -15,25 +14,15 @@ using sxlib.Specialized;
 
 namespace Synapse_X_Infinity
 {
-    public partial class SynapseX : Form
+    public partial class SynapseXbeta : Form
     {
-        public bool attached;
-        public const int WM_NCLBUTTONDOWN = 0xA1;
-        public const int HT_CAPTION = 0x2;
-
-        [DllImport("user32.dll")]
-        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParan, int lParan);
-
-        [DllImport("user32.dll")]
-        public static extern bool ReleaseCapture();
-
-        private void ZeusMoveForm(object sender, System.Windows.Forms.MouseEventArgs e)
+        public SynapseXbeta()
         {
-            if (e.Button == MouseButtons.Left)
-            {
-                ReleaseCapture();
-                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
-            }
+            InitializeComponent();
+            bunifuFormDock1.SubscribeControlToDragEvents(bunifuShadowPanel1);
+            bunifuFormDock1.SubscribeControlToDragEvents(panel1);
+            SynxF.Lib.AttachEvent += sxAttachEvent;
+            LoadScriptsLoop.Enabled = true;
         }
 
         private void LoadScripts(string path)
@@ -68,27 +57,14 @@ namespace Synapse_X_Infinity
             string Text = obj.ToString();
             return Text;
         }
-
-        public SynapseX()
+        
+        public bool getProcess(string ProcessName)
         {
-            InitializeComponent();
-            SynxF.Lib.AttachEvent += sxAttachEvent;
-            LoadScriptsLoop.Enabled = true;
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            Environment.Exit(0);    
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void SynapseX_Load(object sender, EventArgs e)
-        {
-            this.webBrowser1.Navigate(string.Format("file:///{0}ace/AceEditor.html", AppDomain.CurrentDomain.BaseDirectory));
+            Process[] pname = Process.GetProcessesByName(ProcessName);
+            if (pname.Length == 0)
+                return true;
+            else
+                return false;
         }
 
         private void sxAttachEvent(SxLibBase.SynAttachEvents Event, object whatever)
@@ -152,55 +128,53 @@ namespace Synapse_X_Infinity
             }
         }
 
-        private void bunifuButton6_Click(object sender, EventArgs e) // Attach Button
+        private void bunifuButton3_Click(object sender, EventArgs e)
+        {
+            indicator.Top = ((Control)sender).Top;
+            BunifuPages1.SetPage("executorPage");
+        }
+
+        private void bunifuButton4_Click(object sender, EventArgs e)
+        {
+            indicator.Top = ((Control)sender).Top;
+            BunifuPages1.SetPage("dashboardPage");
+        }
+
+        private void bunifuButton11_Click(object sender, EventArgs e)
+        {
+            indicator.Top = ((Control)sender).Top;
+            BunifuPages1.SetPage("dashboardPage");
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            Process.Start("");
+        }
+
+        private void bunifuButton6_Click(object sender, EventArgs e)
         {
             SynxF.Lib.Attach();
             SynxF.Lib.AttachEvent += sxAttachEvent;
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (!Directory.Exists("scripts"))
-            {
-                Directory.CreateDirectory("scripts");
-            }
-
-            object item = listBox1.SelectedItem;
-
-            if (item != null)
-            {
-                string path = @"\scripts\";
-                string script = File.ReadAllText(Application.StartupPath + @"\scripts\" + item.ToString());
-
-                SetAceText(script);
-                LoadScripts(path);
-            }
-        }
-
-        private void bunifuButton4_Click(object sender, EventArgs e)
-        {
-            if (SynxF.OpenFile.ShowDialog() == DialogResult.OK)
-            {
-                try
-                {
-                    string MainText = File.ReadAllText(SynxF.OpenFile.FileName);
-                    SynxF.Lib.Execute(MainText);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message, "Synapse X - Error Report");
-                }
-            }
-        }
-
-        private void bunifuButton2_Click(object sender, EventArgs e){SetAceText("");}
-
-        private void bunifuButton1_Click(object sender, EventArgs e)
+        private void bunifuButton9_Click(object sender, EventArgs e)
         {
             SynxF.Lib.Execute(GetAceText());
         }
 
-        private void bunifuButton3_Click(object sender, EventArgs e)
+        private void bunifuButton8_Click(object sender, EventArgs e) { SetAceText(""); }
+
+        private void bunifuButton7_Click(object sender, EventArgs e)
         {
             if (SynxF.OpenFile.ShowDialog() == DialogResult.OK)
             {
@@ -209,6 +183,22 @@ namespace Synapse_X_Infinity
                     string MainText = File.ReadAllText(SynxF.OpenFile.FileName);
                     SetAceText(MainText);
 
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message, "Synapse X - Error Report");
+                }
+            }
+        }
+
+        private void bunifuButton2_Click(object sender, EventArgs e)
+        {
+            if (SynxF.OpenFile.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    string MainText = File.ReadAllText(SynxF.OpenFile.FileName);
+                    SynxF.Lib.Execute(MainText);
                 }
                 catch (Exception ex)
                 {
@@ -232,9 +222,61 @@ namespace Synapse_X_Infinity
             }
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+
+        }
+
+        private void LoadScriptsLoop_Tick(object sender, EventArgs e)
         {
             LoadScripts(@"\scripts\");
+        }
+
+        private void bunifuShadowPanel1_ControlAdded(object sender, ControlEventArgs e)
+        {
+
+        }
+
+        private void SynapseXbeta_Load(object sender, EventArgs e)
+        {
+            this.webBrowser1.Navigate(string.Format("file:///{0}ace/AceEditor.html", AppDomain.CurrentDomain.BaseDirectory));
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (!Directory.Exists("scripts"))
+            {
+                Directory.CreateDirectory("scripts");
+            }
+
+            object item = listBox1.SelectedItem;
+
+            if (item != null)
+            {
+                string path = @"\scripts\";
+                string script = File.ReadAllText(Application.StartupPath + @"\scripts\" + item.ToString());
+
+                SetAceText(script);
+                LoadScripts(path);
+            }
+        }
+
+        private void Configurations_Tick(object sender, EventArgs e)
+        {
+            if (topMostToggle.Checked)
+            {
+                this.TopMost = true;
+            }
+
+            if (autoInjectToggle.Checked)
+            {
+
+            }
         }
     }
 }

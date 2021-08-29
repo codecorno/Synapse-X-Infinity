@@ -204,6 +204,12 @@
     <Compile Include="SynapseX.Designer.cs">
       <DependentUpon>SynapseX.cs</DependentUpon>
     </Compile>
+    <Compile Include="SynapseXbeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SynapseXbeta.Designer.cs">
+      <DependentUpon>SynapseXbeta.cs</DependentUpon>
+    </Compile>
     <Compile Include="SynxF.cs" />
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -216,6 +222,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SynapseX.resx">
       <DependentUpon>SynapseX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SynapseXbeta.resx">
+      <DependentUpon>SynapseXbeta.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -266,6 +275,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
