@@ -73,7 +73,7 @@ namespace Synapse_X_Infinity
         {
             InitializeComponent();
             SynxF.Lib.AttachEvent += sxAttachEvent;
-            LoadScripts(@"\scripts\");
+            LoadScriptsLoop.Enabled = true;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -174,7 +174,7 @@ namespace Synapse_X_Infinity
                 string script = File.ReadAllText(Application.StartupPath + @"\scripts\" + item.ToString());
 
                 SetAceText(script);
-                LoadScriptsLoop.Start();
+                LoadScripts(path);
             }
         }
 

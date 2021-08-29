@@ -62,40 +62,41 @@ namespace Synapse_X_Infinity
                 // Importants
 
                 case SxLibBase.SynLoadEvents.CHECKING_WL:
+                    this.whitelistProgress.Value = 100;
+                    this.whitelistProgress.ProgressColor = Color.FromArgb(0, 255, 0);
                     this.bunifuProgressBar1.Value = 16;
-                    this.bunifuProgressBar1.ProgressColorLeft = Color.FromArgb(198, 252, 3);
-                    this.bunifuProgressBar1.ProgressColorRight = Color.FromArgb(198, 252, 3);
 
                     return;
 
                 case SxLibBase.SynLoadEvents.DOWNLOADING_DATA:
+                    this.dataBaseProgress.Value = 100;
+                    this.changingWlProgress.Value = 100;
+                    this.dataBaseProgress.ProgressColor = Color.FromArgb(0, 255, 0);
+                    this.changingWlProgress.ProgressColor = Color.FromArgb(0, 255, 0);
                     this.bunifuProgressBar1.Value = 32;
-                    this.bunifuProgressBar1.ProgressColorLeft = Color.FromArgb(252, 127, 3);
-                    this.bunifuProgressBar1.ProgressColorRight = Color.FromArgb(252, 127, 3);
                     return;
 
                 case SxLibBase.SynLoadEvents.DOWNLOADING_DLLS:
+                    this.dllProgress.Value = 100;
+                    this.dllProgress.ProgressColor = Color.FromArgb(0, 255, 0);
                     this.bunifuProgressBar1.Value = 48;
-                    this.bunifuProgressBar1.ProgressColorLeft = Color.FromArgb(252, 227, 3);
-                    this.bunifuProgressBar1.ProgressColorRight = Color.FromArgb(252, 227, 3);
                     return;
 
                 case SxLibBase.SynLoadEvents.CHECKING_DATA:
+                    this.folderProgress.Value = 100;
+                    this.folderProgress.ProgressColor = Color.FromArgb(0, 255, 0);
                     this.bunifuProgressBar1.Value = 64;
-                    this.bunifuProgressBar1.ProgressColorLeft = Color.FromArgb(252, 173, 3);
-                    this.bunifuProgressBar1.ProgressColorRight = Color.FromArgb(252, 173, 3);
                     return;
 
                 case SxLibBase.SynLoadEvents.CHANGING_WL:
+                    this.changingWlProgress.Value = 100;
+                    this.changingWlProgress.ProgressColor = Color.FromArgb(0, 255, 0);
                     this.bunifuProgressBar1.Value = 80;
-                    this.bunifuProgressBar1.ProgressColorLeft = Color.FromArgb(248, 252, 3);
-                    this.bunifuProgressBar1.ProgressColorRight = Color.FromArgb(248, 252, 3);
                     return;
 
                 case SxLibBase.SynLoadEvents.READY:
+                    this.dllProgress.Value = 100;
                     this.bunifuProgressBar1.Value = 100;
-                    this.bunifuProgressBar1.ProgressColorLeft = Color.FromArgb(86, 252, 3);
-                    this.bunifuProgressBar1.ProgressColorRight = Color.FromArgb(86, 252, 3);
                     this.Visible = false;
                     var SynapseXLoader = new SynapseX();
                     SynapseXLoader.Show();
