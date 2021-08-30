@@ -166,6 +166,12 @@ namespace Synapse_X_Infinity
             BunifuPages1.SetPage("configurationPage");
         }
 
+        private void bunifuButton13_Click(object sender, EventArgs e)
+        {
+            indicator.Top = ((Control)sender).Top;
+            BunifuPages1.SetPage("hubPage");
+        }
+
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
