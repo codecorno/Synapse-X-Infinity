@@ -16,10 +16,5 @@ namespace Synapse_X_Infinity
         {
             InitializeComponent();
         }
-
-        private void dashCard_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
