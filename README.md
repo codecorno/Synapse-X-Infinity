@@ -37,6 +37,15 @@
 
 ---------------------------------------------------------------------------------------
 
+# Credits
+
+<p align="center">
+    <a href="https://github.com/ct201158"><img alt="ct201158" src="https://img.shields.io/badge/github-@ct201158-orange?style=for-the-badge"></a>
+    <br />
+</p>
+
+    My total thanks to the users that are on this tab, have we used any of your code or had any support for the creation of 
+    Project Infinity.
 # Read more
 
 The code quality is pretty bad, this is a project made with a focus on learning the C# programming language, if you can, contribute a Pull Request :)
