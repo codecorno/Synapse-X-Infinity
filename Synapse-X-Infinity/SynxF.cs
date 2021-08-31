@@ -14,6 +14,7 @@ namespace Synapse_X_Infinity
     {
         public static SxLibWinForms Lib;
 
+        // Credits to @github.com/ct201158
         public static OpenFileDialog OpenFile = new OpenFileDialog
         {
             Filter = "Script Files (*.lua, *.txt) | *.lua;*.txt",
@@ -22,6 +23,7 @@ namespace Synapse_X_Infinity
             Title = "Synapse X Infinity - Open File"
         };
 
+        // Credits to @github.com/ct201158
         public static OpenFileDialog ExecuteFile = new OpenFileDialog
         {
             Filter = "Script Files (*.lua, *.txt) | *.lua;*.txt",
@@ -30,6 +32,7 @@ namespace Synapse_X_Infinity
             Title = "Synapse X Infinity - Execute File"
         };
 
+        // Credits to @github.com/ct201158
         public static SaveFileDialog SaveFile = new SaveFileDialog()
         {
             Filter = "Script Files (*.lua) | *.lua",
