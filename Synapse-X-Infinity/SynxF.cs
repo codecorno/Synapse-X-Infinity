@@ -7,6 +7,7 @@ using System.IO;
 using sxlib;
 using sxlib.Specialized;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Synapse_X_Infinity
 {
@@ -40,5 +41,9 @@ namespace Synapse_X_Infinity
             RestoreDirectory = true,
             Title = "Synapse X Infinity - Save FIle"
         };
+
+
+
+        
     }
 }

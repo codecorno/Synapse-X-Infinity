@@ -188,6 +188,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dashCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="dashCard.Designer.cs">
+      <DependentUpon>dashCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -214,6 +220,9 @@
       <DependentUpon>SynapseXbeta.cs</DependentUpon>
     </Compile>
     <Compile Include="SynxF.cs" />
+    <EmbeddedResource Include="dashCard.resx">
+      <DependentUpon>dashCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

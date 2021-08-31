@@ -19,10 +19,10 @@ namespace Synapse_X_Infinity
         public SynapseXbeta()
         {
             InitializeComponent();
-            bunifuFormDock1.SubscribeControlToDragEvents(bunifuShadowPanel1);
-            bunifuFormDock1.SubscribeControlToDragEvents(panel1);
+            bunifuFormDock1.SubscribeControlToDragEvents(bunifuPanel1);
             SynxF.Lib.AttachEvent += sxAttachEvent;
             LoadScriptsLoop.Enabled = true;
+            computerStats.Enabled = true;
         }
 
         private void LoadScripts(string path)
@@ -148,28 +148,24 @@ namespace Synapse_X_Infinity
             }
         }
 
-        private void bunifuButton3_Click(object sender, EventArgs e)
+        private void pictureBox8_Click(object sender, EventArgs e)
         {
-            indicator.Top = ((Control)sender).Top;
-            BunifuPages1.SetPage("executorPage");
-        }
-
-        private void bunifuButton4_Click(object sender, EventArgs e)
-        {
-            indicator.Top = ((Control)sender).Top;
-            BunifuPages1.SetPage("dashboardPage");
-        }
-
-        private void bunifuButton11_Click(object sender, EventArgs e)
-        {
-            indicator.Top = ((Control)sender).Top;
             BunifuPages1.SetPage("configurationPage");
         }
 
-        private void bunifuButton13_Click(object sender, EventArgs e)
+        private void pictureBox7_Click(object sender, EventArgs e)
         {
-            indicator.Top = ((Control)sender).Top;
             BunifuPages1.SetPage("hubPage");
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            BunifuPages1.SetPage("dashboardPage");
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            BunifuPages1.SetPage("executorPage");
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -318,6 +314,10 @@ namespace Synapse_X_Infinity
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void computerStats_Tick(object sender, EventArgs e)
+        {
         }
     }
 }
