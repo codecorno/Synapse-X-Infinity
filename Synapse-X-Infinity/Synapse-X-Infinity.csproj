@@ -199,6 +199,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Scripts.cs" />
     <Compile Include="StartUp.cs">
       <SubType>Form</SubType>
     </Compile>
