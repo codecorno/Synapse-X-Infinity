@@ -31,26 +31,19 @@ namespace Synapse_X_Infinity
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartUp));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.RoundForm = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.whitelistProgress = new Bunifu.UI.WinForms.BunifuCircleProgress();
             this.dataBaseProgress = new Bunifu.UI.WinForms.BunifuCircleProgress();
             this.dataPic = new System.Windows.Forms.PictureBox();
             this.wlProgress = new System.Windows.Forms.PictureBox();
-            this.bunifuProgressBar1 = new Bunifu.UI.WinForms.BunifuProgressBar();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.dllProgress = new Bunifu.UI.WinForms.BunifuCircleProgress();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.folderProgress = new Bunifu.UI.WinForms.BunifuCircleProgress();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.changingWlProgress = new Bunifu.UI.WinForms.BunifuCircleProgress();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wlProgress)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -58,53 +51,17 @@ namespace Synapse_X_Infinity
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(499, 39);
-            this.panel1.TabIndex = 0;
-            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ZeusMoveForm);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = global::Synapse_X_Infinity.Properties.Resources.Green;
-            this.pictureBox3.Location = new System.Drawing.Point(441, 7);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::Synapse_X_Infinity.Properties.Resources.Red;
-            this.pictureBox2.Location = new System.Drawing.Point(467, 7);
+            this.pictureBox2.Image = global::Synapse_X_Infinity.Properties.Resources.cancel;
+            this.pictureBox2.Location = new System.Drawing.Point(467, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(20, 20);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Image = global::Synapse_X_Infinity.Properties.Resources.InfinityLogoV2;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(163, 39);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // RoundForm
             // 
@@ -123,7 +80,7 @@ namespace Synapse_X_Infinity
             this.whitelistProgress.IsPercentage = false;
             this.whitelistProgress.LineProgressThickness = 2;
             this.whitelistProgress.LineThickness = 2;
-            this.whitelistProgress.Location = new System.Drawing.Point(104, 92);
+            this.whitelistProgress.Location = new System.Drawing.Point(107, 83);
             this.whitelistProgress.Name = "whitelistProgress";
             this.whitelistProgress.ProgressAnimationSpeed = 200;
             this.whitelistProgress.ProgressBackColor = System.Drawing.Color.Gainsboro;
@@ -159,7 +116,7 @@ namespace Synapse_X_Infinity
             this.dataBaseProgress.IsPercentage = false;
             this.dataBaseProgress.LineProgressThickness = 2;
             this.dataBaseProgress.LineThickness = 2;
-            this.dataBaseProgress.Location = new System.Drawing.Point(160, 92);
+            this.dataBaseProgress.Location = new System.Drawing.Point(163, 83);
             this.dataBaseProgress.Name = "dataBaseProgress";
             this.dataBaseProgress.ProgressAnimationSpeed = 200;
             this.dataBaseProgress.ProgressBackColor = System.Drawing.Color.Gainsboro;
@@ -186,7 +143,7 @@ namespace Synapse_X_Infinity
             // dataPic
             // 
             this.dataPic.Image = global::Synapse_X_Infinity.Properties.Resources.database;
-            this.dataPic.Location = new System.Drawing.Point(165, 54);
+            this.dataPic.Location = new System.Drawing.Point(168, 45);
             this.dataPic.Name = "dataPic";
             this.dataPic.Size = new System.Drawing.Size(30, 30);
             this.dataPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -196,43 +153,17 @@ namespace Synapse_X_Infinity
             // wlProgress
             // 
             this.wlProgress.Image = global::Synapse_X_Infinity.Properties.Resources.whitelist;
-            this.wlProgress.Location = new System.Drawing.Point(109, 54);
+            this.wlProgress.Location = new System.Drawing.Point(112, 45);
             this.wlProgress.Name = "wlProgress";
             this.wlProgress.Size = new System.Drawing.Size(30, 30);
             this.wlProgress.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.wlProgress.TabIndex = 17;
             this.wlProgress.TabStop = false;
             // 
-            // bunifuProgressBar1
-            // 
-            this.bunifuProgressBar1.AllowAnimations = false;
-            this.bunifuProgressBar1.Animation = 0;
-            this.bunifuProgressBar1.AnimationSpeed = 220;
-            this.bunifuProgressBar1.AnimationStep = 10;
-            this.bunifuProgressBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.bunifuProgressBar1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuProgressBar1.BackgroundImage")));
-            this.bunifuProgressBar1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.bunifuProgressBar1.BorderRadius = 9;
-            this.bunifuProgressBar1.BorderThickness = 1;
-            this.bunifuProgressBar1.Location = new System.Drawing.Point(34, 142);
-            this.bunifuProgressBar1.Maximum = 100;
-            this.bunifuProgressBar1.MaximumValue = 100;
-            this.bunifuProgressBar1.Minimum = 0;
-            this.bunifuProgressBar1.MinimumValue = 0;
-            this.bunifuProgressBar1.Name = "bunifuProgressBar1";
-            this.bunifuProgressBar1.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            this.bunifuProgressBar1.ProgressBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.bunifuProgressBar1.ProgressColorLeft = System.Drawing.Color.Lime;
-            this.bunifuProgressBar1.ProgressColorRight = System.Drawing.Color.Lime;
-            this.bunifuProgressBar1.Size = new System.Drawing.Size(433, 13);
-            this.bunifuProgressBar1.TabIndex = 1;
-            this.bunifuProgressBar1.Value = 0;
-            this.bunifuProgressBar1.ValueByTransition = 0;
-            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Synapse_X_Infinity.Properties.Resources.dll;
-            this.pictureBox4.Location = new System.Drawing.Point(221, 54);
+            this.pictureBox4.Location = new System.Drawing.Point(224, 45);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(30, 30);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -251,7 +182,7 @@ namespace Synapse_X_Infinity
             this.dllProgress.IsPercentage = false;
             this.dllProgress.LineProgressThickness = 2;
             this.dllProgress.LineThickness = 2;
-            this.dllProgress.Location = new System.Drawing.Point(216, 92);
+            this.dllProgress.Location = new System.Drawing.Point(219, 83);
             this.dllProgress.Name = "dllProgress";
             this.dllProgress.ProgressAnimationSpeed = 200;
             this.dllProgress.ProgressBackColor = System.Drawing.Color.Gainsboro;
@@ -278,7 +209,7 @@ namespace Synapse_X_Infinity
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(279, 54);
+            this.pictureBox5.Location = new System.Drawing.Point(282, 45);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(30, 30);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -297,7 +228,7 @@ namespace Synapse_X_Infinity
             this.folderProgress.IsPercentage = false;
             this.folderProgress.LineProgressThickness = 2;
             this.folderProgress.LineThickness = 2;
-            this.folderProgress.Location = new System.Drawing.Point(274, 92);
+            this.folderProgress.Location = new System.Drawing.Point(277, 83);
             this.folderProgress.Name = "folderProgress";
             this.folderProgress.ProgressAnimationSpeed = 200;
             this.folderProgress.ProgressBackColor = System.Drawing.Color.Gainsboro;
@@ -324,7 +255,7 @@ namespace Synapse_X_Infinity
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(337, 54);
+            this.pictureBox6.Location = new System.Drawing.Point(340, 45);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(30, 30);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -343,7 +274,7 @@ namespace Synapse_X_Infinity
             this.changingWlProgress.IsPercentage = false;
             this.changingWlProgress.LineProgressThickness = 2;
             this.changingWlProgress.LineThickness = 2;
-            this.changingWlProgress.Location = new System.Drawing.Point(332, 92);
+            this.changingWlProgress.Location = new System.Drawing.Point(335, 83);
             this.changingWlProgress.Name = "changingWlProgress";
             this.changingWlProgress.ProgressAnimationSpeed = 200;
             this.changingWlProgress.ProgressBackColor = System.Drawing.Color.Gainsboro;
@@ -374,6 +305,7 @@ namespace Synapse_X_Infinity
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(499, 167);
             this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.changingWlProgress);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.folderProgress);
@@ -383,18 +315,13 @@ namespace Synapse_X_Infinity
             this.Controls.Add(this.dataBaseProgress);
             this.Controls.Add(this.wlProgress);
             this.Controls.Add(this.whitelistProgress);
-            this.Controls.Add(this.bunifuProgressBar1);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "StartUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Loading Synapse X Infinity";
             this.Load += new System.EventHandler(this.StartUp_Load);
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wlProgress)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -405,12 +332,7 @@ namespace Synapse_X_Infinity
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private Bunifu.UI.WinForms.BunifuProgressBar bunifuProgressBar1;
         private System.Windows.Forms.PictureBox wlProgress;
         private Bunifu.UI.WinForms.BunifuCircleProgress whitelistProgress;
         private System.Windows.Forms.PictureBox dataPic;

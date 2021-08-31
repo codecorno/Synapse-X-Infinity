@@ -309,6 +309,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Logo.ico" />
+    <None Include="Resources\minimize.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\InfinityLogoSolo.png" />
     <None Include="Resources\scriptsImages\Dex V4.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

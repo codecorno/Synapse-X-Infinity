@@ -64,8 +64,6 @@ namespace Synapse_X_Infinity
                 case SxLibBase.SynLoadEvents.CHECKING_WL:
                     this.whitelistProgress.Value = 100;
                     this.whitelistProgress.ProgressColor = Color.FromArgb(0, 255, 0);
-                    this.bunifuProgressBar1.Value = 16;
-
                     return;
 
                 case SxLibBase.SynLoadEvents.DOWNLOADING_DATA:
@@ -73,30 +71,25 @@ namespace Synapse_X_Infinity
                     this.changingWlProgress.Value = 100;
                     this.dataBaseProgress.ProgressColor = Color.FromArgb(0, 255, 0);
                     this.changingWlProgress.ProgressColor = Color.FromArgb(0, 255, 0);
-                    this.bunifuProgressBar1.Value = 32;
                     return;
 
                 case SxLibBase.SynLoadEvents.DOWNLOADING_DLLS:
                     this.dllProgress.Value = 100;
                     this.dllProgress.ProgressColor = Color.FromArgb(0, 255, 0);
-                    this.bunifuProgressBar1.Value = 48;
                     return;
 
                 case SxLibBase.SynLoadEvents.CHECKING_DATA:
                     this.folderProgress.Value = 100;
                     this.folderProgress.ProgressColor = Color.FromArgb(0, 255, 0);
-                    this.bunifuProgressBar1.Value = 64;
                     return;
 
                 case SxLibBase.SynLoadEvents.CHANGING_WL:
                     this.changingWlProgress.Value = 100;
                     this.changingWlProgress.ProgressColor = Color.FromArgb(0, 255, 0);
-                    this.bunifuProgressBar1.Value = 80;
                     return;
 
                 case SxLibBase.SynLoadEvents.READY:
                     this.dllProgress.Value = 100;
-                    this.bunifuProgressBar1.Value = 100;
                     this.Visible = false;
                     var SynapseXLoader = new SynapseX();
                     SynapseXLoader.Show();
@@ -105,20 +98,14 @@ namespace Synapse_X_Infinity
                 // others
 
                 case SxLibBase.SynLoadEvents.NOT_LOGGED_IN:
-                    this.bunifuProgressBar1.ProgressColorLeft = Color.FromArgb(255, 0, 0);
-                    this.bunifuProgressBar1.ProgressColorRight = Color.FromArgb(255, 0, 0);
                     MessageBox.Show("[ERROR]: You are not logged in SynapseX.");
                     return;
 
                 case SxLibBase.SynLoadEvents.UNAUTHORIZED_HWID:
-                    this.bunifuProgressBar1.ProgressColorLeft = Color.FromArgb(255, 0, 0);
-                    this.bunifuProgressBar1.ProgressColorRight = Color.FromArgb(255, 0, 0);
                     MessageBox.Show("[ERROR]: Unauthorized Hwid Detected.");
                     return;
 
                 case SxLibBase.SynLoadEvents.FAILED_TO_DOWNLOAD:
-                    this.bunifuProgressBar1.ProgressColorLeft = Color.FromArgb(255, 0, 0);
-                    this.bunifuProgressBar1.ProgressColorRight = Color.FromArgb(255, 0, 0);
                     MessageBox.Show("[ERROR]: Failed To Download SynapseX.");
                     return;
             }

@@ -110,57 +110,48 @@ namespace Synapse_X_Infinity
             switch (Event)
             {
                 case SxLibBase.SynAttachEvents.CHECKING:
-                    this.bunifuProgressBar1.Value = 20;
-                    this.bunifuProgressBar1.ProgressColorLeft = Color.FromArgb(255, 128, 0);
-                    this.bunifuProgressBar1.ProgressColorRight = Color.FromArgb(255, 128, 0);
+                    this.statusProgress.Value = 20;
+                    this.statusProgress.ProgressColor = Color.FromArgb(255, 128, 0);
                     break;
 
                 case SxLibBase.SynAttachEvents.INJECTING:
-                    this.bunifuProgressBar1.ProgressColorLeft = Color.FromArgb(195, 255, 0);
-                    this.bunifuProgressBar1.ProgressColorRight = Color.FromArgb(195, 255, 0);
-                    this.bunifuProgressBar1.Value = 40;
+                    this.statusProgress.ProgressColor = Color.FromArgb(195, 255, 0);
+                    this.statusProgress.Value = 40;
                     break;
 
                 case SxLibBase.SynAttachEvents.CHECKING_WHITELIST:
-                    this.bunifuProgressBar1.ProgressColorLeft = Color.FromArgb(255, 208, 0);
-                    this.bunifuProgressBar1.ProgressColorRight = Color.FromArgb(255, 208, 0);
-                    this.bunifuProgressBar1.Value = 60;
+                    this.statusProgress.ProgressColor = Color.FromArgb(255, 208, 0);
+                    this.statusProgress.Value = 60;
                     break;
 
                 case SxLibBase.SynAttachEvents.SCANNING:
-                    this.bunifuProgressBar1.ProgressColorLeft = Color.FromArgb(255, 251, 0);
-                    this.bunifuProgressBar1.ProgressColorRight = Color.FromArgb(255, 251, 0);
-                    this.bunifuProgressBar1.Value = 80;
+                    this.statusProgress.ProgressColor = Color.FromArgb(255, 251, 0);
+                    this.statusProgress.Value = 80;
                     break;
 
                 case SxLibBase.SynAttachEvents.READY:
-                    this.bunifuProgressBar1.ProgressColorLeft = Color.FromArgb(86, 252, 3);
-                    this.bunifuProgressBar1.ProgressColorRight = Color.FromArgb(86, 252, 3);
-                    this.bunifuProgressBar1.Value = 100;
+                    this.statusProgress.ProgressColor = Color.FromArgb(86, 252, 3);
+                    this.statusProgress.Value = 100;
                     break;
 
                 case SxLibBase.SynAttachEvents.FAILED_TO_FIND:
-                    this.bunifuProgressBar1.ProgressColorLeft = Color.FromArgb(255, 128, 0);
-                    this.bunifuProgressBar1.ProgressColorRight = Color.FromArgb(255, 128, 0);
-                    this.bunifuProgressBar1.Value = 100;
+                    this.statusProgress.ProgressColor = Color.FromArgb(255, 128, 0);
+                    this.statusProgress.Value = 100;
                     break;
 
                 case SxLibBase.SynAttachEvents.NOT_RUNNING_LATEST_VER_UPDATING:
-                    this.bunifuProgressBar1.ProgressColorLeft = Color.FromArgb(255, 128, 0);
-                    this.bunifuProgressBar1.ProgressColorRight = Color.FromArgb(255, 128, 0);
-                    this.bunifuProgressBar1.Value = 100;
+                    this.statusProgress.ProgressColor = Color.FromArgb(255, 128, 0);
+                    this.statusProgress.Value = 100;
                     break;
 
                 case SxLibBase.SynAttachEvents.NOT_INJECTED:
-                    this.bunifuProgressBar1.ProgressColorLeft = Color.FromArgb(255, 128, 0);
-                    this.bunifuProgressBar1.ProgressColorRight = Color.FromArgb(255, 128, 0);
-                    this.bunifuProgressBar1.Value = 100;
+                    this.statusProgress.ProgressColor = Color.FromArgb(255, 128, 0);
+                    this.statusProgress.Value = 100;
                     break;
 
                 case SxLibBase.SynAttachEvents.ALREADY_INJECTED:
-                    this.bunifuProgressBar1.ProgressColorLeft = Color.FromArgb(255, 128, 0);
-                    this.bunifuProgressBar1.ProgressColorRight = Color.FromArgb(255, 128, 0);
-                    this.bunifuProgressBar1.Value = 100;
+                    this.statusProgress.ProgressColor = Color.FromArgb(255, 128, 0);
+                    this.statusProgress.Value = 100;
                     break;
 
             }
