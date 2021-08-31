@@ -118,6 +118,7 @@ namespace Synapse_X_Infinity
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox8.Image = global::Synapse_X_Infinity.Properties.Resources.settings;
             this.pictureBox8.Location = new System.Drawing.Point(534, 6);
             this.pictureBox8.Name = "pictureBox8";
@@ -130,6 +131,7 @@ namespace Synapse_X_Infinity
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox7.Image = global::Synapse_X_Infinity.Properties.Resources.hub;
             this.pictureBox7.Location = new System.Drawing.Point(498, 6);
             this.pictureBox7.Name = "pictureBox7";
@@ -142,6 +144,7 @@ namespace Synapse_X_Infinity
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Image = global::Synapse_X_Infinity.Properties.Resources.lua;
             this.pictureBox6.Location = new System.Drawing.Point(462, 6);
             this.pictureBox6.Name = "pictureBox6";
@@ -154,6 +157,7 @@ namespace Synapse_X_Infinity
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::Synapse_X_Infinity.Properties.Resources.dashboard;
             this.pictureBox4.Location = new System.Drawing.Point(426, 6);
             this.pictureBox4.Name = "pictureBox4";
@@ -194,7 +198,7 @@ namespace Synapse_X_Infinity
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(6, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(6, -1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 40);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -212,10 +216,10 @@ namespace Synapse_X_Infinity
             this.BunifuPages1.Location = new System.Drawing.Point(-4, 34);
             this.BunifuPages1.Multiline = true;
             this.BunifuPages1.Name = "BunifuPages1";
-            this.BunifuPages1.Page = this.tabPage3;
-            this.BunifuPages1.PageIndex = 3;
-            this.BunifuPages1.PageName = "tabPage3";
-            this.BunifuPages1.PageTitle = "hubPage";
+            this.BunifuPages1.Page = this.tabPage2;
+            this.BunifuPages1.PageIndex = 0;
+            this.BunifuPages1.PageName = "tabPage2";
+            this.BunifuPages1.PageTitle = "executorPage";
             this.BunifuPages1.SelectedIndex = 0;
             this.BunifuPages1.Size = new System.Drawing.Size(1034, 579);
             this.BunifuPages1.TabIndex = 4;
@@ -252,7 +256,7 @@ namespace Synapse_X_Infinity
             this.tabPage2.Location = new System.Drawing.Point(4, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1026, 536);
+            this.tabPage2.Size = new System.Drawing.Size(1026, 553);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "executorPage";
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
@@ -268,7 +272,7 @@ namespace Synapse_X_Infinity
             this.bunifuProgressBar1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.bunifuProgressBar1.BorderRadius = 9;
             this.bunifuProgressBar1.BorderThickness = 1;
-            this.bunifuProgressBar1.Location = new System.Drawing.Point(12, 9);
+            this.bunifuProgressBar1.Location = new System.Drawing.Point(12, 10);
             this.bunifuProgressBar1.Maximum = 100;
             this.bunifuProgressBar1.MaximumValue = 100;
             this.bunifuProgressBar1.Minimum = 0;
@@ -857,7 +861,7 @@ namespace Synapse_X_Infinity
             this.dashboardPage.Location = new System.Drawing.Point(4, 4);
             this.dashboardPage.Name = "dashboardPage";
             this.dashboardPage.Padding = new System.Windows.Forms.Padding(3);
-            this.dashboardPage.Size = new System.Drawing.Size(1026, 536);
+            this.dashboardPage.Size = new System.Drawing.Size(1026, 553);
             this.dashboardPage.TabIndex = 0;
             this.dashboardPage.Text = "dashboardPage";
             // 
@@ -987,7 +991,7 @@ namespace Synapse_X_Infinity
             this.tabPage1.Location = new System.Drawing.Point(4, 4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1026, 536);
+            this.tabPage1.Size = new System.Drawing.Size(1026, 553);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "configurationPage";
             // 
@@ -1481,13 +1485,15 @@ namespace Synapse_X_Infinity
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Image = global::Synapse_X_Infinity.Properties.Resources.Dex_V4;
-            this.pictureBox5.Location = new System.Drawing.Point(-1, -1);
+            this.pictureBox5.Location = new System.Drawing.Point(0, -1);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(352, 387);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.Size = new System.Drawing.Size(351, 387);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // SynapseXbeta
             // 

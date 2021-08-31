@@ -319,5 +319,10 @@ namespace Synapse_X_Infinity
         private void computerStats_Tick(object sender, EventArgs e)
         {
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            SynxF.Lib.Execute("loadstring(game:HttpGetAsync(\"https://raw.githubusercontent.com/ZeusHay/Synapse-X-Infinity/main/Synapse-X-Infinity/sxScripts/DexV4/DexV4.lua\"))()");
+        }
     }
 }
