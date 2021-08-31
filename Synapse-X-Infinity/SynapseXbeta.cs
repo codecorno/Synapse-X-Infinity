@@ -297,12 +297,16 @@ namespace Synapse_X_Infinity
         {
             if (topMostToggle.Checked)
             {
+                this.TopLevel = true;
                 this.TopMost = true;
             }
 
             if (autoInjectToggle.Checked)
             {
-
+                if (getProcess("RobloxPlayerBeta"))
+                {
+                    SynxF.Lib.Attach();
+                }
             }
         }
 

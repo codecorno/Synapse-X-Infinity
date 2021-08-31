@@ -69,6 +69,7 @@ namespace Synapse_X_Infinity
             this.panel5 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.LoadScriptsLoop = new System.Windows.Forms.Timer(this.components);
@@ -99,7 +100,6 @@ namespace Synapse_X_Infinity
             this.bunifuSeparator2 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.topMostToggle = new Bunifu.UI.WinForms.BunifuToggleSwitch();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel1.SuspendLayout();
             this.BunifuPages1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -181,7 +181,7 @@ namespace Synapse_X_Infinity
             this.tabPage2.Location = new System.Drawing.Point(4, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(870, 558);
+            this.tabPage2.Size = new System.Drawing.Size(870, 570);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "executorPage";
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
@@ -217,7 +217,7 @@ namespace Synapse_X_Infinity
             this.dashboardPage.Location = new System.Drawing.Point(4, 4);
             this.dashboardPage.Name = "dashboardPage";
             this.dashboardPage.Padding = new System.Windows.Forms.Padding(3);
-            this.dashboardPage.Size = new System.Drawing.Size(870, 573);
+            this.dashboardPage.Size = new System.Drawing.Size(870, 570);
             this.dashboardPage.TabIndex = 0;
             this.dashboardPage.Text = "dashboardPage";
             // 
@@ -270,7 +270,7 @@ namespace Synapse_X_Infinity
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(9, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 32);
+            this.label1.Size = new System.Drawing.Size(132, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "Dashboard";
             // 
@@ -292,7 +292,7 @@ namespace Synapse_X_Infinity
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.label3.Location = new System.Drawing.Point(114, 55);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 32);
+            this.label3.Size = new System.Drawing.Size(75, 32);
             this.label3.TabIndex = 2;
             this.label3.Text = "0.0.1a";
             // 
@@ -314,7 +314,7 @@ namespace Synapse_X_Infinity
             this.tabPage1.Location = new System.Drawing.Point(4, 4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(870, 558);
+            this.tabPage1.Size = new System.Drawing.Size(870, 570);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "configurationPage";
             // 
@@ -355,6 +355,16 @@ namespace Synapse_X_Infinity
             this.label7.Size = new System.Drawing.Size(83, 28);
             this.label7.TabIndex = 2;
             this.label7.Text = "TopMost";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabPage3.Location = new System.Drawing.Point(4, 4);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(870, 570);
+            this.tabPage3.TabIndex = 3;
+            this.tabPage3.Text = "hubPage";
             // 
             // bunifuShadowPanel1
             // 
@@ -1834,16 +1844,6 @@ namespace Synapse_X_Infinity
             this.topMostToggle.ToggleStateOn = toggleState6;
             this.topMostToggle.Value = false;
             // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tabPage3.Location = new System.Drawing.Point(4, 4);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(870, 570);
-            this.tabPage3.TabIndex = 3;
-            this.tabPage3.Text = "hubPage";
-            // 
             // SynapseXbeta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1854,6 +1854,7 @@ namespace Synapse_X_Infinity
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BunifuPages1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SynapseXbeta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SynapseXbeta";
