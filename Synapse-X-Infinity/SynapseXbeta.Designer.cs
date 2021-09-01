@@ -38,13 +38,22 @@ namespace Synapse_X_Infinity
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState1 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
             Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState2 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
             Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState3 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState4 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
             Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState5 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
             Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState6 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
+            Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState7 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
+            Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState8 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
+            Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState9 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
+            Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState10 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
+            Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState11 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
+            Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState12 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
+            Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState13 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
+            Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState14 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
+            Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState15 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -72,14 +81,27 @@ namespace Synapse_X_Infinity
             this.bunifuGradientPanel3 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.topMostToggle = new Bunifu.UI.WinForms.BunifuToggleSwitch();
+            this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.bunifuSeparator5 = new Bunifu.UI.WinForms.BunifuSeparator();
+            this.bunifuSeparator6 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.bunifuButton12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.bunifuSeparator7 = new Bunifu.UI.WinForms.BunifuSeparator();
+            this.bunifuSeparator8 = new Bunifu.UI.WinForms.BunifuSeparator();
+            this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.internalUiToggle = new Bunifu.UI.WinForms.BunifuToggleSwitch();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.autoInjectToggle = new Bunifu.UI.WinForms.BunifuToggleSwitch();
+            this.label3 = new System.Windows.Forms.Label();
+            this.autoLaunchToggle = new Bunifu.UI.WinForms.BunifuToggleSwitch();
+            this.topMostToggle = new Bunifu.UI.WinForms.BunifuToggleSwitch();
+            this.bunifuSeparator4 = new Bunifu.UI.WinForms.BunifuSeparator();
+            this.bunifuSeparator3 = new Bunifu.UI.WinForms.BunifuSeparator();
+            this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
+            this.unlockFpsToggle = new Bunifu.UI.WinForms.BunifuToggleSwitch();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.bunifuSeparator2 = new Bunifu.UI.WinForms.BunifuSeparator();
+            this.label2 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.bunifuGradientPanel19 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuGradientPanel18 = new Bunifu.UI.WinForms.BunifuGradientPanel();
@@ -100,7 +122,7 @@ namespace Synapse_X_Infinity
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.statusProgress = new Bunifu.UI.WinForms.BunifuCircleProgress();
-            this.computerStats = new System.Windows.Forms.Timer(this.components);
+            this.setupMessage = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -112,6 +134,7 @@ namespace Synapse_X_Infinity
             this.tabPage2.SuspendLayout();
             this.dashboardPage.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.bunifuPanel3.SuspendLayout();
             this.bunifuPanel2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.bunifuGradientPanel9.SuspendLayout();
@@ -222,10 +245,10 @@ namespace Synapse_X_Infinity
             this.BunifuPages1.Location = new System.Drawing.Point(-4, 34);
             this.BunifuPages1.Multiline = true;
             this.BunifuPages1.Name = "BunifuPages1";
-            this.BunifuPages1.Page = this.tabPage3;
-            this.BunifuPages1.PageIndex = 3;
-            this.BunifuPages1.PageName = "tabPage3";
-            this.BunifuPages1.PageTitle = "hubPage";
+            this.BunifuPages1.Page = this.tabPage1;
+            this.BunifuPages1.PageIndex = 2;
+            this.BunifuPages1.PageName = "tabPage1";
+            this.BunifuPages1.PageTitle = "configurationPage";
             this.BunifuPages1.SelectedIndex = 0;
             this.BunifuPages1.Size = new System.Drawing.Size(831, 438);
             this.BunifuPages1.TabIndex = 4;
@@ -984,6 +1007,7 @@ namespace Synapse_X_Infinity
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabPage1.Controls.Add(this.bunifuPanel3);
             this.tabPage1.Controls.Add(this.bunifuPanel2);
             this.tabPage1.Location = new System.Drawing.Point(4, 4);
             this.tabPage1.Name = "tabPage1";
@@ -992,69 +1016,54 @@ namespace Synapse_X_Infinity
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "configurationPage";
             // 
-            // bunifuPanel2
+            // bunifuPanel3
             // 
-            this.bunifuPanel2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.bunifuPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel2.BackgroundImage")));
-            this.bunifuPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel2.BorderRadius = 15;
-            this.bunifuPanel2.BorderThickness = 1;
-            this.bunifuPanel2.Controls.Add(this.topMostToggle);
-            this.bunifuPanel2.Controls.Add(this.bunifuButton12);
-            this.bunifuPanel2.Controls.Add(this.label7);
-            this.bunifuPanel2.Controls.Add(this.label6);
-            this.bunifuPanel2.Controls.Add(this.bunifuSeparator1);
-            this.bunifuPanel2.Controls.Add(this.autoInjectToggle);
-            this.bunifuPanel2.Controls.Add(this.bunifuSeparator2);
-            this.bunifuPanel2.Location = new System.Drawing.Point(12, 13);
-            this.bunifuPanel2.Name = "bunifuPanel2";
-            this.bunifuPanel2.ShowBorders = true;
-            this.bunifuPanel2.Size = new System.Drawing.Size(225, 177);
-            this.bunifuPanel2.TabIndex = 2;
+            this.bunifuPanel3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.bunifuPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel3.BackgroundImage")));
+            this.bunifuPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel3.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel3.BorderRadius = 15;
+            this.bunifuPanel3.BorderThickness = 1;
+            this.bunifuPanel3.Controls.Add(this.bunifuSeparator5);
+            this.bunifuPanel3.Controls.Add(this.bunifuSeparator6);
+            this.bunifuPanel3.Controls.Add(this.bunifuButton12);
+            this.bunifuPanel3.Controls.Add(this.bunifuSeparator7);
+            this.bunifuPanel3.Controls.Add(this.bunifuSeparator8);
+            this.bunifuPanel3.Location = new System.Drawing.Point(278, 12);
+            this.bunifuPanel3.Name = "bunifuPanel3";
+            this.bunifuPanel3.ShowBorders = true;
+            this.bunifuPanel3.Size = new System.Drawing.Size(225, 257);
+            this.bunifuPanel3.TabIndex = 14;
             // 
-            // topMostToggle
+            // bunifuSeparator5
             // 
-            this.topMostToggle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.topMostToggle.Animation = 5;
-            this.topMostToggle.BackColor = System.Drawing.Color.Transparent;
-            this.topMostToggle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("topMostToggle.BackgroundImage")));
-            this.topMostToggle.Checked = false;
-            this.topMostToggle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.topMostToggle.InnerCirclePadding = 3;
-            this.topMostToggle.Location = new System.Drawing.Point(13, 24);
-            this.topMostToggle.Name = "topMostToggle";
-            this.topMostToggle.Size = new System.Drawing.Size(32, 18);
-            this.topMostToggle.TabIndex = 0;
-            this.topMostToggle.ThumbMargin = 3;
-            toggleState1.BackColor = System.Drawing.Color.DarkGray;
-            toggleState1.BackColorInner = System.Drawing.Color.White;
-            toggleState1.BorderColor = System.Drawing.Color.DarkGray;
-            toggleState1.BorderColorInner = System.Drawing.Color.White;
-            toggleState1.BorderRadius = 17;
-            toggleState1.BorderRadiusInner = 11;
-            toggleState1.BorderThickness = 1;
-            toggleState1.BorderThicknessInner = 1;
-            this.topMostToggle.ToggleStateDisabled = toggleState1;
-            toggleState2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            toggleState2.BackColorInner = System.Drawing.Color.White;
-            toggleState2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
-            toggleState2.BorderColorInner = System.Drawing.Color.White;
-            toggleState2.BorderRadius = 17;
-            toggleState2.BorderRadiusInner = 11;
-            toggleState2.BorderThickness = 1;
-            toggleState2.BorderThicknessInner = 1;
-            this.topMostToggle.ToggleStateOff = toggleState2;
-            toggleState3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
-            toggleState3.BackColorInner = System.Drawing.Color.White;
-            toggleState3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
-            toggleState3.BorderColorInner = System.Drawing.Color.White;
-            toggleState3.BorderRadius = 17;
-            toggleState3.BorderRadiusInner = 11;
-            toggleState3.BorderThickness = 1;
-            toggleState3.BorderThicknessInner = 1;
-            this.topMostToggle.ToggleStateOn = toggleState3;
-            this.topMostToggle.Value = false;
+            this.bunifuSeparator5.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator5.BackgroundImage")));
+            this.bunifuSeparator5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuSeparator5.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
+            this.bunifuSeparator5.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
+            this.bunifuSeparator5.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
+            this.bunifuSeparator5.LineThickness = 1;
+            this.bunifuSeparator5.Location = new System.Drawing.Point(-42, 197);
+            this.bunifuSeparator5.Name = "bunifuSeparator5";
+            this.bunifuSeparator5.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
+            this.bunifuSeparator5.Size = new System.Drawing.Size(300, 14);
+            this.bunifuSeparator5.TabIndex = 12;
+            // 
+            // bunifuSeparator6
+            // 
+            this.bunifuSeparator6.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator6.BackgroundImage")));
+            this.bunifuSeparator6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuSeparator6.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
+            this.bunifuSeparator6.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
+            this.bunifuSeparator6.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
+            this.bunifuSeparator6.LineThickness = 1;
+            this.bunifuSeparator6.Location = new System.Drawing.Point(-42, 141);
+            this.bunifuSeparator6.Name = "bunifuSeparator6";
+            this.bunifuSeparator6.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
+            this.bunifuSeparator6.Size = new System.Drawing.Size(300, 14);
+            this.bunifuSeparator6.TabIndex = 8;
             // 
             // bunifuButton12
             // 
@@ -1097,16 +1106,16 @@ namespace Synapse_X_Infinity
             this.bunifuButton12.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.bunifuButton12.IconSize = 25;
             this.bunifuButton12.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.bunifuButton12.IdleBorderRadius = 1;
+            this.bunifuButton12.IdleBorderRadius = 15;
             this.bunifuButton12.IdleBorderThickness = 1;
             this.bunifuButton12.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
             this.bunifuButton12.IdleIconLeftImage = null;
             this.bunifuButton12.IdleIconRightImage = null;
             this.bunifuButton12.IndicateFocus = false;
-            this.bunifuButton12.Location = new System.Drawing.Point(14, 123);
+            this.bunifuButton12.Location = new System.Drawing.Point(15, 6);
             this.bunifuButton12.Name = "bunifuButton12";
             this.bunifuButton12.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.bunifuButton12.OnDisabledState.BorderRadius = 1;
+            this.bunifuButton12.OnDisabledState.BorderRadius = 15;
             this.bunifuButton12.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton12.OnDisabledState.BorderThickness = 1;
             this.bunifuButton12.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
@@ -1114,7 +1123,7 @@ namespace Synapse_X_Infinity
             this.bunifuButton12.OnDisabledState.IconLeftImage = null;
             this.bunifuButton12.OnDisabledState.IconRightImage = null;
             this.bunifuButton12.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.bunifuButton12.onHoverState.BorderRadius = 1;
+            this.bunifuButton12.onHoverState.BorderRadius = 15;
             this.bunifuButton12.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton12.onHoverState.BorderThickness = 1;
             this.bunifuButton12.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
@@ -1122,7 +1131,7 @@ namespace Synapse_X_Infinity
             this.bunifuButton12.onHoverState.IconLeftImage = null;
             this.bunifuButton12.onHoverState.IconRightImage = null;
             this.bunifuButton12.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.bunifuButton12.OnIdleState.BorderRadius = 1;
+            this.bunifuButton12.OnIdleState.BorderRadius = 15;
             this.bunifuButton12.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton12.OnIdleState.BorderThickness = 1;
             this.bunifuButton12.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
@@ -1130,7 +1139,7 @@ namespace Synapse_X_Infinity
             this.bunifuButton12.OnIdleState.IconLeftImage = null;
             this.bunifuButton12.OnIdleState.IconRightImage = null;
             this.bunifuButton12.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.bunifuButton12.OnPressedState.BorderRadius = 1;
+            this.bunifuButton12.OnPressedState.BorderRadius = 15;
             this.bunifuButton12.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton12.OnPressedState.BorderThickness = 1;
             this.bunifuButton12.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
@@ -1146,57 +1155,132 @@ namespace Synapse_X_Infinity
             this.bunifuButton12.UseDefaultRadiusAndThickness = true;
             this.bunifuButton12.Click += new System.EventHandler(this.bunifuButton12_Click);
             // 
+            // bunifuSeparator7
+            // 
+            this.bunifuSeparator7.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator7.BackgroundImage")));
+            this.bunifuSeparator7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuSeparator7.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
+            this.bunifuSeparator7.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
+            this.bunifuSeparator7.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
+            this.bunifuSeparator7.LineThickness = 1;
+            this.bunifuSeparator7.Location = new System.Drawing.Point(-40, 42);
+            this.bunifuSeparator7.Name = "bunifuSeparator7";
+            this.bunifuSeparator7.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
+            this.bunifuSeparator7.Size = new System.Drawing.Size(300, 14);
+            this.bunifuSeparator7.TabIndex = 3;
+            // 
+            // bunifuSeparator8
+            // 
+            this.bunifuSeparator8.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator8.BackgroundImage")));
+            this.bunifuSeparator8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuSeparator8.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
+            this.bunifuSeparator8.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
+            this.bunifuSeparator8.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
+            this.bunifuSeparator8.LineThickness = 1;
+            this.bunifuSeparator8.Location = new System.Drawing.Point(-48, 88);
+            this.bunifuSeparator8.Name = "bunifuSeparator8";
+            this.bunifuSeparator8.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
+            this.bunifuSeparator8.Size = new System.Drawing.Size(300, 14);
+            this.bunifuSeparator8.TabIndex = 4;
+            // 
+            // bunifuPanel2
+            // 
+            this.bunifuPanel2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.bunifuPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel2.BackgroundImage")));
+            this.bunifuPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel2.BorderRadius = 15;
+            this.bunifuPanel2.BorderThickness = 1;
+            this.bunifuPanel2.Controls.Add(this.internalUiToggle);
+            this.bunifuPanel2.Controls.Add(this.label7);
+            this.bunifuPanel2.Controls.Add(this.autoInjectToggle);
+            this.bunifuPanel2.Controls.Add(this.label3);
+            this.bunifuPanel2.Controls.Add(this.autoLaunchToggle);
+            this.bunifuPanel2.Controls.Add(this.topMostToggle);
+            this.bunifuPanel2.Controls.Add(this.bunifuSeparator4);
+            this.bunifuPanel2.Controls.Add(this.bunifuSeparator3);
+            this.bunifuPanel2.Controls.Add(this.bunifuSeparator1);
+            this.bunifuPanel2.Controls.Add(this.unlockFpsToggle);
+            this.bunifuPanel2.Controls.Add(this.label1);
+            this.bunifuPanel2.Controls.Add(this.label6);
+            this.bunifuPanel2.Controls.Add(this.bunifuSeparator2);
+            this.bunifuPanel2.Controls.Add(this.label2);
+            this.bunifuPanel2.Location = new System.Drawing.Point(12, 12);
+            this.bunifuPanel2.Name = "bunifuPanel2";
+            this.bunifuPanel2.ShowBorders = true;
+            this.bunifuPanel2.Size = new System.Drawing.Size(225, 257);
+            this.bunifuPanel2.TabIndex = 2;
+            // 
+            // internalUiToggle
+            // 
+            this.internalUiToggle.AccessibleName = "";
+            this.internalUiToggle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.internalUiToggle.Animation = 5;
+            this.internalUiToggle.BackColor = System.Drawing.Color.Transparent;
+            this.internalUiToggle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("internalUiToggle.BackgroundImage")));
+            this.internalUiToggle.Checked = false;
+            this.internalUiToggle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.internalUiToggle.InnerCirclePadding = 3;
+            this.internalUiToggle.Location = new System.Drawing.Point(181, 225);
+            this.internalUiToggle.Name = "internalUiToggle";
+            this.internalUiToggle.Size = new System.Drawing.Size(32, 18);
+            this.internalUiToggle.TabIndex = 15;
+            this.internalUiToggle.ThumbMargin = 3;
+            toggleState1.BackColor = System.Drawing.Color.DarkGray;
+            toggleState1.BackColorInner = System.Drawing.Color.White;
+            toggleState1.BorderColor = System.Drawing.Color.DarkGray;
+            toggleState1.BorderColorInner = System.Drawing.Color.White;
+            toggleState1.BorderRadius = 17;
+            toggleState1.BorderRadiusInner = 11;
+            toggleState1.BorderThickness = 1;
+            toggleState1.BorderThicknessInner = 1;
+            this.internalUiToggle.ToggleStateDisabled = toggleState1;
+            toggleState2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            toggleState2.BackColorInner = System.Drawing.Color.White;
+            toggleState2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
+            toggleState2.BorderColorInner = System.Drawing.Color.White;
+            toggleState2.BorderRadius = 17;
+            toggleState2.BorderRadiusInner = 11;
+            toggleState2.BorderThickness = 1;
+            toggleState2.BorderThicknessInner = 1;
+            this.internalUiToggle.ToggleStateOff = toggleState2;
+            toggleState3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
+            toggleState3.BackColorInner = System.Drawing.Color.White;
+            toggleState3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
+            toggleState3.BorderColorInner = System.Drawing.Color.White;
+            toggleState3.BorderRadius = 17;
+            toggleState3.BorderRadiusInner = 11;
+            toggleState3.BorderThickness = 1;
+            toggleState3.BorderThicknessInner = 1;
+            this.internalUiToggle.ToggleStateOn = toggleState3;
+            this.internalUiToggle.Value = false;
+            this.internalUiToggle.CheckedChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuToggleSwitch.CheckedChangedEventArgs>(this.internalUiToggle_CheckedChanged);
+            // 
             // label7
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Segoe UI Light", 15F);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(136, 14);
+            this.label7.Location = new System.Drawing.Point(8, 3);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(83, 28);
             this.label7.TabIndex = 2;
             this.label7.Text = "TopMost";
             // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Light", 15F);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(116, 67);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(103, 28);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Auto Inject";
-            // 
-            // bunifuSeparator1
-            // 
-            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
-            this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuSeparator1.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
-            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
-            this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(-36, 48);
-            this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
-            this.bunifuSeparator1.Size = new System.Drawing.Size(300, 14);
-            this.bunifuSeparator1.TabIndex = 3;
-            // 
             // autoInjectToggle
             // 
-            this.autoInjectToggle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.autoInjectToggle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.autoInjectToggle.Animation = 5;
             this.autoInjectToggle.BackColor = System.Drawing.Color.Transparent;
             this.autoInjectToggle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("autoInjectToggle.BackgroundImage")));
             this.autoInjectToggle.Checked = false;
             this.autoInjectToggle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.autoInjectToggle.InnerCirclePadding = 3;
-            this.autoInjectToggle.Location = new System.Drawing.Point(13, 77);
+            this.autoInjectToggle.Location = new System.Drawing.Point(181, 63);
             this.autoInjectToggle.Name = "autoInjectToggle";
             this.autoInjectToggle.Size = new System.Drawing.Size(32, 18);
             this.autoInjectToggle.TabIndex = 5;
@@ -1229,6 +1313,223 @@ namespace Synapse_X_Infinity
             toggleState6.BorderThicknessInner = 1;
             this.autoInjectToggle.ToggleStateOn = toggleState6;
             this.autoInjectToggle.Value = false;
+            this.autoInjectToggle.CheckedChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuToggleSwitch.CheckedChangedEventArgs>(this.autoInjectToggle_CheckedChanged);
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Light", 15F);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(8, 217);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(130, 28);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Internal Menu";
+            // 
+            // autoLaunchToggle
+            // 
+            this.autoLaunchToggle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.autoLaunchToggle.Animation = 5;
+            this.autoLaunchToggle.BackColor = System.Drawing.Color.Transparent;
+            this.autoLaunchToggle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("autoLaunchToggle.BackgroundImage")));
+            this.autoLaunchToggle.Checked = false;
+            this.autoLaunchToggle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.autoLaunchToggle.InnerCirclePadding = 3;
+            this.autoLaunchToggle.Location = new System.Drawing.Point(181, 116);
+            this.autoLaunchToggle.Name = "autoLaunchToggle";
+            this.autoLaunchToggle.Size = new System.Drawing.Size(32, 18);
+            this.autoLaunchToggle.TabIndex = 7;
+            this.autoLaunchToggle.ThumbMargin = 3;
+            toggleState7.BackColor = System.Drawing.Color.DarkGray;
+            toggleState7.BackColorInner = System.Drawing.Color.White;
+            toggleState7.BorderColor = System.Drawing.Color.DarkGray;
+            toggleState7.BorderColorInner = System.Drawing.Color.White;
+            toggleState7.BorderRadius = 17;
+            toggleState7.BorderRadiusInner = 11;
+            toggleState7.BorderThickness = 1;
+            toggleState7.BorderThicknessInner = 1;
+            this.autoLaunchToggle.ToggleStateDisabled = toggleState7;
+            toggleState8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            toggleState8.BackColorInner = System.Drawing.Color.White;
+            toggleState8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
+            toggleState8.BorderColorInner = System.Drawing.Color.White;
+            toggleState8.BorderRadius = 17;
+            toggleState8.BorderRadiusInner = 11;
+            toggleState8.BorderThickness = 1;
+            toggleState8.BorderThicknessInner = 1;
+            this.autoLaunchToggle.ToggleStateOff = toggleState8;
+            toggleState9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
+            toggleState9.BackColorInner = System.Drawing.Color.White;
+            toggleState9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
+            toggleState9.BorderColorInner = System.Drawing.Color.White;
+            toggleState9.BorderRadius = 17;
+            toggleState9.BorderRadiusInner = 11;
+            toggleState9.BorderThickness = 1;
+            toggleState9.BorderThicknessInner = 1;
+            this.autoLaunchToggle.ToggleStateOn = toggleState9;
+            this.autoLaunchToggle.Value = false;
+            this.autoLaunchToggle.CheckedChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuToggleSwitch.CheckedChangedEventArgs>(this.autoLaunchToggle_CheckedChanged);
+            // 
+            // topMostToggle
+            // 
+            this.topMostToggle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.topMostToggle.Animation = 5;
+            this.topMostToggle.BackColor = System.Drawing.Color.Transparent;
+            this.topMostToggle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("topMostToggle.BackgroundImage")));
+            this.topMostToggle.Checked = false;
+            this.topMostToggle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.topMostToggle.InnerCirclePadding = 3;
+            this.topMostToggle.Location = new System.Drawing.Point(181, 10);
+            this.topMostToggle.Name = "topMostToggle";
+            this.topMostToggle.Size = new System.Drawing.Size(32, 18);
+            this.topMostToggle.TabIndex = 0;
+            this.topMostToggle.ThumbMargin = 3;
+            toggleState10.BackColor = System.Drawing.Color.DarkGray;
+            toggleState10.BackColorInner = System.Drawing.Color.White;
+            toggleState10.BorderColor = System.Drawing.Color.DarkGray;
+            toggleState10.BorderColorInner = System.Drawing.Color.White;
+            toggleState10.BorderRadius = 17;
+            toggleState10.BorderRadiusInner = 11;
+            toggleState10.BorderThickness = 1;
+            toggleState10.BorderThicknessInner = 1;
+            this.topMostToggle.ToggleStateDisabled = toggleState10;
+            toggleState11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            toggleState11.BackColorInner = System.Drawing.Color.White;
+            toggleState11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
+            toggleState11.BorderColorInner = System.Drawing.Color.White;
+            toggleState11.BorderRadius = 17;
+            toggleState11.BorderRadiusInner = 11;
+            toggleState11.BorderThickness = 1;
+            toggleState11.BorderThicknessInner = 1;
+            this.topMostToggle.ToggleStateOff = toggleState11;
+            toggleState12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
+            toggleState12.BackColorInner = System.Drawing.Color.White;
+            toggleState12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
+            toggleState12.BorderColorInner = System.Drawing.Color.White;
+            toggleState12.BorderRadius = 17;
+            toggleState12.BorderRadiusInner = 11;
+            toggleState12.BorderThickness = 1;
+            toggleState12.BorderThicknessInner = 1;
+            this.topMostToggle.ToggleStateOn = toggleState12;
+            this.topMostToggle.Value = false;
+            this.topMostToggle.CheckedChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuToggleSwitch.CheckedChangedEventArgs>(this.topMostToggle_CheckedChanged);
+            // 
+            // bunifuSeparator4
+            // 
+            this.bunifuSeparator4.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator4.BackgroundImage")));
+            this.bunifuSeparator4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuSeparator4.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
+            this.bunifuSeparator4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
+            this.bunifuSeparator4.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
+            this.bunifuSeparator4.LineThickness = 1;
+            this.bunifuSeparator4.Location = new System.Drawing.Point(-42, 200);
+            this.bunifuSeparator4.Name = "bunifuSeparator4";
+            this.bunifuSeparator4.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
+            this.bunifuSeparator4.Size = new System.Drawing.Size(300, 14);
+            this.bunifuSeparator4.TabIndex = 12;
+            // 
+            // bunifuSeparator3
+            // 
+            this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator3.BackgroundImage")));
+            this.bunifuSeparator3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuSeparator3.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
+            this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
+            this.bunifuSeparator3.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
+            this.bunifuSeparator3.LineThickness = 1;
+            this.bunifuSeparator3.Location = new System.Drawing.Point(-42, 144);
+            this.bunifuSeparator3.Name = "bunifuSeparator3";
+            this.bunifuSeparator3.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
+            this.bunifuSeparator3.Size = new System.Drawing.Size(300, 14);
+            this.bunifuSeparator3.TabIndex = 8;
+            // 
+            // bunifuSeparator1
+            // 
+            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
+            this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuSeparator1.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
+            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
+            this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
+            this.bunifuSeparator1.LineThickness = 1;
+            this.bunifuSeparator1.Location = new System.Drawing.Point(-40, 36);
+            this.bunifuSeparator1.Name = "bunifuSeparator1";
+            this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
+            this.bunifuSeparator1.Size = new System.Drawing.Size(300, 14);
+            this.bunifuSeparator1.TabIndex = 3;
+            // 
+            // unlockFpsToggle
+            // 
+            this.unlockFpsToggle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.unlockFpsToggle.Animation = 5;
+            this.unlockFpsToggle.BackColor = System.Drawing.Color.Transparent;
+            this.unlockFpsToggle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("unlockFpsToggle.BackgroundImage")));
+            this.unlockFpsToggle.Checked = false;
+            this.unlockFpsToggle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.unlockFpsToggle.InnerCirclePadding = 3;
+            this.unlockFpsToggle.Location = new System.Drawing.Point(181, 171);
+            this.unlockFpsToggle.Name = "unlockFpsToggle";
+            this.unlockFpsToggle.Size = new System.Drawing.Size(32, 18);
+            this.unlockFpsToggle.TabIndex = 11;
+            this.unlockFpsToggle.ThumbMargin = 3;
+            toggleState13.BackColor = System.Drawing.Color.DarkGray;
+            toggleState13.BackColorInner = System.Drawing.Color.White;
+            toggleState13.BorderColor = System.Drawing.Color.DarkGray;
+            toggleState13.BorderColorInner = System.Drawing.Color.White;
+            toggleState13.BorderRadius = 17;
+            toggleState13.BorderRadiusInner = 11;
+            toggleState13.BorderThickness = 1;
+            toggleState13.BorderThicknessInner = 1;
+            this.unlockFpsToggle.ToggleStateDisabled = toggleState13;
+            toggleState14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            toggleState14.BackColorInner = System.Drawing.Color.White;
+            toggleState14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
+            toggleState14.BorderColorInner = System.Drawing.Color.White;
+            toggleState14.BorderRadius = 17;
+            toggleState14.BorderRadiusInner = 11;
+            toggleState14.BorderThickness = 1;
+            toggleState14.BorderThicknessInner = 1;
+            this.unlockFpsToggle.ToggleStateOff = toggleState14;
+            toggleState15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
+            toggleState15.BackColorInner = System.Drawing.Color.White;
+            toggleState15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
+            toggleState15.BorderColorInner = System.Drawing.Color.White;
+            toggleState15.BorderRadius = 17;
+            toggleState15.BorderRadiusInner = 11;
+            toggleState15.BorderThickness = 1;
+            toggleState15.BorderThicknessInner = 1;
+            this.unlockFpsToggle.ToggleStateOn = toggleState15;
+            this.unlockFpsToggle.Value = false;
+            this.unlockFpsToggle.CheckedChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuToggleSwitch.CheckedChangedEventArgs>(this.unlockFpsToggle_CheckedChanged);
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Light", 15F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(8, 110);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(119, 28);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Auto Launch";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Light", 15F);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(8, 56);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(103, 28);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Auto Inject";
             // 
             // bunifuSeparator2
             // 
@@ -1239,11 +1540,24 @@ namespace Synapse_X_Infinity
             this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
             this.bunifuSeparator2.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
             this.bunifuSeparator2.LineThickness = 1;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(-44, 104);
+            this.bunifuSeparator2.Location = new System.Drawing.Point(-48, 92);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
             this.bunifuSeparator2.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
             this.bunifuSeparator2.Size = new System.Drawing.Size(300, 14);
             this.bunifuSeparator2.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Light", 15F);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(8, 163);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(102, 28);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Unlock Fps";
             // 
             // tabPage3
             // 
@@ -1265,6 +1579,7 @@ namespace Synapse_X_Infinity
             this.tabPage3.Size = new System.Drawing.Size(823, 412);
             this.tabPage3.TabIndex = 3;
             this.tabPage3.Text = "hubPage";
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // bunifuGradientPanel19
             // 
@@ -1435,6 +1750,7 @@ namespace Synapse_X_Infinity
             this.bunifuGradientPanel10.Quality = 10;
             this.bunifuGradientPanel10.Size = new System.Drawing.Size(261, 119);
             this.bunifuGradientPanel10.TabIndex = 19;
+            this.bunifuGradientPanel10.Click += new System.EventHandler(this.bunifuGradientPanel10_Click);
             // 
             // bunifuGradientPanel9
             // 
@@ -1517,7 +1833,7 @@ namespace Synapse_X_Infinity
             // 
             // Configurations
             // 
-            this.Configurations.Interval = 2000;
+            this.Configurations.Interval = 500;
             this.Configurations.Tick += new System.EventHandler(this.Configurations_Tick);
             // 
             // bunifuElipse1
@@ -1584,9 +1900,9 @@ namespace Synapse_X_Infinity
             this.statusProgress.ValueByTransition = 30;
             this.statusProgress.ValueMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             // 
-            // computerStats
+            // setupMessage
             // 
-            this.computerStats.Tick += new System.EventHandler(this.computerStats_Tick);
+            this.setupMessage.Tick += new System.EventHandler(this.computerStats_Tick);
             // 
             // SynapseXbeta
             // 
@@ -1613,6 +1929,7 @@ namespace Synapse_X_Infinity
             this.tabPage2.ResumeLayout(false);
             this.dashboardPage.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.bunifuPanel3.ResumeLayout(false);
             this.bunifuPanel2.ResumeLayout(false);
             this.bunifuPanel2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
@@ -1659,7 +1976,7 @@ namespace Synapse_X_Infinity
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
-        private System.Windows.Forms.Timer computerStats;
+        private System.Windows.Forms.Timer setupMessage;
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel9;
         private System.Windows.Forms.PictureBox pictureBox5;
         private Bunifu.UI.WinForms.BunifuCircleProgress statusProgress;
@@ -1680,5 +1997,18 @@ namespace Synapse_X_Infinity
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel12;
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel11;
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel10;
+        private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator4;
+        private Bunifu.UI.WinForms.BunifuToggleSwitch unlockFpsToggle;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator3;
+        private Bunifu.UI.WinForms.BunifuToggleSwitch autoLaunchToggle;
+        private Bunifu.UI.WinForms.BunifuToggleSwitch internalUiToggle;
+        private System.Windows.Forms.Label label3;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel3;
+        private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator5;
+        private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator6;
+        private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator7;
+        private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator8;
     }
 }

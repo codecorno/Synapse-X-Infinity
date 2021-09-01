@@ -42,8 +42,14 @@ namespace Synapse_X_Infinity
             Title = "Synapse X Infinity - Save FIle"
         };
 
-
-
-        
+        public static void startSetup(bool Bool)
+        {
+            if (Bool)
+            {
+                Console.Beep(400, 400);
+                SynxF.Lib.Execute("game.StarterGui:SetCore('SendNotification', {\nTitle = 'Synapse X Infinity';\nText = 'Thank you for using our software.';\nIcon = '';\nDuration = 8;\n})");
+            }
+            Bool = false;
+        }
     }
 }

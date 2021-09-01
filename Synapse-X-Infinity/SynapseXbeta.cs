@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using sxlib;
 using sxlib.Specialized;
+using sxlib.Static;
 
 namespace Synapse_X_Infinity
 {
@@ -22,7 +23,63 @@ namespace Synapse_X_Infinity
             bunifuFormDock1.SubscribeControlToDragEvents(bunifuPanel1);
             SynxF.Lib.AttachEvent += sxAttachEvent;
             LoadScriptsLoop.Enabled = true;
-            computerStats.Enabled = true;
+            setupMessage.Enabled = true;
+        }
+
+        public enum launcherConfig
+        {
+            UnlockFPS,
+            AutoAttach,
+            AutoLaunch,
+            InternalUI,
+            TopMost
+        }
+
+        private void Settings(launcherConfig item, bool value)
+        {
+            if (item == launcherConfig.UnlockFPS)
+            {
+                Data.Options options2 = new Data.Options
+                {
+                    UnlockFPS = true
+                };
+                SynxF.Lib.SetOptions(options2);
+            }
+
+            if (item == launcherConfig.AutoAttach)
+            {
+                Data.Options options32 = SynxF.Lib.GetOptions();
+                Data.Options options23 = new Data.Options
+                {
+                    AutoAttach = value
+                };
+                SynxF.Lib.SetOptions(options23);
+            }
+
+            if (item == launcherConfig.AutoLaunch)
+            {
+                Data.Options options32 = SynxF.Lib.GetOptions();
+                Data.Options options23 = new Data.Options
+                {
+                    AutoLaunch = value
+                };
+                SynxF.Lib.SetOptions(options23);
+            }
+
+            if (item == launcherConfig.InternalUI)
+            {
+                Data.Options options32 = SynxF.Lib.GetOptions();
+                Data.Options options23 = new Data.Options
+                {
+                    InternalUI = value
+                };
+                SynxF.Lib.SetOptions(options23);
+            }
+
+            if (item == launcherConfig.TopMost)
+            {
+                this.TopMost = value;
+            }
         }
 
         private void LoadScripts(string path)
@@ -87,6 +144,8 @@ namespace Synapse_X_Infinity
             base.OnFormClosing(e);
         }
 
+        public bool setupSound = true;
+
         private void sxAttachEvent(SxLibBase.SynAttachEvents Event, object whatever)
         {
             switch (Event)
@@ -110,11 +169,12 @@ namespace Synapse_X_Infinity
                     this.statusProgress.ProgressColor = Color.FromArgb(255, 251, 0);
                     this.statusProgress.Value = 80;
                     break;
-
+                
                 case SxLibBase.SynAttachEvents.READY:
+                    SynxF.startSetup(setupSound);
                     this.statusProgress.ProgressColor = Color.FromArgb(86, 252, 3);
                     this.statusProgress.Value = 100;
-                    break;
+                    return;
 
                 case SxLibBase.SynAttachEvents.FAILED_TO_FIND:
                     this.statusProgress.ProgressColor = Color.FromArgb(255, 128, 0);
@@ -281,14 +341,7 @@ namespace Synapse_X_Infinity
 
         private void Configurations_Tick(object sender, EventArgs e)
         {
-            if (topMostToggle.Checked)
-            {
 
-            }
-
-            if (autoInjectToggle.Checked)
-            {
-            }
         }
 
         private void bunifuButton12_Click(object sender, EventArgs e)
@@ -303,11 +356,82 @@ namespace Synapse_X_Infinity
 
         private void computerStats_Tick(object sender, EventArgs e)
         {
+
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             Scripts.DexV4();
+        }
+
+        private void bunifuGradientPanel10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void topMostToggle_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuToggleSwitch.CheckedChangedEventArgs e)
+        {
+            if (topMostToggle.Checked == true)
+            {
+                Settings(launcherConfig.TopMost, true);
+            }
+            else
+            {
+                Settings(launcherConfig.TopMost, false);
+            }
+        }
+
+        private void autoInjectToggle_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuToggleSwitch.CheckedChangedEventArgs e)
+        {
+            if (autoInjectToggle.Checked == true)
+            {
+                Settings(launcherConfig.AutoAttach, true);
+            }
+            else
+            {
+                Settings(launcherConfig.AutoAttach, false);
+            }
+        }
+
+        private void autoLaunchToggle_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuToggleSwitch.CheckedChangedEventArgs e)
+        {
+            if (autoLaunchToggle.Checked == true)
+            {
+                Settings(launcherConfig.AutoLaunch, true);
+            }
+            else
+            {
+                Settings(launcherConfig.AutoLaunch, false);
+            }
+        }
+
+        private void unlockFpsToggle_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuToggleSwitch.CheckedChangedEventArgs e)
+        {
+            if (unlockFpsToggle.Checked == true)
+            {
+                Settings(launcherConfig.UnlockFPS, true);
+            }
+            else
+            {
+                Settings(launcherConfig.UnlockFPS, false);
+            }
+        }
+
+        private void internalUiToggle_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuToggleSwitch.CheckedChangedEventArgs e)
+        {
+            if (internalUiToggle.Checked == true)
+            {
+                Settings(launcherConfig.InternalUI, true);
+            }
+            else
+            {
+                Settings(launcherConfig.InternalUI, false);
+            }
         }
     }
 }

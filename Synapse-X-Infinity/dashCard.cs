@@ -16,5 +16,10 @@ namespace Synapse_X_Infinity
         {
             InitializeComponent();
         }
+
+        private void bunifuGradientPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
