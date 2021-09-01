@@ -42,6 +42,7 @@
 <p align="center">
     <a href="https://github.com/ct201158"><img alt="ct201158" src="https://img.shields.io/badge/github-@ct201158-orange?style=for-the-badge"></a>
     <a href="https://github.com/asunax-aaa"><img alt="asunax" src="https://img.shields.io/badge/github-asunax--aaa-orange?style=for-the-badge"></a>
+    <a href="https://github.com/"><img alt="LoadString" src="https://img.shields.io/badge/discord-Loadstring%237600-orange?style=for-the-badge"></a>
     <br />
 </p>
 
