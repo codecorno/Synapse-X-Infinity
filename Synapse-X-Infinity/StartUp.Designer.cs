@@ -321,6 +321,7 @@ namespace Synapse_X_Infinity
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Loading Synapse X Infinity";
             this.Load += new System.EventHandler(this.StartUp_Load);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ZeusMoveForm);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wlProgress)).EndInit();

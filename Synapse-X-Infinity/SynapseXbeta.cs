@@ -17,6 +17,8 @@ namespace Synapse_X_Infinity
 {
     public partial class SynapseXbeta : Form
     {
+        public static string sxDirectory = Directory.GetCurrentDirectory();
+
         public SynapseXbeta()
         {
             InitializeComponent();
@@ -39,41 +41,36 @@ namespace Synapse_X_Infinity
         {
             if (item == launcherConfig.UnlockFPS)
             {
-                Data.Options options2 = new Data.Options
+                Data.Options unlockFpsOp = new Data.Options
                 {
-                    UnlockFPS = true
+                    UnlockFPS = value
                 };
-                SynxF.Lib.SetOptions(options2);
+                SynxF.Lib.SetOptions(unlockFpsOp);
             }
 
             if (item == launcherConfig.AutoAttach)
             {
-                Data.Options options32 = SynxF.Lib.GetOptions();
-                Data.Options options23 = new Data.Options
+                Data.Options autoAttachOp = new Data.Options
                 {
                     AutoAttach = value
                 };
-                SynxF.Lib.SetOptions(options23);
+                SynxF.Lib.SetOptions(autoAttachOp);
             }
 
             if (item == launcherConfig.AutoLaunch)
             {
-                Data.Options options32 = SynxF.Lib.GetOptions();
-                Data.Options options23 = new Data.Options
+                Data.Options autoLaunchOp = new Data.Options
                 {
                     AutoLaunch = value
                 };
-                SynxF.Lib.SetOptions(options23);
+                SynxF.Lib.SetOptions(autoLaunchOp);
             }
 
             if (item == launcherConfig.InternalUI)
             {
-                Data.Options options32 = SynxF.Lib.GetOptions();
-                Data.Options options23 = new Data.Options
-                {
-                    InternalUI = value
-                };
-                SynxF.Lib.SetOptions(options23);
+                var options = new sxlib.Static.Data.Options();
+                options.InternalUI = value;
+                SynxF.Lib.SetOptions(options);
             }
 
             if (item == launcherConfig.TopMost)
@@ -318,6 +315,16 @@ namespace Synapse_X_Infinity
         {
             this.webBrowser1.Navigate(string.Format("file:///{0}ace/AceEditor.html", AppDomain.CurrentDomain.BaseDirectory));
             BunifuPages1.SetPage("dashboardPage");
+            Configurations.Enabled = true;
+
+
+            logoPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\InfinityLogoSolo.png");
+            dashboardPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\dashboard.png");
+            luaexecPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\lua.png");
+            hubPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\hub.png");
+            configPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\settings.png");
+            minimizePicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\minimize.png");
+            closePicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\cancel.png");
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -341,7 +348,7 @@ namespace Synapse_X_Infinity
 
         private void Configurations_Tick(object sender, EventArgs e)
         {
-
+            bunifuElipse1.ElipseRadius = borderRadiusSlider.Value;
         }
 
         private void bunifuButton12_Click(object sender, EventArgs e)
@@ -431,6 +438,26 @@ namespace Synapse_X_Infinity
             else
             {
                 Settings(launcherConfig.InternalUI, false);
+            }
+        }
+
+        private void setLogoText_TextChange(object sender, EventArgs e)
+        {
+            logoText.Text = setLogoText.Text;
+        }
+
+        private void logoReplace_Click(object sender, EventArgs e)
+        {
+            if (SynxF.OpenFile.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message, "Infinity - Error Report");
+                }
             }
         }
     }

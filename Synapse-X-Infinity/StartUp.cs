@@ -135,7 +135,17 @@ namespace Synapse_X_Infinity
 
         private void StartUp_Load(object sender, EventArgs e)
         {
-
+            if (SynxF.OpenImageFile.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    wlProgress.Image = Image.FromFile(SynxF.OpenImageFile.FileName);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message, "Infinity - Error Report");
+                }
+            }
         }
     }
 }
