@@ -309,6 +309,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Logo.ico" />
+    <None Include="Resources\scriptsImages\hydroxide.png" />
     <None Include="Resources\change.png" />
     <None Include="Resources\minimize.png" />
     <None Include="Resources\cancel.png" />

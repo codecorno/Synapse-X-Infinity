@@ -14,5 +14,10 @@ namespace Synapse_X_Infinity
         {
             SynxF.Lib.Execute("loadstring(game:HttpGetAsync(\"https://raw.githubusercontent.com/ZeusHay/Synapse-X-Infinity/main/Synapse-X-Infinity/sxScripts/DexV4/DexV4.lua\"))()");
         }
+
+        public static void Hydroxide()
+        {
+            SynxF.Lib.Execute("loadstring(game:HttpGetAsync(\"https://raw.githubusercontent.com/ZeusHay/Synapse-X-Infinity/main/Synapse-X-Infinity/sxScripts/Hydroxide/Hydroxide.lua\"))()");
+        }
     }
 }

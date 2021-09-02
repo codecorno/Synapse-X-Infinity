@@ -822,5 +822,10 @@ namespace Synapse_X_Infinity
         {
             setDefaultImages("dashboard");
         }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            Scripts.Hydroxide();
+        }
     }
 }

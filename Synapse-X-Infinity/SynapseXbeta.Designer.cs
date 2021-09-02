@@ -147,6 +147,7 @@ namespace Synapse_X_Infinity
             this.bunifuGradientPanel13 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuGradientPanel12 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuGradientPanel10 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.bunifuGradientPanel17 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuGradientPanel9 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -159,7 +160,6 @@ namespace Synapse_X_Infinity
             this.logoText = new Bunifu.UI.WinForms.BunifuLabel();
             this.statusProgress = new Bunifu.UI.WinForms.BunifuCircleProgress();
             this.setupMessage = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -192,10 +192,10 @@ namespace Synapse_X_Infinity
             this.bunifuPanel2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.bunifuGradientPanel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.bunifuGradientPanel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.bunifuPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox8
@@ -2438,6 +2438,18 @@ namespace Synapse_X_Infinity
             this.bunifuGradientPanel10.Size = new System.Drawing.Size(524, 267);
             this.bunifuGradientPanel10.TabIndex = 21;
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox9.Image = global::Synapse_X_Infinity.Properties.Resources.hydroxide;
+            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(524, 267);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 1;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
+            // 
             // bunifuGradientPanel17
             // 
             this.bunifuGradientPanel17.BackColor = System.Drawing.Color.Transparent;
@@ -2625,17 +2637,6 @@ namespace Synapse_X_Infinity
             // 
             this.setupMessage.Tick += new System.EventHandler(this.computerStats_Tick);
             // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox9.Image = global::Synapse_X_Infinity.Properties.Resources.hydroxide;
-            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(524, 267);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 1;
-            this.pictureBox9.TabStop = false;
-            // 
             // SynapseXbeta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2684,11 +2685,11 @@ namespace Synapse_X_Infinity
             this.bunifuPanel2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.bunifuGradientPanel10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.bunifuGradientPanel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
 
         }
