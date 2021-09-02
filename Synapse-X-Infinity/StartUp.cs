@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -55,6 +57,13 @@ namespace Synapse_X_Infinity
             SynxF.Lib.LoadEvent += sxLoadEvent;
         }
 
+        public void sxInfinity()
+        {
+            this.Visible = false;
+            var SynapseXLoader = new SynapseX();
+            SynapseXLoader.Show();
+        }
+
         private void sxLoadEvent(SxLibBase.SynLoadEvents Event, object Param)
         {
             switch (Event)
@@ -62,6 +71,7 @@ namespace Synapse_X_Infinity
                 // Importants
 
                 case SxLibBase.SynLoadEvents.CHECKING_WL:
+                    sxInfinity();
                     this.whitelistProgress.Value = 100;
                     this.whitelistProgress.ProgressColor = Color.FromArgb(0, 255, 0);
                     return;
@@ -74,6 +84,7 @@ namespace Synapse_X_Infinity
                     return;
 
                 case SxLibBase.SynLoadEvents.DOWNLOADING_DLLS:
+
                     this.dllProgress.Value = 100;
                     this.dllProgress.ProgressColor = Color.FromArgb(0, 255, 0);
                     return;
@@ -90,9 +101,7 @@ namespace Synapse_X_Infinity
 
                 case SxLibBase.SynLoadEvents.READY:
                     this.dllProgress.Value = 100;
-                    this.Visible = false;
-                    var SynapseXLoader = new SynapseX();
-                    SynapseXLoader.Show();
+                    sxInfinity();
                     return;
 
                 // others
@@ -135,17 +144,7 @@ namespace Synapse_X_Infinity
 
         private void StartUp_Load(object sender, EventArgs e)
         {
-            if (SynxF.OpenImageFile.ShowDialog() == DialogResult.OK)
-            {
-                try
-                {
-                    wlProgress.Image = Image.FromFile(SynxF.OpenImageFile.FileName);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message, "Infinity - Error Report");
-                }
-            }
+
         }
     }
 }

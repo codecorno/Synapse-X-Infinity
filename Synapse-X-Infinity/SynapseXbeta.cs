@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -26,6 +27,30 @@ namespace Synapse_X_Infinity
             SynxF.Lib.AttachEvent += sxAttachEvent;
             LoadScriptsLoop.Enabled = true;
             setupMessage.Enabled = true;
+            refreshImages();
+        }
+
+        public void refreshImages()
+        {
+            if (Directory.Exists(sxDirectory + "\\lib\\Resources"))
+            {
+                logoPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\InfinityLogoSolo.png");
+                dashboardPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\dashboard.png");
+                luaexecPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\lua.png");
+                hubPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\hub.png");
+                configPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\settings.png");
+                minimizePicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\minimize.png");
+                closePicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\cancel.png");
+                
+                pictureBox1.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\InfinityLogoSolo.png");
+                pictureBox4.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\dashboard.png");
+                pictureBox6.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\lua.png");
+                pictureBox7.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\hub.png");
+                pictureBox8.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\settings.png");
+
+                pictureBox2.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\cancel.png");
+                pictureBox3.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\minimize.png");
+            }
         }
 
         public enum launcherConfig
@@ -316,15 +341,6 @@ namespace Synapse_X_Infinity
             this.webBrowser1.Navigate(string.Format("file:///{0}ace/AceEditor.html", AppDomain.CurrentDomain.BaseDirectory));
             BunifuPages1.SetPage("dashboardPage");
             Configurations.Enabled = true;
-
-
-            logoPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\InfinityLogoSolo.png");
-            dashboardPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\dashboard.png");
-            luaexecPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\lua.png");
-            hubPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\hub.png");
-            configPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\settings.png");
-            minimizePicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\minimize.png");
-            closePicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\cancel.png");
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -446,13 +462,185 @@ namespace Synapse_X_Infinity
             logoText.Text = setLogoText.Text;
         }
 
-        private void logoReplace_Click(object sender, EventArgs e)
+        private void bunifuButton1_Click_1(object sender, EventArgs e)
         {
-            if (SynxF.OpenFile.ShowDialog() == DialogResult.OK)
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + @"\Roblox";
+            if (Directory.Exists(path) == true)
+            {
+                Directory.Delete(path, true);
+                using (WebClient Client = new WebClient())
+                {
+                    FileInfo file = new FileInfo("RobloxPlayerLauncher.exe");
+                    Client.DownloadFile("https://setup.rbxcdn.com/version-4aa145f1367e450d-Roblox.exe", file.FullName);
+
+                    Process.Start(file.FullName);
+                }
+            }
+            else
+            {
+                using (WebClient Client = new WebClient())
+                {
+                    FileInfo file = new FileInfo("RobloxPlayerLauncher.exe");
+                    Client.DownloadFile("https://setup.rbxcdn.com/version-4aa145f1367e450d-Roblox.exe", file.FullName);
+
+                    Process.Start(file.FullName);
+                }
+            }
+        }
+
+        private void dashboardReplace_Click(object sender, EventArgs e)
+        {
+            if (SynxF.OpenImageFile.ShowDialog() == DialogResult.OK)
             {
                 try
                 {
+                    if (Directory.Exists(sxDirectory + "\\lib\\Resources"))
+                    {
+                        File.Copy(SynxF.OpenImageFile.FileName, sxDirectory + "\\lib\\Resources\\dashboard.png");
+                        refreshImages();
+                    }
+                    else
+                    {
+                        MessageBox.Show("We dont found the Resources folder in your lib.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message, "Infinity - Error Report");
+                }
+            }
+        }
 
+        private void luaexecReplace_Click(object sender, EventArgs e)
+        {
+            if (SynxF.OpenImageFile.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    if (Directory.Exists(sxDirectory + "\\lib\\Resources"))
+                    {
+                        File.Copy(SynxF.OpenImageFile.FileName, sxDirectory + "\\lib\\Resources\\lua.png");
+                        refreshImages();
+                    }
+                    else
+                    {
+                        MessageBox.Show("We dont found the Resources folder in your lib.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message, "Infinity - Error Report");
+                }
+            }
+        }
+
+        private void logoReplace_Click(object sender, EventArgs e)
+        {
+            if (SynxF.OpenImageFile.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    if (Directory.Exists(sxDirectory + "\\lib\\Resources"))
+                    {
+                        File.Copy(SynxF.OpenImageFile.FileName, sxDirectory + "\\lib\\Resources\\InfinityLogoSolo.png", true);
+                        refreshImages();
+                    }
+                    else
+                    {
+                        MessageBox.Show("We dont found the Resources folder in your lib.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message, "Infinity - Error Report");
+                }
+            }
+        }
+
+        private void hubReplace_Click(object sender, EventArgs e)
+        {
+            if (SynxF.OpenImageFile.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    if (Directory.Exists(sxDirectory + "\\lib\\Resources"))
+                    {
+                        File.Copy(SynxF.OpenImageFile.FileName, sxDirectory + "\\lib\\Resources\\hub.png", true);
+                        refreshImages();
+                    }
+                    else
+                    {
+                        MessageBox.Show("We dont found the Resources folder in your lib.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message, "Infinity - Error Report");
+                }
+            }
+        }
+
+        private void configReplace_Click(object sender, EventArgs e)
+        {
+            if (SynxF.OpenImageFile.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    if (Directory.Exists(sxDirectory + "\\lib\\Resources"))
+                    {
+                        File.Copy(SynxF.OpenImageFile.FileName, sxDirectory + "\\lib\\Resources\\settings.png", true);
+                        refreshImages();
+                    }
+                    else
+                    {
+                        MessageBox.Show("We dont found the Resources folder in your lib.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message, "Infinity - Error Report");
+                }
+            }
+        }
+
+        private void minimizeReplace_Click(object sender, EventArgs e)
+        {
+            if (SynxF.OpenImageFile.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    if (Directory.Exists(sxDirectory + "\\lib\\Resources"))
+                    {
+                        File.Copy(SynxF.OpenImageFile.FileName, sxDirectory + "\\lib\\Resources\\minimize.png", true);
+                        refreshImages();
+                    }
+                    else
+                    {
+                        MessageBox.Show("We dont found the Resources folder in your lib.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message, "Infinity - Error Report");
+                }
+            }
+        }
+
+        private void closeReplace_Click(object sender, EventArgs e)
+        {
+            if (SynxF.OpenImageFile.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    if (Directory.Exists(sxDirectory + "\\lib\\Resources"))
+                    {
+                        File.Copy(SynxF.OpenImageFile.FileName, sxDirectory + "\\lib\\Resources\\cancel.png", true);
+                        refreshImages();
+                    }
+                    else
+                    {
+                        MessageBox.Show("We dont found the Resources folder in your lib.");
+                    }
                 }
                 catch (Exception ex)
                 {

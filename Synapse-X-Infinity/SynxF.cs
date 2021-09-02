@@ -26,7 +26,7 @@ namespace Synapse_X_Infinity
 
         public static OpenFileDialog OpenImageFile = new OpenFileDialog
         {
-            Filter = "Script Files (*.png) | *.png",
+            Filter = "Image Files (*.png) | *.png",
             FilterIndex = 1,
             RestoreDirectory = true,
             Title = "Synapse X Infinity - Open File"
