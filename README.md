@@ -28,12 +28,12 @@
 |Function|Status|
 |:---------------------------------------------------------------------------------------: | :-------------------------------------------------------------------: |
 |[Execute Scripts](https://github.com/ZeusHay/Synapse-X-Infinity) | ✔ |
-|[Configuration Gui](https://github.com/ZeusHay/Synapse-X-Infinity) | ❌ |
-|[Infinity Script Hub](https://github.com/ZeusHay/Synapse-X-Infinity) | ❌ |
-|[Auto Updater](https://github.com/ZeusHay/Synapse-X-Infinity) | ❌ |
-|[BootsTrapper](https://github.com/ZeusHay/Synapse-X-Infinity) | ❌ |
-|[DashboardUi](https://github.com/ZeusHay/Synapse-X-Infinity) | ❌ |
-|[Private Hub](https://github.com/ZeusHay/Synapse-X-Infinity) | ❌ |
+|[Configuration Gui](https://github.com/ZeusHay/Synapse-X-Infinity) | ✔ |
+|[DashboardUi](https://github.com/ZeusHay/Synapse-X-Infinity) | ✔ |
+|[Infinity Script Hub](https://github.com/ZeusHay/Synapse-X-Infinity) | 🔵 |
+|[Auto Updater](https://github.com/ZeusHay/Synapse-X-Infinity) | 🔵 |
+|[BootsTrapper](https://github.com/ZeusHay/Synapse-X-Infinity) | 🔵 |
+|[Private Hub](https://github.com/ZeusHay/Synapse-X-Infinity) | 🔵 |
 
 ---------------------------------------------------------------------------------------
 
