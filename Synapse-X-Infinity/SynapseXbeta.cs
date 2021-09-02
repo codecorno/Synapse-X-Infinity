@@ -30,26 +30,135 @@ namespace Synapse_X_Infinity
             refreshImages();
         }
 
+        public void setDefaultImages(string item)
+        {
+            if (item == "logo")
+            {
+                logoPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\InfinityLogoSolo.png");
+                pictureBox1.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\InfinityLogoSolo.png");
+            }
+
+            if (item == "dashboard")
+            {
+                if (File.Exists(sxDirectory + "\\lib\\Resources\\dashboard.png2"))
+                {
+                    File.Delete(sxDirectory + "\\lib\\Resources\\dashboard.png2");
+                }
+                dashboardPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\dashboard.png");
+                pictureBox4.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\dashboard.png");
+            }
+
+            if (item == "lua")
+            {
+                luaexecPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\lua.png");
+                pictureBox6.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\lua.png");
+            }
+
+            if (item == "hub")
+            {
+                hubPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\hub.png");
+                pictureBox7.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\hub.png");
+            }
+
+            if (item == "settings")
+            {
+                configPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\settings.png");
+                pictureBox8.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\settings.png");
+            }
+
+            if (item == "minimize")
+            {
+                minimizePicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\minimize.png");
+                pictureBox3.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\minimize.png");
+            }
+
+            if (item == "cancel")
+            {
+                closePicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\cancel.png");
+                pictureBox2.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\cancel.png");
+            }
+        }
+
         public void refreshImages()
         {
             if (Directory.Exists(sxDirectory + "\\lib\\Resources"))
             {
-                logoPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\InfinityLogoSolo.png");
-                dashboardPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\dashboard.png");
-                luaexecPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\lua.png");
-                hubPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\hub.png");
-                configPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\settings.png");
-                minimizePicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\minimize.png");
-                closePicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\cancel.png");
-                
-                pictureBox1.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\InfinityLogoSolo.png");
-                pictureBox4.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\dashboard.png");
-                pictureBox6.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\lua.png");
-                pictureBox7.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\hub.png");
-                pictureBox8.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\settings.png");
+                if (File.Exists(sxDirectory + "\\lib\\Resources\\InfinityLogoSolo2.png"))
+                {
+                    logoPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\InfinityLogoSolo2.png");
+                    pictureBox1.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\InfinityLogoSolo2.png");
+                }
+                else
+                {
+                    logoPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\InfinityLogoSolo.png");
+                    pictureBox1.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\InfinityLogoSolo.png");
+                }
 
-                pictureBox2.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\cancel.png");
-                pictureBox3.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\minimize.png");
+                if (File.Exists(sxDirectory + "\\lib\\Resources\\dashboard2.png"))
+                {
+                    dashboardPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\dashboard2.png");
+                    pictureBox4.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\dashboard2.png");
+                }
+                else
+                {
+                    dashboardPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\dashboard.png");
+                    pictureBox4.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\dashboard.png");
+                }
+
+                if (File.Exists(sxDirectory + "\\lib\\Resources\\lua2.png"))
+                {
+                    luaexecPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\lua2.png");
+                    pictureBox6.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\lua2.png");
+                }
+                else
+                {
+                    luaexecPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\lua.png");
+                    pictureBox6.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\lua.png");
+                }
+
+                if (File.Exists(sxDirectory + "\\lib\\Resources\\hub2.png"))
+                {
+                    hubPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\hub2.png");
+                    pictureBox7.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\hub2.png");
+                }
+                else
+                {
+                    hubPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\hub.png");
+                    pictureBox7.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\hub.png");
+                }
+
+                if (File.Exists(sxDirectory + "\\lib\\Resources\\settings2.png"))
+                {
+                    configPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\settings2.png");
+                    pictureBox8.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\settings2.png");
+                }
+                else
+                {
+                    configPicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\settings.png");
+                    pictureBox8.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\settings.png");
+                }
+
+                if (File.Exists(sxDirectory + "\\lib\\Resources\\minimize2.png"))
+                {
+                    minimizePicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\minimize2.png");
+                    pictureBox3.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\minimize2.png");
+                }
+                else
+                {
+                    minimizePicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\minimize.png");
+                    pictureBox3.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\minimize.png");
+                }
+
+                if (File.Exists(sxDirectory + "\\lib\\Resources\\cancel2.png"))
+                {
+                    closePicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\cancel2.png");
+                    pictureBox2.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\cancel2.png");
+                }
+                else
+                {
+                    closePicture.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\cancel.png");
+                    pictureBox2.Image = Image.FromFile(sxDirectory + "\\lib\\Resources\\cancel.png");
+                }
             }
         }
 
@@ -496,8 +605,15 @@ namespace Synapse_X_Infinity
                 {
                     if (Directory.Exists(sxDirectory + "\\lib\\Resources"))
                     {
-                        File.Copy(SynxF.OpenImageFile.FileName, sxDirectory + "\\lib\\Resources\\dashboard.png");
-                        refreshImages();
+                        try
+                        {
+                            File.Delete(sxDirectory + "\\lib\\Resources\\dashboard2.png");
+                            File.Copy(SynxF.OpenImageFile.FileName, sxDirectory + "\\lib\\Resources\\dashboard2.png", true);
+                        }
+                        catch {
+                            MessageBox.Show("Ya, i already know, i see a error, i'll fix this on the next update, maybe, please, change the icon manually, rename de png image for dashboard2 and put on resources lib.");
+                            Process.Start("explorer.exe", sxDirectory + "\\lib\\Resources");
+                        }
                     }
                     else
                     {
@@ -519,8 +635,16 @@ namespace Synapse_X_Infinity
                 {
                     if (Directory.Exists(sxDirectory + "\\lib\\Resources"))
                     {
-                        File.Copy(SynxF.OpenImageFile.FileName, sxDirectory + "\\lib\\Resources\\lua.png");
-                        refreshImages();
+                        try
+                        {
+                            File.Copy(SynxF.OpenImageFile.FileName, sxDirectory + "\\lib\\Resources\\lua2.png", true);
+                            refreshImages();
+                        }
+                        catch
+                        {
+                            MessageBox.Show("Ya, i already know, i see a error, i'll fix this on the next update, maybe, please, change the icon manually, rename de png image for lua2 and put on resources lib.");
+                            Process.Start("explorer.exe", sxDirectory + "\\lib\\Resources");
+                        }
                     }
                     else
                     {
@@ -542,8 +666,16 @@ namespace Synapse_X_Infinity
                 {
                     if (Directory.Exists(sxDirectory + "\\lib\\Resources"))
                     {
-                        File.Copy(SynxF.OpenImageFile.FileName, sxDirectory + "\\lib\\Resources\\InfinityLogoSolo.png", true);
-                        refreshImages();
+                        try
+                        {
+                            File.Copy(SynxF.OpenImageFile.FileName, sxDirectory + "\\lib\\Resources\\InfinityLogoSolo2.png", true);
+                            refreshImages();
+                        }
+                        catch
+                        {
+                            MessageBox.Show("Ya, i already know, i see a error, i'll fix this on the next update, maybe, please, change the icon manually, rename de png image for InfinityLogoSolo2 and put on resources lib.");
+                            Process.Start("explorer.exe", sxDirectory + "\\lib\\Resources");
+                        }
                     }
                     else
                     {
@@ -565,8 +697,16 @@ namespace Synapse_X_Infinity
                 {
                     if (Directory.Exists(sxDirectory + "\\lib\\Resources"))
                     {
-                        File.Copy(SynxF.OpenImageFile.FileName, sxDirectory + "\\lib\\Resources\\hub.png", true);
-                        refreshImages();
+                        try
+                        {
+                            File.Copy(SynxF.OpenImageFile.FileName, sxDirectory + "\\lib\\Resources\\hub2.png", true);
+                            refreshImages();
+                        }
+                        catch
+                        {
+                            MessageBox.Show("Ya, i already know, i see a error, i'll fix this on the next update, maybe, please, change the icon manually, rename de png image for hub2 and put on resources lib.");
+                            Process.Start("explorer.exe", sxDirectory + "\\lib\\Resources");
+                        }
                     }
                     else
                     {
@@ -588,8 +728,16 @@ namespace Synapse_X_Infinity
                 {
                     if (Directory.Exists(sxDirectory + "\\lib\\Resources"))
                     {
-                        File.Copy(SynxF.OpenImageFile.FileName, sxDirectory + "\\lib\\Resources\\settings.png", true);
-                        refreshImages();
+                        try
+                        {
+                            File.Copy(SynxF.OpenImageFile.FileName, sxDirectory + "\\lib\\Resources\\settings2.png", true);
+                            refreshImages();
+                        }
+                        catch
+                        {
+                            MessageBox.Show("Ya, i already know, i see a error, i'll fix this on the next update, maybe, please, change the icon manually, rename de png image for settings2 and put on resources lib.");
+                            Process.Start("explorer.exe", sxDirectory + "\\lib\\Resources");
+                        }
                     }
                     else
                     {
@@ -611,8 +759,16 @@ namespace Synapse_X_Infinity
                 {
                     if (Directory.Exists(sxDirectory + "\\lib\\Resources"))
                     {
-                        File.Copy(SynxF.OpenImageFile.FileName, sxDirectory + "\\lib\\Resources\\minimize.png", true);
-                        refreshImages();
+                        try
+                        {
+                            refreshImages();
+                            File.Copy(SynxF.OpenImageFile.FileName, sxDirectory + "\\lib\\Resources\\minimize2.png", true);
+                        }
+                        catch
+                        {
+                            MessageBox.Show("Ya, i already know, i see a error, i'll fix this on the next update, maybe, please, change the icon manually, rename de png image for minimize2 and put on resources lib.");
+                            Process.Start("explorer.exe", sxDirectory + "\\lib\\Resources");
+                        }
                     }
                     else
                     {
@@ -634,8 +790,16 @@ namespace Synapse_X_Infinity
                 {
                     if (Directory.Exists(sxDirectory + "\\lib\\Resources"))
                     {
-                        File.Copy(SynxF.OpenImageFile.FileName, sxDirectory + "\\lib\\Resources\\cancel.png", true);
-                        refreshImages();
+                        try
+                        {
+                            File.Copy(SynxF.OpenImageFile.FileName, sxDirectory + "\\lib\\Resources\\cancel2.png", true);
+                            refreshImages();
+                        }
+                        catch
+                        {
+                            MessageBox.Show("Ya, i already know, i see a error, i'll fix this on the next update, maybe, please, change the icon manually, rename de png image for cancel2 and put on resources lib.");
+                            Process.Start("explorer.exe", sxDirectory + "\\lib\\Resources");
+                        }
                     }
                     else
                     {
@@ -647,6 +811,16 @@ namespace Synapse_X_Infinity
                     MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message, "Infinity - Error Report");
                 }
             }
+        }
+
+        private void bunifuPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton1_Click_2(object sender, EventArgs e)
+        {
+            setDefaultImages("dashboard");
         }
     }
 }
