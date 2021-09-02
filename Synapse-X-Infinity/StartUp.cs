@@ -71,7 +71,6 @@ namespace Synapse_X_Infinity
                 // Importants
 
                 case SxLibBase.SynLoadEvents.CHECKING_WL:
-                    sxInfinity();
                     this.whitelistProgress.Value = 100;
                     this.whitelistProgress.ProgressColor = Color.FromArgb(0, 255, 0);
                     return;
