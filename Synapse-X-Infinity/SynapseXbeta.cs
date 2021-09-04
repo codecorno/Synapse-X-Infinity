@@ -339,11 +339,13 @@ namespace Synapse_X_Infinity
         private void pictureBox8_Click(object sender, EventArgs e)
         {
             BunifuPages1.SetPage("configurationPage");
+            bunifuVScrollBar1.Visible = false;
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
             BunifuPages1.SetPage("hubPage");
+            bunifuVScrollBar1.Visible = false;
         }
 
         private async void createPostPanels()
@@ -376,17 +378,21 @@ namespace Synapse_X_Infinity
                 NewPos = tempPanel.Location.Y + 143;
             }
             bunifuCircleProgress1.Visible = false;
+            dashboardPage.Height = NewPos + 30;
+            bunifuVScrollBar1.Height = dashboardPage.Height;
             
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             BunifuPages1.SetPage("dashboardPage");
+            bunifuVScrollBar1.Visible = true;
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             BunifuPages1.SetPage("executorPage");
+            bunifuVScrollBar1.Visible = false;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -869,6 +875,11 @@ namespace Synapse_X_Infinity
         }
 
         private void bunifuCircleProgress1_ProgressChanged(object sender, Bunifu.UI.WinForms.BunifuCircleProgress.ProgressChangedEventArgs e)
+        {
+
+        }
+
+        private void dashboardPage_Click(object sender, EventArgs e)
         {
 
         }

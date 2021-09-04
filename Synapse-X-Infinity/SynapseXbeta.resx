@@ -1248,25 +1248,36 @@
   </metadata>
   <data name="bunifuPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAyQAAAAnCAYAAAD+dow3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAL5SURBVHhe7d09TxRRFAbgLSkp6WagsqSktKQyNiaWlsZf
-        YElhYWJnYUFn7R+woiVWW5JYkFgQjEgAjfhBoecOZwWGEZfszkbD8yZPJuzcuUP75szsDkRERERERP6b
-        VFW1sri4uBY2wzDshZ8AAMCNU7pA6QTFWnSF1awN001sPB83WK/r+iiOB6HrnwEAAG62g+gMJ0tLS6+i
-        Q9RZJyZLbPp0tPG5GwEAAFylDDLWo5jMZbW4XspUJErIm9jk67lNAQAAxlKGGuFtdIuFrBnjpYxXYoOt
-        uPh7e1MAAIBr2o2OsZx14+qUyUhcsNXaAAAAYBIfyuAja8efUx7TMhkBAAB6sF0GIFk9LicWPI8y4p0R
-        AABg6qJr/Ijj66wfFxNNZSEWlK/17bwYAABgUtE5DjvfJ4mT5XdGfLUvAADQt42sIaeJhjIXZeRTx0IA
-        AIBp+1Ke0Mo60hSS1fjQL7ADAACzUArJw6wjzeNaL1oLAAAA+nT22Fb8sdk6CQAA0KedrCNNIdlunQQA
-        AOjTcdaRppAct04CAAD0KutIU0g6FwAAAPQl64hCAgAAzF7WEYUEAACYvawjCgkAADB7WUcUEgAAYPay
-        jgwGdV2fdC0AAADoS9aRZkKy0z4JAADQlzIUyTrSFJJhewEAAECP9rKONIXkZeskAABAnzazjgwGVVU9
-        iA8+txYAAAD04aSu6ydZR5pCMh8ffOtYCAAAMFXRPQ6jgyxnHTlNnNhoLwQAAOjBdtaQs5SGUppKx2IA
-        AICpyOnI3awhFxMLTEkAAIA+XZ6OjBJNZSEay7uOiwAAACYSXeN9dI5bWT+6Ux7disUf2xcDAABMYD/c
-        y9pxdaK53InFSgkAADAN+1VVPcq6MV5yUrLb2ggAAGBs5TGtOI43GWmnvFMSFw/DwWhDAACAMRyF7b++
-        MzJOYpPbZbNoN2XTk7wBAADAb9EXyrEMM/aiQ9zPOjG9lHYTHscNhnEzxQQAABgpT1Y9i76wkvVBRERE
-        RETkX85g8AtMQziVY+M77AAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAzcAAAAnCAYAAAAy77bcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMASURBVHhe7d09T9VgGAbgMzIysrUwOTIyOjIZFxNHR+Mv
+        cGRwMHFzcGBz9g84sRInRhKHkzgQjEgAjfhxBn3e8hCgVMTw1YbrTq40nL59y3rnac8ZiYiIiIiI3MpU
+        VbUwOzu7FFbDWtgKvwEAAC6g9IrSL4ql6B2LWUEuN7HxdNxgua7rvTjuhK5/BgAA4LLsRP+YzM3NvYk+
+        Umc1uVhi0+eHGx+7EQAAwHUpA5blKDlTWVP+L2VaE4XmXWzy/dimAAAA164MW8L76CkzWVnOlzL2iQ3W
+        4+Kf7U0BAABu0Gb0lfmsLmenTGzigvXWBgAAAH3xqQxkssL8PeVRNBMbAACg58ZlMJM15nRiwcsoNt6x
+        AQAAei16y684vs0qczLRemZiQfmq586LAQAA+iT6y27n+zdxsvyOja97BgAAhmQlK81Bou1MRbH50rEQ
+        AACgz76Vp9Cy2jTlZjE+LD+M07UYAACgr0q5eZzVpnkk7VVrAQAAwFAcPZoWf6y2TgIAAAzFRlabptyM
+        WycBAACGYj+rTVNu9lsnAQAABiOrTVNuOhcAAAAMQVYb5QYAABi2rDbKDQAAMGxZbZQbAABg2LLaKDcA
+        AMCwZbUZjeq6nnQtAAAAGIKsNs3kZqN9EgAAYAjKsCarTVNu1toLAAAABmIrq01Tbl63TgIAAAzFalab
+        0aiqqkfxwdfWAgAAgL6b1HX9LKtNU26m44MfHQsBAAB6K3rMbvSZ+aw2B4kTK+2FAAAAPTfOSnOU0nZK
+        6+lYDAAA0Ds5tbmfleZkYoHpDQAAMBSnpzaHidYzE+3nQ8dFAAAAvRG95WP0lztZZbpTHk+LxZ/bFwMA
+        APTEdniQFebsRAu6F4sVHAAAoG+2q6p6ktXlfMkJzmZrIwAAgBtRHkWL4/kmNu2Ud3Di4rWwc7ghAADA
+        NdsL43++Y3OexCZ3y2bRlMqmk7wBAADAlYjuUY5lyLIVfeRhVpPLS2lK4WncYC1upuQAAABXoTw99iK6
+        x0JWERERERERkduS0egPBoQE7935S1wAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="logoText.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Light'; font-size: 17pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+  </data>
+  <data name="bunifuVScrollBar1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAgAAAGZCAYAAAC0QnDZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAElSURBVGhD7dstTgNRAEXhykoksstAsoRKZDfAHhA4HIJN
+        kLCEmXENqjtAgUKU0KT8iXLfnL5m0kx3cJp8YebdU0jwb9J13TJ2JywnbdvOYh438ZvD77jL81XZJvWT
+        lybDR2ziOe/T/dSP1zn8jP5XN03zlZ/3dZzlZV3HgXW2ixLc5uXvaKwe698eG3fZXkqwHRur8n8YHSoD
+        GMAABjCAAQxgAAMYwAAGMIABDGAAAxjAAAYwgAEMYAADGMAABjCAAQxgAAMYwAAGMIABDGAAAxjAAAYw
+        gAEMYAADlODUPZheCVbHhwPvJXg4OjwoF2nKZZnLvIzdx9lkW9RLO09R7gMNg1U/lk/GabwNotc8n+/n
+        PjiLeYafEuR5cQhy0O6/NaJr/wFHO0i5TZ9HvAAAAABJRU5ErkJggg==
+</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
