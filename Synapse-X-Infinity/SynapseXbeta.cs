@@ -7,7 +7,10 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
 using System.Text;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using sxlib;
@@ -24,7 +27,9 @@ namespace Synapse_X_Infinity
         {
             InitializeComponent();
             bunifuFormDock1.SubscribeControlToDragEvents(bunifuPanel1);
+#if Interface
             SynxF.Lib.AttachEvent += sxAttachEvent;
+#endif
             LoadScriptsLoop.Enabled = true;
             setupMessage.Enabled = true;
             refreshImages();
@@ -339,8 +344,53 @@ namespace Synapse_X_Infinity
             BunifuPages1.SetPage("hubPage");
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+        class Posts
         {
+            [JsonPropertyName("title")]
+            public string title { get; set; }
+
+            [JsonPropertyName("content")]
+            public string content { get; set; }
+
+            [JsonPropertyName("script")]
+            public string script { get; set; }
+
+            [JsonPropertyName("created_at")]
+            public DateTime created_at { get; set; }
+        }
+
+        private async static Task<List<Posts>> GetPost()
+        {
+            HttpClient client = new HttpClient();
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Add("User-Agent", "Synapse X Infinity UserAgent");
+
+            var streamTask = client.GetStreamAsync("https://synapse-database.vercel.app/api/posts");
+            var repositories = await JsonSerializer.DeserializeAsync<List<Posts>>(await streamTask);
+            return repositories;
+        }
+
+        private async void pictureBox4_Click(object sender, EventArgs e)
+        {
+            //Fetch da API dos Dados
+            var json = await GetPost();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SynapseXbeta));
+            Bunifu.UI.WinForms.BunifuGradientPanel panelTest = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            panelTest.BackColor = System.Drawing.Color.Transparent;
+            panelTest.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            panelTest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            panelTest.BorderRadius = 10;
+            panelTest.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            panelTest.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            panelTest.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            panelTest.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            panelTest.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            panelTest.Location = new System.Drawing.Point(12, 155);
+            panelTest.Name = "panelTest";
+            panelTest.Quality = 10;
+            panelTest.Size = new System.Drawing.Size(783, 138);
+            panelTest.TabIndex = 15;
+            dashboardPage.Controls.Add(panelTest);
             BunifuPages1.SetPage("dashboardPage");
         }
 
@@ -827,5 +877,6 @@ namespace Synapse_X_Infinity
         {
             Scripts.Hydroxide();
         }
+
     }
 }

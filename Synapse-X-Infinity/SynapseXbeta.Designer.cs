@@ -78,13 +78,6 @@ namespace Synapse_X_Infinity
             this.bunifuButton9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.dashboardPage = new System.Windows.Forms.TabPage();
-            this.bunifuGradientPanel7 = new Bunifu.UI.WinForms.BunifuGradientPanel();
-            this.bunifuGradientPanel6 = new Bunifu.UI.WinForms.BunifuGradientPanel();
-            this.bunifuGradientPanel8 = new Bunifu.UI.WinForms.BunifuGradientPanel();
-            this.bunifuGradientPanel5 = new Bunifu.UI.WinForms.BunifuGradientPanel();
-            this.bunifuGradientPanel2 = new Bunifu.UI.WinForms.BunifuGradientPanel();
-            this.bunifuGradientPanel4 = new Bunifu.UI.WinForms.BunifuGradientPanel();
-            this.bunifuGradientPanel3 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.bunifuPanel6 = new Bunifu.UI.WinForms.BunifuPanel();
@@ -301,10 +294,10 @@ namespace Synapse_X_Infinity
             this.BunifuPages1.Location = new System.Drawing.Point(-4, 34);
             this.BunifuPages1.Multiline = true;
             this.BunifuPages1.Name = "BunifuPages1";
-            this.BunifuPages1.Page = this.tabPage3;
-            this.BunifuPages1.PageIndex = 3;
-            this.BunifuPages1.PageName = "tabPage3";
-            this.BunifuPages1.PageTitle = "hubPage";
+            this.BunifuPages1.Page = this.dashboardPage;
+            this.BunifuPages1.PageIndex = 1;
+            this.BunifuPages1.PageName = "dashboardPage";
+            this.BunifuPages1.PageTitle = "dashboardPage";
             this.BunifuPages1.SelectedIndex = 0;
             this.BunifuPages1.Size = new System.Drawing.Size(831, 436);
             this.BunifuPages1.TabIndex = 4;
@@ -411,14 +404,14 @@ namespace Synapse_X_Infinity
             this.bunifuButton6.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuButton6.OnDisabledState.IconLeftImage = null;
             this.bunifuButton6.OnDisabledState.IconRightImage = null;
-            this.bunifuButton6.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.bunifuButton6.onHoverState.BorderRadius = 15;
-            this.bunifuButton6.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton6.onHoverState.BorderThickness = 3;
-            this.bunifuButton6.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.bunifuButton6.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton6.onHoverState.IconLeftImage = null;
-            this.bunifuButton6.onHoverState.IconRightImage = null;
+            this.bunifuButton6.OnHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.bunifuButton6.OnHoverState.BorderRadius = 15;
+            this.bunifuButton6.OnHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton6.OnHoverState.BorderThickness = 3;
+            this.bunifuButton6.OnHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.bunifuButton6.OnHoverState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton6.OnHoverState.IconLeftImage = null;
+            this.bunifuButton6.OnHoverState.IconRightImage = null;
             this.bunifuButton6.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuButton6.OnIdleState.BorderRadius = 15;
             this.bunifuButton6.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
@@ -501,14 +494,14 @@ namespace Synapse_X_Infinity
             this.bunifuButton5.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuButton5.OnDisabledState.IconLeftImage = null;
             this.bunifuButton5.OnDisabledState.IconRightImage = null;
-            this.bunifuButton5.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.bunifuButton5.onHoverState.BorderRadius = 15;
-            this.bunifuButton5.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton5.onHoverState.BorderThickness = 3;
-            this.bunifuButton5.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.bunifuButton5.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton5.onHoverState.IconLeftImage = null;
-            this.bunifuButton5.onHoverState.IconRightImage = null;
+            this.bunifuButton5.OnHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.bunifuButton5.OnHoverState.BorderRadius = 15;
+            this.bunifuButton5.OnHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton5.OnHoverState.BorderThickness = 3;
+            this.bunifuButton5.OnHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.bunifuButton5.OnHoverState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton5.OnHoverState.IconLeftImage = null;
+            this.bunifuButton5.OnHoverState.IconRightImage = null;
             this.bunifuButton5.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuButton5.OnIdleState.BorderRadius = 15;
             this.bunifuButton5.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
@@ -591,14 +584,14 @@ namespace Synapse_X_Infinity
             this.bunifuButton2.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuButton2.OnDisabledState.IconLeftImage = null;
             this.bunifuButton2.OnDisabledState.IconRightImage = null;
-            this.bunifuButton2.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.bunifuButton2.onHoverState.BorderRadius = 15;
-            this.bunifuButton2.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton2.onHoverState.BorderThickness = 3;
-            this.bunifuButton2.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.bunifuButton2.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton2.onHoverState.IconLeftImage = null;
-            this.bunifuButton2.onHoverState.IconRightImage = null;
+            this.bunifuButton2.OnHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.bunifuButton2.OnHoverState.BorderRadius = 15;
+            this.bunifuButton2.OnHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton2.OnHoverState.BorderThickness = 3;
+            this.bunifuButton2.OnHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.bunifuButton2.OnHoverState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton2.OnHoverState.IconLeftImage = null;
+            this.bunifuButton2.OnHoverState.IconRightImage = null;
             this.bunifuButton2.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuButton2.OnIdleState.BorderRadius = 15;
             this.bunifuButton2.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
@@ -681,14 +674,14 @@ namespace Synapse_X_Infinity
             this.bunifuButton7.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuButton7.OnDisabledState.IconLeftImage = null;
             this.bunifuButton7.OnDisabledState.IconRightImage = null;
-            this.bunifuButton7.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.bunifuButton7.onHoverState.BorderRadius = 15;
-            this.bunifuButton7.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton7.onHoverState.BorderThickness = 3;
-            this.bunifuButton7.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.bunifuButton7.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton7.onHoverState.IconLeftImage = null;
-            this.bunifuButton7.onHoverState.IconRightImage = null;
+            this.bunifuButton7.OnHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.bunifuButton7.OnHoverState.BorderRadius = 15;
+            this.bunifuButton7.OnHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton7.OnHoverState.BorderThickness = 3;
+            this.bunifuButton7.OnHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.bunifuButton7.OnHoverState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton7.OnHoverState.IconLeftImage = null;
+            this.bunifuButton7.OnHoverState.IconRightImage = null;
             this.bunifuButton7.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuButton7.OnIdleState.BorderRadius = 15;
             this.bunifuButton7.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
@@ -771,14 +764,14 @@ namespace Synapse_X_Infinity
             this.bunifuButton8.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuButton8.OnDisabledState.IconLeftImage = null;
             this.bunifuButton8.OnDisabledState.IconRightImage = null;
-            this.bunifuButton8.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.bunifuButton8.onHoverState.BorderRadius = 15;
-            this.bunifuButton8.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton8.onHoverState.BorderThickness = 3;
-            this.bunifuButton8.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.bunifuButton8.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton8.onHoverState.IconLeftImage = null;
-            this.bunifuButton8.onHoverState.IconRightImage = null;
+            this.bunifuButton8.OnHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.bunifuButton8.OnHoverState.BorderRadius = 15;
+            this.bunifuButton8.OnHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton8.OnHoverState.BorderThickness = 3;
+            this.bunifuButton8.OnHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.bunifuButton8.OnHoverState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton8.OnHoverState.IconLeftImage = null;
+            this.bunifuButton8.OnHoverState.IconRightImage = null;
             this.bunifuButton8.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuButton8.OnIdleState.BorderRadius = 15;
             this.bunifuButton8.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
@@ -861,14 +854,14 @@ namespace Synapse_X_Infinity
             this.bunifuButton9.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuButton9.OnDisabledState.IconLeftImage = null;
             this.bunifuButton9.OnDisabledState.IconRightImage = null;
-            this.bunifuButton9.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.bunifuButton9.onHoverState.BorderRadius = 15;
-            this.bunifuButton9.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton9.onHoverState.BorderThickness = 3;
-            this.bunifuButton9.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.bunifuButton9.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton9.onHoverState.IconLeftImage = null;
-            this.bunifuButton9.onHoverState.IconRightImage = null;
+            this.bunifuButton9.OnHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.bunifuButton9.OnHoverState.BorderRadius = 15;
+            this.bunifuButton9.OnHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton9.OnHoverState.BorderThickness = 3;
+            this.bunifuButton9.OnHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.bunifuButton9.OnHoverState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton9.OnHoverState.IconLeftImage = null;
+            this.bunifuButton9.OnHoverState.IconRightImage = null;
             this.bunifuButton9.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuButton9.OnIdleState.BorderRadius = 15;
             this.bunifuButton9.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
@@ -908,14 +901,8 @@ namespace Synapse_X_Infinity
             // 
             // dashboardPage
             // 
+            this.dashboardPage.AutoScroll = true;
             this.dashboardPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.dashboardPage.Controls.Add(this.bunifuGradientPanel7);
-            this.dashboardPage.Controls.Add(this.bunifuGradientPanel6);
-            this.dashboardPage.Controls.Add(this.bunifuGradientPanel8);
-            this.dashboardPage.Controls.Add(this.bunifuGradientPanel5);
-            this.dashboardPage.Controls.Add(this.bunifuGradientPanel2);
-            this.dashboardPage.Controls.Add(this.bunifuGradientPanel4);
-            this.dashboardPage.Controls.Add(this.bunifuGradientPanel3);
             this.dashboardPage.Controls.Add(this.bunifuGradientPanel1);
             this.dashboardPage.Location = new System.Drawing.Point(4, 4);
             this.dashboardPage.Name = "dashboardPage";
@@ -923,125 +910,6 @@ namespace Synapse_X_Infinity
             this.dashboardPage.Size = new System.Drawing.Size(823, 410);
             this.dashboardPage.TabIndex = 0;
             this.dashboardPage.Text = "dashboardPage";
-            // 
-            // bunifuGradientPanel7
-            // 
-            this.bunifuGradientPanel7.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuGradientPanel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel7.BackgroundImage")));
-            this.bunifuGradientPanel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel7.BorderRadius = 10;
-            this.bunifuGradientPanel7.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.bunifuGradientPanel7.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.bunifuGradientPanel7.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.bunifuGradientPanel7.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.bunifuGradientPanel7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.bunifuGradientPanel7.Location = new System.Drawing.Point(376, 261);
-            this.bunifuGradientPanel7.Name = "bunifuGradientPanel7";
-            this.bunifuGradientPanel7.Quality = 10;
-            this.bunifuGradientPanel7.Size = new System.Drawing.Size(119, 150);
-            this.bunifuGradientPanel7.TabIndex = 20;
-            // 
-            // bunifuGradientPanel6
-            // 
-            this.bunifuGradientPanel6.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuGradientPanel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel6.BackgroundImage")));
-            this.bunifuGradientPanel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel6.BorderRadius = 10;
-            this.bunifuGradientPanel6.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.bunifuGradientPanel6.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.bunifuGradientPanel6.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.bunifuGradientPanel6.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.bunifuGradientPanel6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.bunifuGradientPanel6.Location = new System.Drawing.Point(14, 261);
-            this.bunifuGradientPanel6.Name = "bunifuGradientPanel6";
-            this.bunifuGradientPanel6.Quality = 10;
-            this.bunifuGradientPanel6.Size = new System.Drawing.Size(207, 150);
-            this.bunifuGradientPanel6.TabIndex = 18;
-            // 
-            // bunifuGradientPanel8
-            // 
-            this.bunifuGradientPanel8.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuGradientPanel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel8.BackgroundImage")));
-            this.bunifuGradientPanel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel8.BorderRadius = 10;
-            this.bunifuGradientPanel8.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.bunifuGradientPanel8.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.bunifuGradientPanel8.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.bunifuGradientPanel8.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.bunifuGradientPanel8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.bunifuGradientPanel8.Location = new System.Drawing.Point(227, 261);
-            this.bunifuGradientPanel8.Name = "bunifuGradientPanel8";
-            this.bunifuGradientPanel8.Quality = 10;
-            this.bunifuGradientPanel8.Size = new System.Drawing.Size(143, 150);
-            this.bunifuGradientPanel8.TabIndex = 19;
-            // 
-            // bunifuGradientPanel5
-            // 
-            this.bunifuGradientPanel5.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuGradientPanel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel5.BackgroundImage")));
-            this.bunifuGradientPanel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel5.BorderRadius = 10;
-            this.bunifuGradientPanel5.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.bunifuGradientPanel5.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.bunifuGradientPanel5.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.bunifuGradientPanel5.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.bunifuGradientPanel5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.bunifuGradientPanel5.Location = new System.Drawing.Point(199, 138);
-            this.bunifuGradientPanel5.Name = "bunifuGradientPanel5";
-            this.bunifuGradientPanel5.Quality = 10;
-            this.bunifuGradientPanel5.Size = new System.Drawing.Size(296, 117);
-            this.bunifuGradientPanel5.TabIndex = 16;
-            // 
-            // bunifuGradientPanel2
-            // 
-            this.bunifuGradientPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuGradientPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel2.BackgroundImage")));
-            this.bunifuGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel2.BorderRadius = 10;
-            this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.bunifuGradientPanel2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.bunifuGradientPanel2.Location = new System.Drawing.Point(360, 17);
-            this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
-            this.bunifuGradientPanel2.Quality = 10;
-            this.bunifuGradientPanel2.Size = new System.Drawing.Size(135, 115);
-            this.bunifuGradientPanel2.TabIndex = 18;
-            // 
-            // bunifuGradientPanel4
-            // 
-            this.bunifuGradientPanel4.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuGradientPanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel4.BackgroundImage")));
-            this.bunifuGradientPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel4.BorderRadius = 10;
-            this.bunifuGradientPanel4.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.bunifuGradientPanel4.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.bunifuGradientPanel4.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.bunifuGradientPanel4.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.bunifuGradientPanel4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.bunifuGradientPanel4.Location = new System.Drawing.Point(199, 17);
-            this.bunifuGradientPanel4.Name = "bunifuGradientPanel4";
-            this.bunifuGradientPanel4.Quality = 10;
-            this.bunifuGradientPanel4.Size = new System.Drawing.Size(154, 115);
-            this.bunifuGradientPanel4.TabIndex = 17;
-            // 
-            // bunifuGradientPanel3
-            // 
-            this.bunifuGradientPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuGradientPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel3.BackgroundImage")));
-            this.bunifuGradientPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel3.BorderRadius = 10;
-            this.bunifuGradientPanel3.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.bunifuGradientPanel3.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.bunifuGradientPanel3.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.bunifuGradientPanel3.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.bunifuGradientPanel3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.bunifuGradientPanel3.Location = new System.Drawing.Point(501, 14);
-            this.bunifuGradientPanel3.Name = "bunifuGradientPanel3";
-            this.bunifuGradientPanel3.Quality = 10;
-            this.bunifuGradientPanel3.Size = new System.Drawing.Size(307, 397);
-            this.bunifuGradientPanel3.TabIndex = 17;
             // 
             // bunifuGradientPanel1
             // 
@@ -1054,10 +922,10 @@ namespace Synapse_X_Infinity
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.bunifuGradientPanel1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(14, 14);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(12, 12);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(179, 241);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(783, 138);
             this.bunifuGradientPanel1.TabIndex = 15;
             // 
             // tabPage1
@@ -1149,14 +1017,14 @@ namespace Synapse_X_Infinity
             this.bunifuButton11.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuButton11.OnDisabledState.IconLeftImage = null;
             this.bunifuButton11.OnDisabledState.IconRightImage = null;
-            this.bunifuButton11.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.bunifuButton11.onHoverState.BorderRadius = 15;
-            this.bunifuButton11.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton11.onHoverState.BorderThickness = 1;
-            this.bunifuButton11.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.bunifuButton11.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton11.onHoverState.IconLeftImage = null;
-            this.bunifuButton11.onHoverState.IconRightImage = null;
+            this.bunifuButton11.OnHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.bunifuButton11.OnHoverState.BorderRadius = 15;
+            this.bunifuButton11.OnHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton11.OnHoverState.BorderThickness = 1;
+            this.bunifuButton11.OnHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.bunifuButton11.OnHoverState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton11.OnHoverState.IconLeftImage = null;
+            this.bunifuButton11.OnHoverState.IconRightImage = null;
             this.bunifuButton11.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.bunifuButton11.OnIdleState.BorderRadius = 15;
             this.bunifuButton11.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
@@ -1239,14 +1107,14 @@ namespace Synapse_X_Infinity
             this.reinstallRobloxButton.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.reinstallRobloxButton.OnDisabledState.IconLeftImage = null;
             this.reinstallRobloxButton.OnDisabledState.IconRightImage = null;
-            this.reinstallRobloxButton.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.reinstallRobloxButton.onHoverState.BorderRadius = 15;
-            this.reinstallRobloxButton.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.reinstallRobloxButton.onHoverState.BorderThickness = 1;
-            this.reinstallRobloxButton.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.reinstallRobloxButton.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.reinstallRobloxButton.onHoverState.IconLeftImage = null;
-            this.reinstallRobloxButton.onHoverState.IconRightImage = null;
+            this.reinstallRobloxButton.OnHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.reinstallRobloxButton.OnHoverState.BorderRadius = 15;
+            this.reinstallRobloxButton.OnHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.reinstallRobloxButton.OnHoverState.BorderThickness = 1;
+            this.reinstallRobloxButton.OnHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.reinstallRobloxButton.OnHoverState.ForeColor = System.Drawing.Color.White;
+            this.reinstallRobloxButton.OnHoverState.IconLeftImage = null;
+            this.reinstallRobloxButton.OnHoverState.IconRightImage = null;
             this.reinstallRobloxButton.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.reinstallRobloxButton.OnIdleState.BorderRadius = 15;
             this.reinstallRobloxButton.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
@@ -1360,14 +1228,14 @@ namespace Synapse_X_Infinity
             this.bunifuButton1.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuButton1.OnDisabledState.IconLeftImage = null;
             this.bunifuButton1.OnDisabledState.IconRightImage = null;
-            this.bunifuButton1.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.bunifuButton1.onHoverState.BorderRadius = 15;
-            this.bunifuButton1.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton1.onHoverState.BorderThickness = 1;
-            this.bunifuButton1.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.bunifuButton1.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton1.onHoverState.IconLeftImage = null;
-            this.bunifuButton1.onHoverState.IconRightImage = null;
+            this.bunifuButton1.OnHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.bunifuButton1.OnHoverState.BorderRadius = 15;
+            this.bunifuButton1.OnHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton1.OnHoverState.BorderThickness = 1;
+            this.bunifuButton1.OnHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.bunifuButton1.OnHoverState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton1.OnHoverState.IconLeftImage = null;
+            this.bunifuButton1.OnHoverState.IconRightImage = null;
             this.bunifuButton1.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.bunifuButton1.OnIdleState.BorderRadius = 15;
             this.bunifuButton1.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
@@ -1825,6 +1693,7 @@ namespace Synapse_X_Infinity
             this.setLogoText.AnimationSpeed = 200;
             this.setLogoText.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.setLogoText.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.setLogoText.AutoSizeHeight = true;
             this.setLogoText.BackColor = System.Drawing.Color.Transparent;
             this.setLogoText.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("setLogoText.BackgroundImage")));
             this.setLogoText.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
@@ -1957,6 +1826,7 @@ namespace Synapse_X_Infinity
             this.internalUiToggle.AccessibleName = "";
             this.internalUiToggle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.internalUiToggle.Animation = 5;
+            this.internalUiToggle.AnimationSpeed = 5;
             this.internalUiToggle.BackColor = System.Drawing.Color.Transparent;
             this.internalUiToggle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("internalUiToggle.BackgroundImage")));
             this.internalUiToggle.Checked = false;
@@ -2014,6 +1884,7 @@ namespace Synapse_X_Infinity
             // 
             this.autoInjectToggle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.autoInjectToggle.Animation = 5;
+            this.autoInjectToggle.AnimationSpeed = 5;
             this.autoInjectToggle.BackColor = System.Drawing.Color.Transparent;
             this.autoInjectToggle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("autoInjectToggle.BackgroundImage")));
             this.autoInjectToggle.Checked = false;
@@ -2071,6 +1942,7 @@ namespace Synapse_X_Infinity
             // 
             this.autoLaunchToggle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.autoLaunchToggle.Animation = 5;
+            this.autoLaunchToggle.AnimationSpeed = 5;
             this.autoLaunchToggle.BackColor = System.Drawing.Color.Transparent;
             this.autoLaunchToggle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("autoLaunchToggle.BackgroundImage")));
             this.autoLaunchToggle.Checked = false;
@@ -2115,6 +1987,7 @@ namespace Synapse_X_Infinity
             // 
             this.topMostToggle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.topMostToggle.Animation = 5;
+            this.topMostToggle.AnimationSpeed = 5;
             this.topMostToggle.BackColor = System.Drawing.Color.Transparent;
             this.topMostToggle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("topMostToggle.BackgroundImage")));
             this.topMostToggle.Checked = false;
@@ -2204,6 +2077,7 @@ namespace Synapse_X_Infinity
             // 
             this.unlockFpsToggle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.unlockFpsToggle.Animation = 5;
+            this.unlockFpsToggle.AnimationSpeed = 5;
             this.unlockFpsToggle.BackColor = System.Drawing.Color.Transparent;
             this.unlockFpsToggle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("unlockFpsToggle.BackgroundImage")));
             this.unlockFpsToggle.Checked = false;
@@ -2592,7 +2466,7 @@ namespace Synapse_X_Infinity
             this.logoText.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.logoText.Size = new System.Drawing.Size(0, 0);
             this.logoText.TabIndex = 19;
-            this.logoText.Text = " ";
+            this.logoText.Text = "Synapse X Infinity";
             this.logoText.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.logoText.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -2734,13 +2608,6 @@ namespace Synapse_X_Infinity
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel9;
         private System.Windows.Forms.PictureBox pictureBox5;
         private Bunifu.UI.WinForms.BunifuCircleProgress statusProgress;
-        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel7;
-        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel6;
-        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel8;
-        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel5;
-        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel2;
-        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel4;
-        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel3;
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel17;
         private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator4;
         private Bunifu.UI.WinForms.BunifuToggleSwitch unlockFpsToggle;

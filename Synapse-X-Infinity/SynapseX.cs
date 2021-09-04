@@ -1,16 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using sxlib;
 using sxlib.Specialized;
 
 namespace Synapse_X_Infinity
@@ -72,7 +64,7 @@ namespace Synapse_X_Infinity
         public SynapseX()
         {
             InitializeComponent();
-            SynxF.Lib.AttachEvent += sxAttachEvent;
+          //SynxF.Lib.AttachEvent += sxAttachEvent;
             LoadScriptsLoop.Enabled = true;
         }
 
@@ -245,6 +237,7 @@ namespace Synapse_X_Infinity
         private void timer1_Tick_1(object sender, EventArgs e)
         {
             timer1.Enabled = false;
+#if Interface
             var testBeta = MessageBox.Show("Do you want to test the alpha version of the Infinity Dashboard?", "Synapse X Alpha Version", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (testBeta == DialogResult.Yes)
             {
@@ -252,6 +245,12 @@ namespace Synapse_X_Infinity
                 var SynapseXLoader = new SynapseXbeta();
                 SynapseXLoader.Show();
             }
+#else
+            this.Visible = false;
+            StartUp.ActiveForm.Visible = false;
+            var SynapseXLoader = new SynapseXbeta();
+            SynapseXLoader.Show();
+#endif
         }
     }
 }
