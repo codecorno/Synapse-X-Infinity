@@ -9,6 +9,14 @@
     <img alt="Hit Count" src="https://img.shields.io/github/search/ZeusHay/Synapse-X-Infinity/goto?color=orange&label=Hit%20Counter&style=for-the-badge"></a>
     <br />
 </p>
+<p align="center">
+    Developed By
+</p>
+<p align="center">
+    <a href="https://github.com/ZeusHay"><img alt="Zeus" src="https://img.shields.io/badge/github-ZeusHay-orange?style=for-the-badge"></a>
+    <a href="https://github.com/caiocinel"><img alt="CaioCinel" src="https://img.shields.io/badge/github-caiocinel-orange?style=for-the-badge"></a>
+</p>
+
 <p><center>Synapse X Infinity is a project made using the <a href="https://x.synapse.to/">Synapse X</a> library, we are in a betas version, and bugs will be fixed.</center></p>
 
 # Getting Stated
@@ -51,6 +59,4 @@
 # Read more
 
 The code quality is pretty bad, this is a project made with a focus on learning the C# programming language, if you can, contribute a Pull Request :)
-
-Developed by [@ZeusHay](https://github.com/ZeusHay).
 </p>
