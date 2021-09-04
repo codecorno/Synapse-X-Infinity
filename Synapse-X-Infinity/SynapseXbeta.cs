@@ -16,6 +16,7 @@ using System.Windows.Forms;
 using sxlib;
 using sxlib.Specialized;
 using sxlib.Static;
+using System.Threading;
 
 namespace Synapse_X_Infinity
 {
@@ -26,6 +27,7 @@ namespace Synapse_X_Infinity
         public SynapseXbeta()
         {
             InitializeComponent();
+            BunifuPages1.SetPage("dashboardPage");
             bunifuFormDock1.SubscribeControlToDragEvents(bunifuPanel1);
 #if Interface
             SynxF.Lib.AttachEvent += sxAttachEvent;
@@ -344,27 +346,41 @@ namespace Synapse_X_Infinity
             BunifuPages1.SetPage("hubPage");
         }
 
-        private async void pictureBox4_Click(object sender, EventArgs e)
+        private async void createPostPanels()
         {
+            List<APITypes.Posts> posts = await APIWrapper.GetPost();
             //Fetch da API dos Dados
-            var json = await APIWrapper.GetPost();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SynapseXbeta));
-            Bunifu.UI.WinForms.BunifuGradientPanel panelTest = new Bunifu.UI.WinForms.BunifuGradientPanel();
-            panelTest.BackColor = System.Drawing.Color.Transparent;
-            panelTest.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
-            panelTest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            panelTest.BorderRadius = 10;
-            panelTest.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            panelTest.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            panelTest.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            panelTest.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            panelTest.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            panelTest.Location = new System.Drawing.Point(12, 155);
-            panelTest.Name = "panelTest";
-            panelTest.Quality = 10;
-            panelTest.Size = new System.Drawing.Size(783, 138);
-            panelTest.TabIndex = 15;
-            dashboardPage.Controls.Add(panelTest);
+            if (posts.Count <= 0) { return; }
+
+            int NewPos = 12;
+
+            foreach ( APITypes.Posts post in posts) 
+            {
+                System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SynapseXbeta));
+                Bunifu.UI.WinForms.BunifuGradientPanel tempPanel = new Bunifu.UI.WinForms.BunifuGradientPanel();
+                tempPanel.BackColor = System.Drawing.Color.Transparent;
+                tempPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+                tempPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+                tempPanel.BorderRadius = 10;
+                tempPanel.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+                tempPanel.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+                tempPanel.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+                tempPanel.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+                tempPanel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+                tempPanel.Location = new System.Drawing.Point(12, NewPos);
+                tempPanel.Name = "panelTest" + post.id.ToString();
+                tempPanel.Quality = 10;
+                tempPanel.Size = new System.Drawing.Size(783, 138);
+                tempPanel.TabIndex = 15;
+                dashboardPage.Controls.Add(tempPanel);
+                NewPos = tempPanel.Location.Y + 143;
+            }
+            bunifuCircleProgress1.Visible = false;
+            
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
             BunifuPages1.SetPage("dashboardPage");
         }
 
@@ -472,7 +488,7 @@ namespace Synapse_X_Infinity
         private void SynapseXbeta_Load(object sender, EventArgs e)
         {
             this.webBrowser1.Navigate(string.Format("file:///{0}ace/AceEditor.html", AppDomain.CurrentDomain.BaseDirectory));
-            BunifuPages1.SetPage("dashboardPage");
+            createPostPanels();
             Configurations.Enabled = true;
         }
 
@@ -852,5 +868,9 @@ namespace Synapse_X_Infinity
             Scripts.Hydroxide();
         }
 
+        private void bunifuCircleProgress1_ProgressChanged(object sender, Bunifu.UI.WinForms.BunifuCircleProgress.ProgressChangedEventArgs e)
+        {
+
+        }
     }
 }

@@ -13,6 +13,9 @@ namespace Synapse_X_Infinity
     {
         public class Posts
         {
+            [JsonPropertyName("id")]
+            public int id { get; set; }
+
             [JsonPropertyName("title")]
             public string title { get; set; }
 

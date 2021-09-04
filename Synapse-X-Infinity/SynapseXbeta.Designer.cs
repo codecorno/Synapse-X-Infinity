@@ -78,7 +78,7 @@ namespace Synapse_X_Infinity
             this.bunifuButton9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.dashboardPage = new System.Windows.Forms.TabPage();
-            this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.bunifuCircleProgress1 = new Bunifu.UI.WinForms.BunifuCircleProgress();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.bunifuPanel6 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuButton11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -196,7 +196,7 @@ namespace Synapse_X_Infinity
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox8.Image = global::Synapse_X_Infinity.Properties.Resources.settings;
-            this.pictureBox8.Location = new System.Drawing.Point(434, 6);
+            this.pictureBox8.Location = new System.Drawing.Point(452, 4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(30, 30);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -209,7 +209,7 @@ namespace Synapse_X_Infinity
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox7.Image = global::Synapse_X_Infinity.Properties.Resources.hub;
-            this.pictureBox7.Location = new System.Drawing.Point(398, 6);
+            this.pictureBox7.Location = new System.Drawing.Point(416, 4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(30, 30);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -222,7 +222,7 @@ namespace Synapse_X_Infinity
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Image = global::Synapse_X_Infinity.Properties.Resources.lua;
-            this.pictureBox6.Location = new System.Drawing.Point(362, 6);
+            this.pictureBox6.Location = new System.Drawing.Point(380, 4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(30, 30);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -235,7 +235,7 @@ namespace Synapse_X_Infinity
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::Synapse_X_Infinity.Properties.Resources.dashboard;
-            this.pictureBox4.Location = new System.Drawing.Point(326, 6);
+            this.pictureBox4.Location = new System.Drawing.Point(344, 4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(30, 30);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -903,7 +903,7 @@ namespace Synapse_X_Infinity
             // 
             this.dashboardPage.AutoScroll = true;
             this.dashboardPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.dashboardPage.Controls.Add(this.bunifuGradientPanel1);
+            this.dashboardPage.Controls.Add(this.bunifuCircleProgress1);
             this.dashboardPage.Location = new System.Drawing.Point(4, 4);
             this.dashboardPage.Name = "dashboardPage";
             this.dashboardPage.Padding = new System.Windows.Forms.Padding(3);
@@ -911,22 +911,44 @@ namespace Synapse_X_Infinity
             this.dashboardPage.TabIndex = 0;
             this.dashboardPage.Text = "dashboardPage";
             // 
-            // bunifuGradientPanel1
+            // bunifuCircleProgress1
             // 
-            this.bunifuGradientPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
-            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.BorderRadius = 10;
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.bunifuGradientPanel1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(12, 12);
-            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
-            this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(783, 138);
-            this.bunifuGradientPanel1.TabIndex = 15;
+            this.bunifuCircleProgress1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuCircleProgress1.Animated = true;
+            this.bunifuCircleProgress1.AnimationInterval = 5;
+            this.bunifuCircleProgress1.AnimationSpeed = 1;
+            this.bunifuCircleProgress1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCircleProgress1.CircleMargin = 10;
+            this.bunifuCircleProgress1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCircleProgress1.ForeColor = System.Drawing.Color.Transparent;
+            this.bunifuCircleProgress1.IsPercentage = false;
+            this.bunifuCircleProgress1.LineProgressThickness = 9;
+            this.bunifuCircleProgress1.LineThickness = 10;
+            this.bunifuCircleProgress1.Location = new System.Drawing.Point(385, 163);
+            this.bunifuCircleProgress1.Name = "bunifuCircleProgress1";
+            this.bunifuCircleProgress1.ProgressAnimationSpeed = 200;
+            this.bunifuCircleProgress1.ProgressBackColor = System.Drawing.Color.Gainsboro;
+            this.bunifuCircleProgress1.ProgressColor = System.Drawing.Color.DimGray;
+            this.bunifuCircleProgress1.ProgressColor2 = System.Drawing.Color.DarkGray;
+            this.bunifuCircleProgress1.ProgressEndCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Round;
+            this.bunifuCircleProgress1.ProgressFillStyle = Bunifu.UI.WinForms.BunifuCircleProgress.FillStyles.Solid;
+            this.bunifuCircleProgress1.ProgressStartCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Round;
+            this.bunifuCircleProgress1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.bunifuCircleProgress1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.bunifuCircleProgress1.Size = new System.Drawing.Size(75, 75);
+            this.bunifuCircleProgress1.SubScriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.bunifuCircleProgress1.SubScriptMargin = new System.Windows.Forms.Padding(5, -20, 0, 0);
+            this.bunifuCircleProgress1.SubScriptText = "";
+            this.bunifuCircleProgress1.SuperScriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.bunifuCircleProgress1.SuperScriptMargin = new System.Windows.Forms.Padding(5, 20, 0, 0);
+            this.bunifuCircleProgress1.SuperScriptText = "";
+            this.bunifuCircleProgress1.TabIndex = 19;
+            this.bunifuCircleProgress1.Text = "30";
+            this.bunifuCircleProgress1.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.bunifuCircleProgress1.Value = 30;
+            this.bunifuCircleProgress1.ValueByTransition = 30;
+            this.bunifuCircleProgress1.ValueMargin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.bunifuCircleProgress1.ProgressChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuCircleProgress.ProgressChangedEventArgs>(this.bunifuCircleProgress1_ProgressChanged);
             // 
             // tabPage1
             // 
@@ -2464,7 +2486,7 @@ namespace Synapse_X_Infinity
             this.logoText.Location = new System.Drawing.Point(44, 3);
             this.logoText.Name = "logoText";
             this.logoText.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.logoText.Size = new System.Drawing.Size(0, 0);
+            this.logoText.Size = new System.Drawing.Size(165, 31);
             this.logoText.TabIndex = 19;
             this.logoText.Text = "Synapse X Infinity";
             this.logoText.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -2602,7 +2624,6 @@ namespace Synapse_X_Infinity
         private System.Windows.Forms.PictureBox pictureBox4;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
         private System.Windows.Forms.Timer setupMessage;
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel9;
@@ -2662,5 +2683,6 @@ namespace Synapse_X_Infinity
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel10;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
         private System.Windows.Forms.PictureBox pictureBox9;
+        private Bunifu.UI.WinForms.BunifuCircleProgress bunifuCircleProgress1;
     }
 }

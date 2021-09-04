@@ -237,7 +237,6 @@ namespace Synapse_X_Infinity
         private void timer1_Tick_1(object sender, EventArgs e)
         {
             timer1.Enabled = false;
-#if Interface
             var testBeta = MessageBox.Show("Do you want to test the alpha version of the Infinity Dashboard?", "Synapse X Alpha Version", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (testBeta == DialogResult.Yes)
             {
@@ -245,12 +244,7 @@ namespace Synapse_X_Infinity
                 var SynapseXLoader = new SynapseXbeta();
                 SynapseXLoader.Show();
             }
-#else
-            this.Visible = false;
-            StartUp.ActiveForm.Visible = false;
-            var SynapseXLoader = new SynapseXbeta();
-            SynapseXLoader.Show();
-#endif
+
         }
     }
 }
