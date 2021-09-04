@@ -344,36 +344,10 @@ namespace Synapse_X_Infinity
             BunifuPages1.SetPage("hubPage");
         }
 
-        class Posts
-        {
-            [JsonPropertyName("title")]
-            public string title { get; set; }
-
-            [JsonPropertyName("content")]
-            public string content { get; set; }
-
-            [JsonPropertyName("script")]
-            public string script { get; set; }
-
-            [JsonPropertyName("created_at")]
-            public DateTime created_at { get; set; }
-        }
-
-        private async static Task<List<Posts>> GetPost()
-        {
-            HttpClient client = new HttpClient();
-            client.DefaultRequestHeaders.Accept.Clear();
-            client.DefaultRequestHeaders.Add("User-Agent", "Synapse X Infinity UserAgent");
-
-            var streamTask = client.GetStreamAsync("https://synapse-database.vercel.app/api/posts");
-            var repositories = await JsonSerializer.DeserializeAsync<List<Posts>>(await streamTask);
-            return repositories;
-        }
-
         private async void pictureBox4_Click(object sender, EventArgs e)
         {
             //Fetch da API dos Dados
-            var json = await GetPost();
+            var json = await APIWrapper.GetPost();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SynapseXbeta));
             Bunifu.UI.WinForms.BunifuGradientPanel panelTest = new Bunifu.UI.WinForms.BunifuGradientPanel();
             panelTest.BackColor = System.Drawing.Color.Transparent;

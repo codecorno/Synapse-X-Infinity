@@ -73,7 +73,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Interface|AnyCPU'">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>ReleaseVersion\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;INTERFACE</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <LangVersion>7.3</LangVersion>
@@ -239,6 +239,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="APIWrapper.cs" />
     <Compile Include="dashCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
