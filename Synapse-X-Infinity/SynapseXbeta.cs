@@ -374,6 +374,58 @@ namespace Synapse_X_Infinity
                 tempPanel.Quality = 10;
                 tempPanel.Size = new System.Drawing.Size(783, 138);
                 tempPanel.TabIndex = 15;
+
+                Bunifu.UI.WinForms.BunifuLabel tempTitle = new Bunifu.UI.WinForms.BunifuLabel();
+                Bunifu.UI.WinForms.BunifuLabel tempDescription = new Bunifu.UI.WinForms.BunifuLabel();
+                Bunifu.UI.WinForms.BunifuPictureBox tempPicImage = new Bunifu.UI.WinForms.BunifuPictureBox();
+
+                tempTitle.AllowParentOverrides = false;
+                tempTitle.AutoEllipsis = false;
+                tempTitle.AutoSize = false;
+                tempTitle.CursorType = System.Windows.Forms.Cursors.Default;
+                tempTitle.Font = new System.Drawing.Font("Segoe UI", 15.16F);
+                tempTitle.Location = new System.Drawing.Point(154, 3);
+                tempTitle.Name = "lbTitle" + post.id.ToString();
+                tempTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
+                tempTitle.Size = new System.Drawing.Size(626, 30);
+                tempTitle.TabIndex = 0;
+                tempTitle.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+                tempTitle.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+                tempTitle.Text = post.title;
+                tempTitle.ForeColor = Color.White;
+
+                tempDescription.AllowParentOverrides = false;
+                tempDescription.AutoEllipsis = false;
+                tempDescription.AutoSize = false;
+                tempDescription.CursorType = null;
+                tempDescription.Font = new System.Drawing.Font("Segoe UI", 15.12F);
+                tempDescription.Location = new System.Drawing.Point(154, 39);
+                tempDescription.Name = "lbDescription" + post.id.ToString();
+                tempDescription.RightToLeft = System.Windows.Forms.RightToLeft.No;
+                tempDescription.Size = new System.Drawing.Size(626, 96);
+                tempDescription.TabIndex = 1;
+                tempDescription.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+                tempDescription.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+                tempDescription.Text = post.content;
+                tempDescription.ForeColor = Color.White;
+
+                tempPicImage.AllowFocused = false;
+                tempPicImage.Anchor = System.Windows.Forms.AnchorStyles.None;
+                tempPicImage.AutoSizeHeight = true;
+                tempPicImage.BorderRadius = 0;
+                tempPicImage.IsCircle = true;
+                tempPicImage.Location = new System.Drawing.Point(0, 1);
+                tempPicImage.Name = "picImage" + post.id.ToString();
+                tempPicImage.Size = new System.Drawing.Size(137, 137);
+                tempPicImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+                tempPicImage.TabIndex = 2;
+                tempPicImage.TabStop = false;
+                tempPicImage.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+
+                tempPanel.Controls.Add(tempPicImage);
+                tempPanel.Controls.Add(tempTitle);
+                tempPanel.Controls.Add(tempDescription);
+
                 dashboardPage.Controls.Add(tempPanel);
                 NewPos = tempPanel.Location.Y + 143;
             }

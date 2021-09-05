@@ -295,10 +295,10 @@ namespace Synapse_X_Infinity
             this.BunifuPages1.Location = new System.Drawing.Point(5, 50);
             this.BunifuPages1.Multiline = true;
             this.BunifuPages1.Name = "BunifuPages1";
-            this.BunifuPages1.Page = this.tabPage2;
-            this.BunifuPages1.PageIndex = 0;
-            this.BunifuPages1.PageName = "tabPage2";
-            this.BunifuPages1.PageTitle = "executorPage";
+            this.BunifuPages1.Page = this.dashboardPage;
+            this.BunifuPages1.PageIndex = 1;
+            this.BunifuPages1.PageName = "dashboardPage";
+            this.BunifuPages1.PageTitle = "dashboardPage";
             this.BunifuPages1.SelectedIndex = 0;
             this.BunifuPages1.Size = new System.Drawing.Size(815, 445);
             this.BunifuPages1.TabIndex = 4;
@@ -907,7 +907,7 @@ namespace Synapse_X_Infinity
             this.dashboardPage.Location = new System.Drawing.Point(4, 4);
             this.dashboardPage.Name = "dashboardPage";
             this.dashboardPage.Padding = new System.Windows.Forms.Padding(3);
-            this.dashboardPage.Size = new System.Drawing.Size(807, 392);
+            this.dashboardPage.Size = new System.Drawing.Size(807, 419);
             this.dashboardPage.TabIndex = 0;
             this.dashboardPage.Text = "dashboardPage";
             this.dashboardPage.Click += new System.EventHandler(this.dashboardPage_Click);
@@ -962,7 +962,7 @@ namespace Synapse_X_Infinity
             this.tabPage1.Location = new System.Drawing.Point(4, 4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(807, 392);
+            this.tabPage1.Size = new System.Drawing.Size(807, 419);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "configurationPage";
             // 
@@ -2210,7 +2210,7 @@ namespace Synapse_X_Infinity
             this.tabPage3.Location = new System.Drawing.Point(4, 4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(807, 392);
+            this.tabPage3.Size = new System.Drawing.Size(807, 419);
             this.tabPage3.TabIndex = 3;
             this.tabPage3.Text = "hubPage";
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
