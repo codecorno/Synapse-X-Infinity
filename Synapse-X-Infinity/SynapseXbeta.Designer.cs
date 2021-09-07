@@ -77,7 +77,7 @@ namespace Synapse_X_Infinity
             this.bunifuButton8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.dashboardPage = new System.Windows.Forms.TabPage();
+            this.scriptsPage = new System.Windows.Forms.TabPage();
             this.bunifuCircleProgress1 = new Bunifu.UI.WinForms.BunifuCircleProgress();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.bunifuPanel6 = new Bunifu.UI.WinForms.BunifuPanel();
@@ -144,16 +144,19 @@ namespace Synapse_X_Infinity
             this.bunifuGradientPanel17 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuGradientPanel9 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.dashboardPage = new System.Windows.Forms.TabPage();
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.LoadScriptsLoop = new System.Windows.Forms.Timer(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.Configurations = new System.Windows.Forms.Timer(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.scriptsMenuItem = new System.Windows.Forms.PictureBox();
             this.logoText = new Bunifu.UI.WinForms.BunifuLabel();
             this.statusProgress = new Bunifu.UI.WinForms.BunifuCircleProgress();
             this.setupMessage = new System.Windows.Forms.Timer(this.components);
             this.bunifuVScrollBar1 = new Bunifu.UI.WinForms.BunifuVScrollBar();
+            this.bunifuCircleCount = new Bunifu.UI.WinForms.BunifuCircleProgress();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -163,7 +166,7 @@ namespace Synapse_X_Infinity
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.BunifuPages1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.dashboardPage.SuspendLayout();
+            this.scriptsPage.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.bunifuPanel6.SuspendLayout();
             this.bunifuPanel5.SuspendLayout();
@@ -189,7 +192,9 @@ namespace Synapse_X_Infinity
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.bunifuGradientPanel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.dashboardPage.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.scriptsMenuItem)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox8
@@ -197,7 +202,7 @@ namespace Synapse_X_Infinity
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox8.Image = global::Synapse_X_Infinity.Properties.Resources.settings;
-            this.pictureBox8.Location = new System.Drawing.Point(452, 4);
+            this.pictureBox8.Location = new System.Drawing.Point(483, 4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(30, 30);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -210,7 +215,7 @@ namespace Synapse_X_Infinity
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox7.Image = global::Synapse_X_Infinity.Properties.Resources.hub;
-            this.pictureBox7.Location = new System.Drawing.Point(416, 4);
+            this.pictureBox7.Location = new System.Drawing.Point(447, 4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(30, 30);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -223,7 +228,7 @@ namespace Synapse_X_Infinity
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Image = global::Synapse_X_Infinity.Properties.Resources.lua;
-            this.pictureBox6.Location = new System.Drawing.Point(380, 4);
+            this.pictureBox6.Location = new System.Drawing.Point(411, 4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(30, 30);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -236,7 +241,7 @@ namespace Synapse_X_Infinity
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::Synapse_X_Infinity.Properties.Resources.dashboard;
-            this.pictureBox4.Location = new System.Drawing.Point(344, 4);
+            this.pictureBox4.Location = new System.Drawing.Point(375, 4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(30, 30);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -289,14 +294,15 @@ namespace Synapse_X_Infinity
             this.BunifuPages1.Alignment = System.Windows.Forms.TabAlignment.Bottom;
             this.BunifuPages1.AllowTransitions = false;
             this.BunifuPages1.Controls.Add(this.tabPage2);
-            this.BunifuPages1.Controls.Add(this.dashboardPage);
+            this.BunifuPages1.Controls.Add(this.scriptsPage);
             this.BunifuPages1.Controls.Add(this.tabPage1);
             this.BunifuPages1.Controls.Add(this.tabPage3);
+            this.BunifuPages1.Controls.Add(this.dashboardPage);
             this.BunifuPages1.Location = new System.Drawing.Point(5, 50);
             this.BunifuPages1.Multiline = true;
             this.BunifuPages1.Name = "BunifuPages1";
             this.BunifuPages1.Page = this.dashboardPage;
-            this.BunifuPages1.PageIndex = 1;
+            this.BunifuPages1.PageIndex = 4;
             this.BunifuPages1.PageName = "dashboardPage";
             this.BunifuPages1.PageTitle = "dashboardPage";
             this.BunifuPages1.SelectedIndex = 0;
@@ -900,17 +906,17 @@ namespace Synapse_X_Infinity
             this.listBox1.TabIndex = 4;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // dashboardPage
+            // scriptsPage
             // 
-            this.dashboardPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.dashboardPage.Controls.Add(this.bunifuCircleProgress1);
-            this.dashboardPage.Location = new System.Drawing.Point(4, 4);
-            this.dashboardPage.Name = "dashboardPage";
-            this.dashboardPage.Padding = new System.Windows.Forms.Padding(3);
-            this.dashboardPage.Size = new System.Drawing.Size(807, 419);
-            this.dashboardPage.TabIndex = 0;
-            this.dashboardPage.Text = "dashboardPage";
-            this.dashboardPage.Click += new System.EventHandler(this.dashboardPage_Click);
+            this.scriptsPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.scriptsPage.Controls.Add(this.bunifuCircleProgress1);
+            this.scriptsPage.Location = new System.Drawing.Point(4, 4);
+            this.scriptsPage.Name = "scriptsPage";
+            this.scriptsPage.Padding = new System.Windows.Forms.Padding(3);
+            this.scriptsPage.Size = new System.Drawing.Size(807, 419);
+            this.scriptsPage.TabIndex = 0;
+            this.scriptsPage.Text = "scriptsPage";
+            this.scriptsPage.Click += new System.EventHandler(this.dashboardPage_Click);
             // 
             // bunifuCircleProgress1
             // 
@@ -2394,6 +2400,18 @@ namespace Synapse_X_Infinity
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
+            // dashboardPage
+            // 
+            this.dashboardPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.dashboardPage.Controls.Add(this.bunifuCircleCount);
+            this.dashboardPage.ForeColor = System.Drawing.Color.Black;
+            this.dashboardPage.Location = new System.Drawing.Point(4, 4);
+            this.dashboardPage.Name = "dashboardPage";
+            this.dashboardPage.Size = new System.Drawing.Size(807, 419);
+            this.dashboardPage.TabIndex = 4;
+            this.dashboardPage.Text = "dashboardPage";
+            this.dashboardPage.Enter += new System.EventHandler(this.dashboardPage_Enter);
+            // 
             // bunifuFormDock1
             // 
             this.bunifuFormDock1.AllowFormDragging = true;
@@ -2460,6 +2478,7 @@ namespace Synapse_X_Infinity
             this.bunifuPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.bunifuPanel1.BorderRadius = 30;
             this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Controls.Add(this.scriptsMenuItem);
             this.bunifuPanel1.Controls.Add(this.logoText);
             this.bunifuPanel1.Controls.Add(this.statusProgress);
             this.bunifuPanel1.Controls.Add(this.pictureBox3);
@@ -2475,6 +2494,19 @@ namespace Synapse_X_Infinity
             this.bunifuPanel1.Size = new System.Drawing.Size(823, 39);
             this.bunifuPanel1.TabIndex = 15;
             this.bunifuPanel1.Click += new System.EventHandler(this.bunifuPanel1_Click);
+            // 
+            // scriptsMenuItem
+            // 
+            this.scriptsMenuItem.BackColor = System.Drawing.Color.Transparent;
+            this.scriptsMenuItem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.scriptsMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("scriptsMenuItem.Image")));
+            this.scriptsMenuItem.Location = new System.Drawing.Point(339, 4);
+            this.scriptsMenuItem.Name = "scriptsMenuItem";
+            this.scriptsMenuItem.Size = new System.Drawing.Size(30, 30);
+            this.scriptsMenuItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.scriptsMenuItem.TabIndex = 20;
+            this.scriptsMenuItem.TabStop = false;
+            this.scriptsMenuItem.Click += new System.EventHandler(this.scriptsMenuItem_Click);
             // 
             // logoText
             // 
@@ -2550,7 +2582,7 @@ namespace Synapse_X_Infinity
             this.bunifuVScrollBar1.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.bunifuVScrollBar1.BackgroundColor = System.Drawing.Color.Silver;
             this.bunifuVScrollBar1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuVScrollBar1.BackgroundImage")));
-            this.bunifuVScrollBar1.BindingContainer = this.dashboardPage;
+            this.bunifuVScrollBar1.BindingContainer = this.scriptsPage;
             this.bunifuVScrollBar1.BorderColor = System.Drawing.Color.Silver;
             this.bunifuVScrollBar1.BorderRadius = 14;
             this.bunifuVScrollBar1.BorderThickness = 1;
@@ -2575,6 +2607,44 @@ namespace Synapse_X_Infinity
             this.bunifuVScrollBar1.ThumbMargin = 1;
             this.bunifuVScrollBar1.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
             this.bunifuVScrollBar1.Value = 0;
+            this.bunifuVScrollBar1.Visible = false;
+            // 
+            // bunifuCircleCount
+            // 
+            this.bunifuCircleCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuCircleCount.Animated = true;
+            this.bunifuCircleCount.AnimationInterval = 1;
+            this.bunifuCircleCount.AnimationSpeed = 1;
+            this.bunifuCircleCount.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCircleCount.CircleMargin = 5;
+            this.bunifuCircleCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 1E-05F, System.Drawing.FontStyle.Bold);
+            this.bunifuCircleCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuCircleCount.IsPercentage = false;
+            this.bunifuCircleCount.LineProgressThickness = 2;
+            this.bunifuCircleCount.LineThickness = 2;
+            this.bunifuCircleCount.Location = new System.Drawing.Point(40, 35);
+            this.bunifuCircleCount.Name = "bunifuCircleCount";
+            this.bunifuCircleCount.ProgressAnimationSpeed = 200;
+            this.bunifuCircleCount.ProgressBackColor = System.Drawing.Color.Gainsboro;
+            this.bunifuCircleCount.ProgressColor = System.Drawing.Color.Orange;
+            this.bunifuCircleCount.ProgressColor2 = System.Drawing.Color.Orange;
+            this.bunifuCircleCount.ProgressEndCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Round;
+            this.bunifuCircleCount.ProgressFillStyle = Bunifu.UI.WinForms.BunifuCircleProgress.FillStyles.Solid;
+            this.bunifuCircleCount.ProgressStartCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Round;
+            this.bunifuCircleCount.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.bunifuCircleCount.Size = new System.Drawing.Size(117, 117);
+            this.bunifuCircleCount.SubScriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.bunifuCircleCount.SubScriptMargin = new System.Windows.Forms.Padding(5, -20, 0, 0);
+            this.bunifuCircleCount.SubScriptText = "";
+            this.bunifuCircleCount.SuperScriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.bunifuCircleCount.SuperScriptMargin = new System.Windows.Forms.Padding(5, 20, 0, 0);
+            this.bunifuCircleCount.SuperScriptText = "";
+            this.bunifuCircleCount.TabIndex = 19;
+            this.bunifuCircleCount.Text = "30";
+            this.bunifuCircleCount.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.bunifuCircleCount.Value = 30;
+            this.bunifuCircleCount.ValueByTransition = 30;
+            this.bunifuCircleCount.ValueMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             // 
             // SynapseXbeta
             // 
@@ -2600,7 +2670,7 @@ namespace Synapse_X_Infinity
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.BunifuPages1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
-            this.dashboardPage.ResumeLayout(false);
+            this.scriptsPage.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.bunifuPanel6.ResumeLayout(false);
             this.bunifuPanel5.ResumeLayout(false);
@@ -2628,8 +2698,10 @@ namespace Synapse_X_Infinity
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.bunifuGradientPanel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.dashboardPage.ResumeLayout(false);
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.scriptsMenuItem)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2640,7 +2712,7 @@ namespace Synapse_X_Infinity
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.UI.WinForms.BunifuPages BunifuPages1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage dashboardPage;
+        private System.Windows.Forms.TabPage scriptsPage;
         private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
         private System.Windows.Forms.ListBox listBox1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton6;
@@ -2729,5 +2801,8 @@ namespace Synapse_X_Infinity
         private System.Windows.Forms.PictureBox pictureBox9;
         private Bunifu.UI.WinForms.BunifuCircleProgress bunifuCircleProgress1;
         private Bunifu.UI.WinForms.BunifuVScrollBar bunifuVScrollBar1;
+        private System.Windows.Forms.PictureBox scriptsMenuItem;
+        private System.Windows.Forms.TabPage dashboardPage;
+        private Bunifu.UI.WinForms.BunifuCircleProgress bunifuCircleCount;
     }
 }

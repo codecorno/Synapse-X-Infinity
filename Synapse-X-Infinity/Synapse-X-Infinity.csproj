@@ -361,6 +361,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Logo.ico" />
+    <None Include="Resources\scripts1.png" />
+    <None Include="Resources\scripts.png" />
+    <None Include="Resources\scripts.bmp" />
     <None Include="Resources\scriptsImages\hydroxide.png" />
     <None Include="Resources\change.png" />
     <None Include="Resources\minimize.png" />

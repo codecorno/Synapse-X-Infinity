@@ -31,6 +31,17 @@ namespace Synapse_X_Infinity
             [JsonPropertyName("created_at")]
             public DateTime created_at { get; set; }
         }
+
+        public class Count
+        {
+
+            [JsonPropertyName("id")]
+            public int id { get; set; }
+
+            [JsonPropertyName("count")]
+            public int count { get; set; }
+
+        }
     }
     class APIWrapper
     {
@@ -42,6 +53,16 @@ namespace Synapse_X_Infinity
 
             var streamTask = postsClient.GetStreamAsync("https://synapse-database.vercel.app/api/posts");
             return await JsonSerializer.DeserializeAsync<List<APITypes.Posts>>(await streamTask);
+        }
+
+        public async static Task<List<APITypes.Count>> GetAnalytics()
+        {
+            HttpClient postsClient = new HttpClient();
+            postsClient.DefaultRequestHeaders.Accept.Clear();
+            postsClient.DefaultRequestHeaders.Add("User-Agent", "Synapse X Infinity UserAgent");
+
+            var streamTask = postsClient.GetStreamAsync("https://synapse-database.vercel.app/api/count");
+            return await JsonSerializer.DeserializeAsync<List<APITypes.Count>>(await streamTask);
         }
     }
 }

@@ -427,19 +427,19 @@ namespace Synapse_X_Infinity
                 tempPanel.Controls.Add(tempTitle);
                 tempPanel.Controls.Add(tempDescription);
 
-                dashboardPage.Controls.Add(tempPanel);
+                scriptsPage.Controls.Add(tempPanel);
                 NewPos = tempPanel.Location.Y + 143;
             }
             bunifuCircleProgress1.Visible = false;
-            dashboardPage.Height = NewPos + 30;
-            bunifuVScrollBar1.Height = dashboardPage.Height;
+            scriptsPage.Height = NewPos + 30;
+            bunifuVScrollBar1.Height = scriptsPage.Height;
             
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             BunifuPages1.SetPage("dashboardPage");
-            bunifuVScrollBar1.Visible = true;
+            bunifuVScrollBar1.Visible = false;
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -935,6 +935,18 @@ namespace Synapse_X_Infinity
         private void dashboardPage_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void scriptsMenuItem_Click(object sender, EventArgs e)
+        {
+            BunifuPages1.SetPage("scriptsPage");
+            bunifuVScrollBar1.Visible = true;
+        }
+
+        private async void dashboardPage_Enter(object sender, EventArgs e)
+        {
+            List<APITypes.Count> data = await APIWrapper.GetAnalytics();
+            bunifuCircleCount.SuperScriptText = data[0].count.ToString();
         }
     }
 }
