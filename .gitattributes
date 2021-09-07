@@ -1,2 +1,1 @@
-* linguist-vendored
-*.cs linguist-vendored=false
+ReleaseVersion/ace linguist-vendored
