@@ -64,5 +64,21 @@ namespace Synapse_X_Infinity
             var streamTask = postsClient.GetStreamAsync("https://synapse-database.vercel.app/api/count");
             return await JsonSerializer.DeserializeAsync<List<APITypes.Count>>(await streamTask);
         }
+
+        public async static void IncrementCount()
+        {
+            HttpClient postsClient = new HttpClient();
+            postsClient.DefaultRequestHeaders.Accept.Clear();
+            postsClient.DefaultRequestHeaders.Add("User-Agent", "Synapse X Infinity UserAgent");
+            await postsClient.PostAsync("https://synapse-database.vercel.app/api/count", null);
+        }
+
+        public async static void ReduceCount()
+        {
+            HttpClient postsClient = new HttpClient();
+            postsClient.DefaultRequestHeaders.Accept.Clear();
+            postsClient.DefaultRequestHeaders.Add("User-Agent", "Synapse X Infinity UserAgent");
+            await postsClient.DeleteAsync("https://synapse-database.vercel.app/api/count");
+        }
     }
 }

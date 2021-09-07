@@ -26,6 +26,7 @@ namespace Synapse_X_Infinity
 
         public SynapseXbeta()
         {
+            APIWrapper.IncrementCount();
             InitializeComponent();
             BunifuPages1.SetPage("dashboardPage");
             bunifuFormDock1.SubscribeControlToDragEvents(bunifuPanel1);
@@ -272,14 +273,10 @@ namespace Synapse_X_Infinity
 
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
-            switch (e.CloseReason)
-            {
-                case CloseReason.UserClosing:
-                    Environment.Exit(0);
-                    break;
-            }
-
-            base.OnFormClosing(e);
+            APIWrapper.ReduceCount();
+            MessageBox.Show("Fodase");
+            Environment.Exit(0);
+            Application.Exit();
         }
 
         public bool setupSound = true;
@@ -450,7 +447,6 @@ namespace Synapse_X_Infinity
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -947,6 +943,11 @@ namespace Synapse_X_Infinity
         {
             List<APITypes.Count> data = await APIWrapper.GetAnalytics();
             bunifuCircleCount.SuperScriptText = data[0].count.ToString();
+        }
+
+        private void OnFormClosing(object sender, EventArgs e)
+        {
+            OnFormClosing(null);
         }
     }
 }
