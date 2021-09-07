@@ -25,6 +25,9 @@ namespace Synapse_X_Infinity
             [JsonPropertyName("script")]
             public string script { get; set; }
 
+            [JsonPropertyName("image")]
+            public string image { get; set; }
+
             [JsonPropertyName("created_at")]
             public DateTime created_at { get; set; }
         }

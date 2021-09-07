@@ -421,6 +421,7 @@ namespace Synapse_X_Infinity
                 tempPicImage.TabIndex = 2;
                 tempPicImage.TabStop = false;
                 tempPicImage.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+                tempPicImage.ImageLocation = post.image;
 
                 tempPanel.Controls.Add(tempPicImage);
                 tempPanel.Controls.Add(tempTitle);
