@@ -1146,7 +1146,6 @@ namespace Synapse_X_Infinity
         private async void dashboardPage_Enter(object sender, EventArgs e)
         {
             List<APITypes.Count> data = await APIWrapper.GetAnalytics();
-            bunifuCircleCount.SuperScriptText = data[0].count.ToString();
         }
 
         private void OnFormClosing(object sender, EventArgs e)
