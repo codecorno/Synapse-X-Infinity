@@ -30,20 +30,30 @@ namespace Synapse_X_Infinity
 
         private void LoadScripts(string path)
         {
-            listBox1.Items.Clear();
-
-            DirectoryInfo dinfo = new DirectoryInfo(Application.StartupPath + path);
-            FileInfo[] Files = dinfo.GetFiles("*.txt");
-            FileInfo[] Files1 = dinfo.GetFiles("*.lua");
-
-            foreach (FileInfo file in Files)
+            try
             {
-                listBox1.Items.Add(file.Name);
+                listBox1.Items.Clear();
+
+                DirectoryInfo dinfo = new DirectoryInfo(Application.StartupPath + path);
+                FileInfo[] Files = dinfo.GetFiles("*.txt");
+                FileInfo[] Files1 = dinfo.GetFiles("*.lua");
+
+                foreach (FileInfo file in Files)
+                {
+                    listBox1.Items.Add(file.Name);
+                }
+
+                foreach (FileInfo file in Files1)
+                {
+                    listBox1.Items.Add(file.Name);
+                }
             }
-
-            foreach (FileInfo file in Files1)
+            catch
             {
-                listBox1.Items.Add(file.Name);
+                if (!Directory.Exists(Application.StartupPath + path))
+                {
+                    Directory.CreateDirectory(Application.StartupPath + path);
+                }
             }
         }
 
