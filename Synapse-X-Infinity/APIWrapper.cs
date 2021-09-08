@@ -55,6 +55,16 @@ namespace Synapse_X_Infinity
             return await JsonSerializer.DeserializeAsync<List<APITypes.Posts>>(await streamTask);
         }
 
+        public async static Task<APITypes.Posts> GetPostByID(string id)
+        {
+            HttpClient postsClient = new HttpClient();
+            postsClient.DefaultRequestHeaders.Accept.Clear();
+            postsClient.DefaultRequestHeaders.Add("User-Agent", "Synapse X Infinity UserAgent");
+
+            var streamTask = postsClient.GetStreamAsync("https://synapse-database.vercel.app/api/post/"+id);
+            return await JsonSerializer.DeserializeAsync<APITypes.Posts>(await streamTask);
+        }
+
         public async static Task<List<APITypes.Count>> GetAnalytics()
         {
             HttpClient postsClient = new HttpClient();
