@@ -7,12 +7,17 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
 using System.Text;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using sxlib;
 using sxlib.Specialized;
 using sxlib.Static;
+using System.Threading;
+using System.Text.RegularExpressions;
 
 namespace Synapse_X_Infinity
 {
@@ -22,9 +27,13 @@ namespace Synapse_X_Infinity
 
         public SynapseXbeta()
         {
+            APIWrapper.IncrementCount();
             InitializeComponent();
+            BunifuPages1.SetPage("dashboardPage");
             bunifuFormDock1.SubscribeControlToDragEvents(bunifuPanel1);
+#if Interface
             SynxF.Lib.AttachEvent += sxAttachEvent;
+#endif
             LoadScriptsLoop.Enabled = true;
             setupMessage.Enabled = true;
             refreshImages();
@@ -215,20 +224,30 @@ namespace Synapse_X_Infinity
 
         private void LoadScripts(string path)
         {
-            listBox1.Items.Clear();
-
-            DirectoryInfo dinfo = new DirectoryInfo(Application.StartupPath + path);
-            FileInfo[] Files = dinfo.GetFiles("*.txt");
-            FileInfo[] Files1 = dinfo.GetFiles("*.lua");
-
-            foreach (FileInfo file in Files)
+            try
             {
-                listBox1.Items.Add(file.Name);
+                listBox1.Items.Clear();
+
+                DirectoryInfo dinfo = new DirectoryInfo(Application.StartupPath + path);
+                FileInfo[] Files = dinfo.GetFiles("*.txt");
+                FileInfo[] Files1 = dinfo.GetFiles("*.lua");
+
+                foreach (FileInfo file in Files)
+                {
+                    listBox1.Items.Add(file.Name);
+                }
+
+                foreach (FileInfo file in Files1)
+                {
+                    listBox1.Items.Add(file.Name);
+                }
             }
-
-            foreach (FileInfo file in Files1)
+            catch 
             {
-                listBox1.Items.Add(file.Name);
+                if (!Directory.Exists(Application.StartupPath + path))
+                {
+                    Directory.CreateDirectory(Application.StartupPath + path);
+                }
             }
         }
 
@@ -265,14 +284,9 @@ namespace Synapse_X_Infinity
 
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
-            switch (e.CloseReason)
-            {
-                case CloseReason.UserClosing:
-                    Environment.Exit(0);
-                    break;
-            }
-
-            base.OnFormClosing(e);
+            APIWrapper.ReduceCount();
+            Environment.Exit(0);
+            Application.Exit();
         }
 
         public bool setupSound = true;
@@ -332,26 +346,321 @@ namespace Synapse_X_Infinity
         private void pictureBox8_Click(object sender, EventArgs e)
         {
             BunifuPages1.SetPage("configurationPage");
+            bunifuVScrollBar1.Visible = false;
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
             BunifuPages1.SetPage("hubPage");
+            bunifuVScrollBar1.Visible = false;
+        }
+
+        public async void showScriptInfo(object sender, EventArgs e)
+        {
+            // Aqui vai ficar as coisas na hora que clicar no panel do Script
+            string ID = Regex.Match(((System.Windows.Forms.Control)sender).Name, @"\d+").Value;
+            APITypes.Posts post = await APIWrapper.GetPostByID(ID);
+
+            Bunifu.UI.WinForms.BunifuPanel pnScriptInfo = new Bunifu.UI.WinForms.BunifuPanel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SynapseXbeta));
+            pnScriptInfo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            pnScriptInfo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnScriptInfo.BackgroundImage")));
+            pnScriptInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            pnScriptInfo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            pnScriptInfo.BorderRadius = 3;
+            pnScriptInfo.BorderThickness = 1;
+            pnScriptInfo.Location = new System.Drawing.Point(3, 3);
+            pnScriptInfo.Name = "pnScriptInfo";
+            pnScriptInfo.ShowBorders = false;
+            pnScriptInfo.Size = new System.Drawing.Size(801, 413);
+            pnScriptInfo.TabIndex = 20;
+            scriptsPage.Controls.Add(pnScriptInfo);
+
+            Bunifu.UI.WinForms.BunifuPictureBox pbIconScriptInfo = new Bunifu.UI.WinForms.BunifuPictureBox();
+
+            pbIconScriptInfo.AllowFocused = false;
+            pbIconScriptInfo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            pbIconScriptInfo.AutoSizeHeight = false;
+            pbIconScriptInfo.BorderRadius = 0;
+            pbIconScriptInfo.Image = ((System.Drawing.Image)(resources.GetObject("pbIconScriptInfo.Image")));
+            pbIconScriptInfo.IsCircle = true;
+            pbIconScriptInfo.Location = new System.Drawing.Point(8, 11);
+            pbIconScriptInfo.Name = "pbIconScriptInfo";
+            pbIconScriptInfo.Size = new System.Drawing.Size(160, 135);
+            pbIconScriptInfo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            pbIconScriptInfo.TabIndex = 1;
+            pbIconScriptInfo.TabStop = false;
+            pbIconScriptInfo.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            pbIconScriptInfo.ImageLocation = post.image;
+            pnScriptInfo.Controls.Add(pbIconScriptInfo);
+
+            Bunifu.UI.WinForms.BunifuLabel lbDescriptionInfoScript = new Bunifu.UI.WinForms.BunifuLabel();
+
+            lbDescriptionInfoScript.AllowParentOverrides = false;
+            lbDescriptionInfoScript.AutoEllipsis = false;
+            lbDescriptionInfoScript.AutoSize = false;
+            lbDescriptionInfoScript.CursorType = System.Windows.Forms.Cursors.Default;
+            lbDescriptionInfoScript.Font = new System.Drawing.Font("Segoe UI", 14F);
+            lbDescriptionInfoScript.ForeColor = System.Drawing.Color.White;
+            lbDescriptionInfoScript.Location = new System.Drawing.Point(198, 63);
+            lbDescriptionInfoScript.Name = "lbDescriptionInfoScript";
+            lbDescriptionInfoScript.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            lbDescriptionInfoScript.Size = new System.Drawing.Size(578, 339);
+            lbDescriptionInfoScript.TabIndex = 2;
+            lbDescriptionInfoScript.Text = post.content;
+            lbDescriptionInfoScript.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            lbDescriptionInfoScript.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            pnScriptInfo.Controls.Add(lbDescriptionInfoScript);
+
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton btnLoadInfoScript = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+
+            btnLoadInfoScript.AllowAnimations = true;
+            btnLoadInfoScript.AllowMouseEffects = true;
+            btnLoadInfoScript.AllowToggling = false;
+            btnLoadInfoScript.AnimationSpeed = 200;
+            btnLoadInfoScript.AutoGenerateColors = false;
+            btnLoadInfoScript.AutoRoundBorders = true;
+            btnLoadInfoScript.AutoSizeLeftIcon = true;
+            btnLoadInfoScript.AutoSizeRightIcon = true;
+            btnLoadInfoScript.BackColor = System.Drawing.Color.Transparent;
+            btnLoadInfoScript.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            btnLoadInfoScript.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLoadInfoScript.BackgroundImage")));
+            btnLoadInfoScript.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            btnLoadInfoScript.ButtonText = "Load this Script";
+            btnLoadInfoScript.ButtonTextMarginLeft = 0;
+            btnLoadInfoScript.ColorContrastOnClick = 45;
+            btnLoadInfoScript.ColorContrastOnHover = 45;
+            btnLoadInfoScript.Cursor = System.Windows.Forms.Cursors.Default;
+            btnLoadInfoScript.DialogResult = System.Windows.Forms.DialogResult.None;
+            btnLoadInfoScript.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            btnLoadInfoScript.DisabledFillColor = System.Drawing.Color.Empty;
+            btnLoadInfoScript.DisabledForecolor = System.Drawing.Color.Empty;
+            btnLoadInfoScript.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            btnLoadInfoScript.Font = new System.Drawing.Font("Segoe UI", 9F);
+            btnLoadInfoScript.ForeColor = System.Drawing.Color.White;
+            btnLoadInfoScript.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnLoadInfoScript.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            btnLoadInfoScript.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            btnLoadInfoScript.IconMarginLeft = 11;
+            btnLoadInfoScript.IconPadding = 10;
+            btnLoadInfoScript.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            btnLoadInfoScript.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            btnLoadInfoScript.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            btnLoadInfoScript.IconSize = 25;
+            btnLoadInfoScript.IdleBorderColor = System.Drawing.Color.Empty;
+            btnLoadInfoScript.IdleBorderRadius = 0;
+            btnLoadInfoScript.IdleBorderThickness = 0;
+            btnLoadInfoScript.IdleFillColor = System.Drawing.Color.Empty;
+            btnLoadInfoScript.IdleIconLeftImage = null;
+            btnLoadInfoScript.IdleIconRightImage = null;
+            btnLoadInfoScript.IndicateFocus = false;
+            btnLoadInfoScript.Location = new System.Drawing.Point(21, 200);
+            btnLoadInfoScript.Name = "btnLoadInfoScript";
+            btnLoadInfoScript.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            btnLoadInfoScript.OnDisabledState.BorderRadius = 1;
+            btnLoadInfoScript.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            btnLoadInfoScript.OnDisabledState.BorderThickness = 1;
+            btnLoadInfoScript.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            btnLoadInfoScript.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            btnLoadInfoScript.OnDisabledState.IconLeftImage = null;
+            btnLoadInfoScript.OnDisabledState.IconRightImage = null;
+            btnLoadInfoScript.OnHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            btnLoadInfoScript.OnHoverState.BorderRadius = 1;
+            btnLoadInfoScript.OnHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            btnLoadInfoScript.OnHoverState.BorderThickness = 1;
+            btnLoadInfoScript.OnHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            btnLoadInfoScript.OnHoverState.ForeColor = System.Drawing.Color.White;
+            btnLoadInfoScript.OnHoverState.IconLeftImage = null;
+            btnLoadInfoScript.OnHoverState.IconRightImage = null;
+            btnLoadInfoScript.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            btnLoadInfoScript.OnIdleState.BorderRadius = 1;
+            btnLoadInfoScript.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            btnLoadInfoScript.OnIdleState.BorderThickness = 1;
+            btnLoadInfoScript.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            btnLoadInfoScript.OnIdleState.ForeColor = System.Drawing.Color.White;
+            btnLoadInfoScript.OnIdleState.IconLeftImage = null;
+            btnLoadInfoScript.OnIdleState.IconRightImage = null;
+            btnLoadInfoScript.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            btnLoadInfoScript.OnPressedState.BorderRadius = 1;
+            btnLoadInfoScript.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            btnLoadInfoScript.OnPressedState.BorderThickness = 1;
+            btnLoadInfoScript.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            btnLoadInfoScript.OnPressedState.ForeColor = System.Drawing.Color.White;
+            btnLoadInfoScript.OnPressedState.IconLeftImage = null;
+            btnLoadInfoScript.OnPressedState.IconRightImage = null;
+            btnLoadInfoScript.Size = new System.Drawing.Size(136, 36);
+            btnLoadInfoScript.TabIndex = 3;
+            btnLoadInfoScript.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            btnLoadInfoScript.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            btnLoadInfoScript.TextMarginLeft = 0;
+            btnLoadInfoScript.TextPadding = new System.Windows.Forms.Padding(0);
+            btnLoadInfoScript.UseDefaultRadiusAndThickness = true;
+            pnScriptInfo.Controls.Add(btnLoadInfoScript);
+
+            Bunifu.UI.WinForms.BunifuLabel lbTitleInfoScript = new Bunifu.UI.WinForms.BunifuLabel();
+
+            lbTitleInfoScript.AllowParentOverrides = false;
+            lbTitleInfoScript.AutoEllipsis = false;
+            lbTitleInfoScript.AutoSize = false;
+            lbTitleInfoScript.AutoSizeHeightOnly = true;
+            lbTitleInfoScript.CursorType = null;
+            lbTitleInfoScript.Font = new System.Drawing.Font("Segoe UI", 16F);
+            lbTitleInfoScript.ForeColor = System.Drawing.Color.White;
+            lbTitleInfoScript.Location = new System.Drawing.Point(217, 11);
+            lbTitleInfoScript.Name = "lbTitleInfoScript";
+            lbTitleInfoScript.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            lbTitleInfoScript.Size = new System.Drawing.Size(490, 30);
+            lbTitleInfoScript.TabIndex = 0;
+            lbTitleInfoScript.Text = post.title;
+            lbTitleInfoScript.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            lbTitleInfoScript.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            pnScriptInfo.Controls.Add(lbTitleInfoScript);
+
+            Bunifu.UI.WinForms.BunifuLabel lbBackInfoScript = new Bunifu.UI.WinForms.BunifuLabel();
+
+            lbBackInfoScript.AllowParentOverrides = false;
+            lbBackInfoScript.AutoEllipsis = false;
+            lbBackInfoScript.Cursor = System.Windows.Forms.Cursors.Default;
+            lbBackInfoScript.CursorType = System.Windows.Forms.Cursors.Default;
+            lbBackInfoScript.Font = new System.Drawing.Font("Segoe UI", 18F);
+            lbBackInfoScript.ForeColor = System.Drawing.Color.White;
+            lbBackInfoScript.Location = new System.Drawing.Point(17, 6);
+            lbBackInfoScript.Name = "lbBackInfoScript";
+            lbBackInfoScript.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            lbBackInfoScript.Size = new System.Drawing.Size(49, 32);
+            lbBackInfoScript.TabIndex = 0;
+            lbBackInfoScript.Text = "Back";
+            lbBackInfoScript.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            lbBackInfoScript.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            lbBackInfoScript.Click += new System.EventHandler(closePnScriptInfo);
+            pnScriptInfo.Controls.Add(lbBackInfoScript);
+
+            script = post.script;
+
+            btnLoadInfoScript.Click += new System.EventHandler(loadPostScript);
+
+            lbBackInfoScript.BringToFront();
+            pnScriptInfo.BringToFront();
+        }
+
+        public static string script;
+
+        private void loadPostScript(object sender, EventArgs e)
+        {
+            SetAceText(script);
+            BunifuPages1.SetPage("executorPage");
+        }
+
+        private void closePnScriptInfo(object sender, EventArgs e)
+        {
+           scriptsPage.Controls["pnScriptInfo"].Visible = false;
+        }
+
+        private async void createPostPanels()
+        {
+            List<APITypes.Posts> posts = await APIWrapper.GetPost();
+            //Fetch da API dos Dados
+            if (posts.Count <= 0) { return; }
+
+            int NewPos = 12;
+
+            foreach ( APITypes.Posts post in posts) 
+            {
+                System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SynapseXbeta));
+                Bunifu.UI.WinForms.BunifuGradientPanel tempPanel = new Bunifu.UI.WinForms.BunifuGradientPanel();
+                tempPanel.BackColor = System.Drawing.Color.Transparent;
+                tempPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+                tempPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+                tempPanel.BorderRadius = 10;
+                tempPanel.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+                tempPanel.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+                tempPanel.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+                tempPanel.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+                tempPanel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+                tempPanel.Location = new System.Drawing.Point(12, NewPos);
+                tempPanel.Name = "panelTest" + post.id.ToString();
+                tempPanel.Quality = 10;
+                tempPanel.Size = new System.Drawing.Size(783, 138);
+                tempPanel.TabIndex = 15;
+                tempPanel.Click += new System.EventHandler(showScriptInfo);
+
+                Bunifu.UI.WinForms.BunifuLabel tempTitle = new Bunifu.UI.WinForms.BunifuLabel();
+                Bunifu.UI.WinForms.BunifuLabel tempDescription = new Bunifu.UI.WinForms.BunifuLabel();
+                Bunifu.UI.WinForms.BunifuPictureBox tempPicImage = new Bunifu.UI.WinForms.BunifuPictureBox();
+
+                tempTitle.AllowParentOverrides = false;
+                tempTitle.AutoEllipsis = false;
+                tempTitle.AutoSize = false;
+                tempTitle.CursorType = System.Windows.Forms.Cursors.Default;
+                tempTitle.Font = new System.Drawing.Font("Segoe UI", 15.16F);
+                tempTitle.Location = new System.Drawing.Point(154, 3);
+                tempTitle.Name = "lbTitle" + post.id.ToString();
+                tempTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
+                tempTitle.Size = new System.Drawing.Size(626, 30);
+                tempTitle.TabIndex = 0;
+                tempTitle.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+                tempTitle.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+                tempTitle.Text = post.title;
+                tempTitle.ForeColor = Color.White;
+                tempTitle.Click += new System.EventHandler(showScriptInfo);
+
+                tempDescription.AllowParentOverrides = false;
+                tempDescription.AutoEllipsis = false;
+                tempDescription.AutoSize = false;
+                tempDescription.CursorType = null;
+                tempDescription.Font = new System.Drawing.Font("Segoe UI", 15.12F);
+                tempDescription.Location = new System.Drawing.Point(154, 39);
+                tempDescription.Name = "lbDescription" + post.id.ToString();
+                tempDescription.RightToLeft = System.Windows.Forms.RightToLeft.No;
+                tempDescription.Size = new System.Drawing.Size(626, 96);
+                tempDescription.TabIndex = 1;
+                tempDescription.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+                tempDescription.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+                tempDescription.Text = post.content;
+                tempDescription.ForeColor = Color.White;
+                tempDescription.Click += new System.EventHandler(showScriptInfo);
+
+                tempPicImage.AllowFocused = false;
+                tempPicImage.Anchor = System.Windows.Forms.AnchorStyles.None;
+                tempPicImage.AutoSizeHeight = true;
+                tempPicImage.BorderRadius = 0;
+                tempPicImage.IsCircle = true;
+                tempPicImage.Location = new System.Drawing.Point(0, 1);
+                tempPicImage.Name = "picImage" + post.id.ToString();
+                tempPicImage.Size = new System.Drawing.Size(137, 137);
+                tempPicImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+                tempPicImage.TabIndex = 2;
+                tempPicImage.TabStop = false;
+                tempPicImage.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+                tempPicImage.ImageLocation = post.image;
+                tempPicImage.Click += new System.EventHandler(showScriptInfo);
+
+                tempPanel.Controls.Add(tempPicImage);
+                tempPanel.Controls.Add(tempTitle);
+                tempPanel.Controls.Add(tempDescription);
+
+                scriptsPage.Controls.Add(tempPanel);
+                NewPos = tempPanel.Location.Y + 143;
+            }
+            bunifuCircleProgress1.Visible = false;
+            scriptsPage.Height = NewPos + 30;
+
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             BunifuPages1.SetPage("dashboardPage");
+            bunifuVScrollBar1.Visible = false;
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             BunifuPages1.SetPage("executorPage");
+            bunifuVScrollBar1.Visible = false;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -448,7 +757,6 @@ namespace Synapse_X_Infinity
         private void SynapseXbeta_Load(object sender, EventArgs e)
         {
             this.webBrowser1.Navigate(string.Format("file:///{0}ace/AceEditor.html", AppDomain.CurrentDomain.BaseDirectory));
-            BunifuPages1.SetPage("dashboardPage");
             Configurations.Enabled = true;
         }
 
@@ -826,6 +1134,42 @@ namespace Synapse_X_Infinity
         private void pictureBox9_Click(object sender, EventArgs e)
         {
             Scripts.Hydroxide();
+        }
+
+        private void bunifuCircleProgress1_ProgressChanged(object sender, Bunifu.UI.WinForms.BunifuCircleProgress.ProgressChangedEventArgs e)
+        {
+
+        }
+
+        private void dashboardPage_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void scriptsMenuItem_Click(object sender, EventArgs e)
+        {
+            BunifuPages1.SetPage("scriptsPage");
+            createPostPanels();
+            bunifuVScrollBar1.Visible = true;
+        }
+
+        private async void dashboardPage_Enter(object sender, EventArgs e)
+        {
+            List<APITypes.Count> data = await APIWrapper.GetAnalytics();
+        }
+
+        private void OnFormClosing(object sender, EventArgs e)
+        {
+            OnFormClosing(null);
+        }
+
+        private void bunifuLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuLabel1_Click_1(object sender, EventArgs e)
+        { 
         }
     }
 }

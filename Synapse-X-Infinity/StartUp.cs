@@ -50,11 +50,14 @@ namespace Synapse_X_Infinity
         public StartUp()
         {
             InitializeComponent();
-            checkFiles();
-            
-            SynxF.Lib = SxLib.InitializeWinForms(this, sxDirectory);
-            SynxF.Lib.Load();
-            SynxF.Lib.LoadEvent += sxLoadEvent;
+#if Interface
+                checkFiles();
+                SynxF.Lib = SxLib.InitializeWinForms(this, sxDirectory);
+                SynxF.Lib.Load();
+                SynxF.Lib.LoadEvent += sxLoadEvent;
+#endif
+            sxInfinity();
+
         }
 
         public void sxInfinity()

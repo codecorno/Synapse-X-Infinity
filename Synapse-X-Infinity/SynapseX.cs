@@ -1,16 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using sxlib;
 using sxlib.Specialized;
 
 namespace Synapse_X_Infinity
@@ -38,20 +30,30 @@ namespace Synapse_X_Infinity
 
         private void LoadScripts(string path)
         {
-            listBox1.Items.Clear();
-
-            DirectoryInfo dinfo = new DirectoryInfo(Application.StartupPath + path);
-            FileInfo[] Files = dinfo.GetFiles("*.txt");
-            FileInfo[] Files1 = dinfo.GetFiles("*.lua");
-
-            foreach (FileInfo file in Files)
+            try
             {
-                listBox1.Items.Add(file.Name);
+                listBox1.Items.Clear();
+
+                DirectoryInfo dinfo = new DirectoryInfo(Application.StartupPath + path);
+                FileInfo[] Files = dinfo.GetFiles("*.txt");
+                FileInfo[] Files1 = dinfo.GetFiles("*.lua");
+
+                foreach (FileInfo file in Files)
+                {
+                    listBox1.Items.Add(file.Name);
+                }
+
+                foreach (FileInfo file in Files1)
+                {
+                    listBox1.Items.Add(file.Name);
+                }
             }
-
-            foreach (FileInfo file in Files1)
+            catch
             {
-                listBox1.Items.Add(file.Name);
+                if (!Directory.Exists(Application.StartupPath + path))
+                {
+                    Directory.CreateDirectory(Application.StartupPath + path);
+                }
             }
         }
 
@@ -72,7 +74,7 @@ namespace Synapse_X_Infinity
         public SynapseX()
         {
             InitializeComponent();
-            SynxF.Lib.AttachEvent += sxAttachEvent;
+          //SynxF.Lib.AttachEvent += sxAttachEvent;
             LoadScriptsLoop.Enabled = true;
         }
 
@@ -252,6 +254,7 @@ namespace Synapse_X_Infinity
                 var SynapseXLoader = new SynapseXbeta();
                 SynapseXLoader.Show();
             }
+
         }
     }
 }
